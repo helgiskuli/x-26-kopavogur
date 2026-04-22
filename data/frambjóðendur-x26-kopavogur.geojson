@@ -1,0 +1,2723 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86975758,
+          64.09986817
+        ]
+      },
+      "properties": {
+        "name": "Orri Vignir Hlöðversson",
+        "address": "Núpalind 8",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 1,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86398603,
+          64.0969936
+        ]
+      },
+      "properties": {
+        "name": "Björg Baldursdóttir",
+        "address": "Haukalind 23",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 2,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86907298,
+          64.09747757
+        ]
+      },
+      "properties": {
+        "name": "Gunnar Sær Ragnarsson",
+        "address": "Fífulind 4",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 3,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.83381285,
+          64.08588821
+        ]
+      },
+      "properties": {
+        "name": "Svava Halldóra Friðgeirsdóttir",
+        "address": "Ásakór 3",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 4,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86841276,
+          64.0984107
+        ]
+      },
+      "properties": {
+        "name": "Heiðdís Geirsdóttir",
+        "address": "Galtalind 13",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 5,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.9024758,
+          64.10976525
+        ]
+      },
+      "properties": {
+        "name": "Bergrún Ósk Ólafsdóttir",
+        "address": "Bræðratungu 36",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 6,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8638947,
+          64.10365972
+        ]
+      },
+      "properties": {
+        "name": "Sveinn Gíslason",
+        "address": "Krossalind 25",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 7,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89145669,
+          64.10763258
+        ]
+      },
+      "properties": {
+        "name": "Stefán Atli Rúnarsson",
+        "address": "Víðihvammi 38",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 8,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.93146509,
+          64.1081291
+        ]
+      },
+      "properties": {
+        "name": "Jónas Haukur Thors Einarsson",
+        "address": "Sunnubraut 52",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 9,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86286795,
+          64.11500911
+        ]
+      },
+      "properties": {
+        "name": "Atli Ársælsson",
+        "address": "Álfatúni 10",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 10,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8850277,
+          64.11339215
+        ]
+      },
+      "properties": {
+        "name": "Kristinn Dagur Gissurarson",
+        "address": "Hjallabrekku 13",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 11,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90443425,
+          64.11661301
+        ]
+      },
+      "properties": {
+        "name": "Guðrún Sigurborg Viggósdóttir",
+        "address": "Sæbólsbraut 44",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 12,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.80191326,
+          64.09001255
+        ]
+      },
+      "properties": {
+        "name": "Atli Ómarsson",
+        "address": "Faxahvarfi 10",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 13,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.81831375,
+          64.07978069
+        ]
+      },
+      "properties": {
+        "name": "Þórunn Kolbeins Matthíasdóttir",
+        "address": "Boðaþingi 16",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 14,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87980343,
+          64.10473786
+        ]
+      },
+      "properties": {
+        "name": "Baldur Þór Baldvinsson",
+        "address": "Lækjasmára 6",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 15,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86907298,
+          64.09747757
+        ]
+      },
+      "properties": {
+        "name": "Díana Íva Gunnarsdóttir",
+        "address": "Fífulind 4",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 16,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.91123363,
+          64.10727586
+        ]
+      },
+      "properties": {
+        "name": "Einar Gunnar Bollason",
+        "address": "Kópavogsgerði 5",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 17,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.80544868,
+          64.08117162
+        ]
+      },
+      "properties": {
+        "name": "Margrét Sigmundsdóttir",
+        "address": "Gulaþingi 60",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 18,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86398603,
+          64.0969936
+        ]
+      },
+      "properties": {
+        "name": "Andrea Mist Guðjónsdóttir",
+        "address": "Haukalind 23",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 19,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.80191326,
+          64.09001255
+        ]
+      },
+      "properties": {
+        "name": "Sigrún Hulda Jónsdóttir",
+        "address": "Faxahvarfi 10",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 20,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90110013,
+          64.10018789
+        ]
+      },
+      "properties": {
+        "name": "Willum Þór Þórsson",
+        "address": "Bakkasmára 10",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 21,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88892587,
+          64.09980034
+        ]
+      },
+      "properties": {
+        "name": "Birkir Jón Jónsson",
+        "address": "Sunnusmára 10",
+        "party": "B - Framsóknarflokkur",
+        "party_color": "#00843D",
+        "list_rank": 22,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92856808,
+          64.11604531
+        ]
+      },
+      "properties": {
+        "name": "María Ellen Steingrímsdóttir",
+        "address": "Naustavör 42",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 1,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90003648,
+          64.10668041
+        ]
+      },
+      "properties": {
+        "name": "Pétur Björgvin Sveinsson",
+        "address": "Birkihvammi 2",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 2,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.82873914,
+          64.0900462
+        ]
+      },
+      "properties": {
+        "name": "Arnar Grétarsson",
+        "address": "Gnitakór 15",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 3,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87437871,
+          64.11054242
+        ]
+      },
+      "properties": {
+        "name": "Sigrún Ólöf Ingólfsdóttir",
+        "address": "Skálaheiði 5",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 4,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90236456,
+          64.11646677
+        ]
+      },
+      "properties": {
+        "name": "Elvar Bjarki Helgason",
+        "address": "Sæbólsbraut 45",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 5,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86753868,
+          64.11053465
+        ]
+      },
+      "properties": {
+        "name": "Bryndís Rut Logadóttir",
+        "address": "Álfaheiði 11",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 6,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.81173308,
+          64.0903155
+        ]
+      },
+      "properties": {
+        "name": "Ísak Leon Júlíusson",
+        "address": "Álfkonuhvarfi 13",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 7,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90463947,
+          64.111074
+        ]
+      },
+      "properties": {
+        "name": "Irpa Fönn Hlynsdóttir",
+        "address": "Fannborg 3",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 8,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90781082,
+          64.11429475
+        ]
+      },
+      "properties": {
+        "name": "Ásgeir Þór Jónsson",
+        "address": "Kársnesbraut 13",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 9,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87309362,
+          64.10885114
+        ]
+      },
+      "properties": {
+        "name": "Sigurlín Margrét Sigurðardóttir",
+        "address": "Hlíðarhjalla 39",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 10,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.91721168,
+          64.1084987
+        ]
+      },
+      "properties": {
+        "name": "Andrés Pétursson",
+        "address": "Kópavogsbrún 4",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 11,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90249989,
+          64.09998101
+        ]
+      },
+      "properties": {
+        "name": "Sóley Eiríksdóttir",
+        "address": "Bakkasmára 3",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 12,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.9302004,
+          64.11594039
+        ]
+      },
+      "properties": {
+        "name": "Máni Þór Magnason",
+        "address": "Naustavör 50",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 13,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.93426602,
+          64.11476238
+        ]
+      },
+      "properties": {
+        "name": "Þórunn Einarsdóttir",
+        "address": "Hafnarbraut 18",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 14,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8198257,
+          64.07992176
+        ]
+      },
+      "properties": {
+        "name": "Þór Hinriksson",
+        "address": "Boðaþingi 20",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 15,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.84960238,
+          64.08658308
+        ]
+      },
+      "properties": {
+        "name": "Auður Gunnarsdóttir",
+        "address": "Austurkór 72",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 16,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89651696,
+          64.11195841
+        ]
+      },
+      "properties": {
+        "name": "Bergþór Skúlason",
+        "address": "Álfhólsvegi 22",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 17,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86621015,
+          64.08987618
+        ]
+      },
+      "properties": {
+        "name": "Inga Þórunn Halldórsdóttir",
+        "address": "Þorrasölum 5",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 18,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86753868,
+          64.11053465
+        ]
+      },
+      "properties": {
+        "name": "Hafsteinn Hrannar Ásgrímsson",
+        "address": "Álfaheiði 11",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 19,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92466717,
+          64.11199369
+        ]
+      },
+      "properties": {
+        "name": "Ingibjörg Auður Guðmundsdóttir",
+        "address": "Skólagerði 11",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 20,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88087345,
+          64.11432806
+        ]
+      },
+      "properties": {
+        "name": "Jón Ingvar Bragason",
+        "address": "Furugrund 28",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 21,
+        "coord_source": "parquet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88569228,
+          64.11208585
+        ]
+      },
+      "properties": {
+        "name": "Kristín Þórhalla Rokk Þórisdóttir",
+        "address": "Álfhólsvegi 67",
+        "party": "C - Viðreisn",
+        "party_color": "#FF6600",
+        "list_rank": 22,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.80126389,
+          64.08947744
+        ]
+      },
+      "properties": {
+        "name": "Ásdís Kristjánsdóttir",
+        "address": "Fákahvarfi 12",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 1,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86607036,
+          64.10294184
+        ]
+      },
+      "properties": {
+        "name": "Hjördís Ýr Johnson",
+        "address": "Krossalind 7",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 2,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88648051,
+          64.1035128
+        ]
+      },
+      "properties": {
+        "name": "Andri Steinn Hilmarsson",
+        "address": "Lautasmára 39",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 3,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89447419,
+          64.10631605
+        ]
+      },
+      "properties": {
+        "name": "Elísabet Berglind Sveinsdóttir",
+        "address": "Fífuhvammi 29",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 4,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.9153041,
+          64.10742862
+        ]
+      },
+      "properties": {
+        "name": "Guðmundur Jóhann Jónsson",
+        "address": "Kópavogsbakka 15",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 5,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88514521,
+          64.10606266
+        ]
+      },
+      "properties": {
+        "name": "Hildur Einarsdóttir",
+        "address": "Lækjasmára 86",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 6,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.85179509,
+          64.09093056
+        ]
+      },
+      "properties": {
+        "name": "Karen Rúnarsdóttir",
+        "address": "Straumsölum 3",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 7,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88044743,
+          64.10701492
+        ]
+      },
+      "properties": {
+        "name": "Kristinn Jakobsson",
+        "address": "Blikahjalla 17",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 8,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86174243,
+          64.11358426
+        ]
+      },
+      "properties": {
+        "name": "Sigrún Bjarnadóttir",
+        "address": "Grænatúni 22",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 9,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.93657038,
+          64.11479639
+        ]
+      },
+      "properties": {
+        "name": "Leifur Andri Leifsson",
+        "address": "Hafnarbraut 14",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 10,
+        "coord_source": "parquet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89651696,
+          64.11195841
+        ]
+      },
+      "properties": {
+        "name": "Ragna Klara Magnúsdóttir",
+        "address": "Álfhólsvegi 22",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 11,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.81163398,
+          64.08792906
+        ]
+      },
+      "properties": {
+        "name": "Guðný Svandís Guðjónsdóttir",
+        "address": "Asparhvarfi 4",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 12,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.84507693,
+          64.09026395
+        ]
+      },
+      "properties": {
+        "name": "Jóhann Sveinn Friðleifsson",
+        "address": "Roðasölum 10",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 13,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8693492,
+          64.11012067
+        ]
+      },
+      "properties": {
+        "name": "Arnór Sveinn Aðalsteinsson",
+        "address": "Álfaheiði 26",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 14,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87182213,
+          64.09267069
+        ]
+      },
+      "properties": {
+        "name": "Berglind Haraldsdóttir",
+        "address": "Þrúðsölum 16",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 15,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87944892,
+          64.09849901
+        ]
+      },
+      "properties": {
+        "name": "Þorsteinn Vilhelmsson",
+        "address": "Bæjarlind 9",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 16,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90777714,
+          64.11583655
+        ]
+      },
+      "properties": {
+        "name": "Helga Guðrún Jónasdóttir",
+        "address": "Marbakkabraut 24",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 17,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88936391,
+          64.09888466
+        ]
+      },
+      "properties": {
+        "name": "Kristófer Breki Halldórsson",
+        "address": "Sunnusmára 26",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 18,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92784786,
+          64.1119652
+        ]
+      },
+      "properties": {
+        "name": "Haukur Már Hauksson",
+        "address": "Skólagerði 35",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 19,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89299056,
+          64.10901264
+        ]
+      },
+      "properties": {
+        "name": "Birgir Ari Óskarsson",
+        "address": "Hrauntungu 62",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 20,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86621015,
+          64.08987618
+        ]
+      },
+      "properties": {
+        "name": "Jón Atli Kristjánsson",
+        "address": "Þorrasölum 5",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 21,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89417525,
+          64.11675538
+        ]
+      },
+      "properties": {
+        "name": "Sólveig Guðrún Pétursdóttir",
+        "address": "Lundi 19",
+        "party": "D - Sjálfstæðisflokkur",
+        "party_color": "#003893",
+        "list_rank": 22,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8833815,
+          64.11159322
+        ]
+      },
+      "properties": {
+        "name": "Markús Candi",
+        "address": "Álfhólsvegi 62",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 1,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8833815,
+          64.11159322
+        ]
+      },
+      "properties": {
+        "name": "Anna Ceridwen Auðnudóttir",
+        "address": "Álfhólsvegi 62",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 2,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87306066,
+          64.11425911
+        ]
+      },
+      "properties": {
+        "name": "Marzuk Ingi Lamsiah Svanlaugar",
+        "address": "Ástúni 4",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 3,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.85905386,
+          64.10951753
+        ]
+      },
+      "properties": {
+        "name": "Sigurður Haraldsson",
+        "address": "Engihjalla 17",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 4,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89342938,
+          64.10743246
+        ]
+      },
+      "properties": {
+        "name": "Þórgunnur Guðgeirsdóttir",
+        "address": "Eskihvammi 2",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 5,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87415111,
+          64.10756583
+        ]
+      },
+      "properties": {
+        "name": "Kolbrún Anna Björnsdóttir",
+        "address": "Hlíðarhjalla 5",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 6,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88429852,
+          64.1101472
+        ]
+      },
+      "properties": {
+        "name": "Magnea Hildur Jónsdóttir",
+        "address": "Digranesheiði 9",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 7,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.85386407,
+          64.11076946
+        ]
+      },
+      "properties": {
+        "name": "Sæþór Benjamín Randalsson",
+        "address": "Smiðjuvegi 1",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 8,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88429852,
+          64.1101472
+        ]
+      },
+      "properties": {
+        "name": "Ágúst Valves Jóhannesson",
+        "address": "Digranesheiði 9",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 9,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.7964682,
+          64.09481399
+        ]
+      },
+      "properties": {
+        "name": "Fanklín Máni Arnarsson",
+        "address": "Dimmuhvarfi 8",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 10,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.91269225,
+          64.10946089
+        ]
+      },
+      "properties": {
+        "name": "Óskar Steinn Gestsson",
+        "address": "Kópavogsbraut 14",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 11,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89342938,
+          64.10743246
+        ]
+      },
+      "properties": {
+        "name": "Kristján Héðinn Gíslason",
+        "address": "Eskihvammi 2",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 12,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90250831,
+          64.11207295
+        ]
+      },
+      "properties": {
+        "name": "Veturliði Snær Gylfason",
+        "address": "Hamraborg 26",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 13,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89589095,
+          64.10944841
+        ]
+      },
+      "properties": {
+        "name": "Viktor Gunnarsson",
+        "address": "Hrauntungu 37",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 14,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.85125797,
+          64.11118905
+        ]
+      },
+      "properties": {
+        "name": "Ágúst Karlsson",
+        "address": "Smiðjuvegi 2",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 15,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86740208,
+          64.1082297
+        ]
+      },
+      "properties": {
+        "name": "Bjarni Ágústsson",
+        "address": "Hlíðarhjalla 54",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 16,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.81303657,
+          64.08275686
+        ]
+      },
+      "properties": {
+        "name": "Alexíus Metúsalem Alexandersson",
+        "address": "Frostaþingi 11",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 17,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87306066,
+          64.11425911
+        ]
+      },
+      "properties": {
+        "name": "Mikolaj Cymcyk",
+        "address": "Ástúni 4",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 18,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87315758,
+          64.09880388
+        ]
+      },
+      "properties": {
+        "name": "Magnús Rínar Magnússon",
+        "address": "Fífulind 15",
+        "party": "J - Sósíalistaflokkur",
+        "party_color": "#E60000",
+        "list_rank": 19,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.82982022,
+          64.08583552
+        ]
+      },
+      "properties": {
+        "name": "Einar Jóhannes Guðnason",
+        "address": "Baugakór 8",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 1,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87349127,
+          64.11459466
+        ]
+      },
+      "properties": {
+        "name": "Nína Berglind Sigurgeirsdóttir",
+        "address": "Daltúni 2",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 2,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88012156,
+          64.11145171
+        ]
+      },
+      "properties": {
+        "name": "Beitir Ólafsson",
+        "address": "Álfhólsvegi 76",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 3,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.91058138,
+          64.11086831
+        ]
+      },
+      "properties": {
+        "name": "Thelma Bergmann Árnadóttir",
+        "address": "Borgarholtsbraut 3",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 4,
+        "coord_source": "parquet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92270339,
+          64.11109955
+        ]
+      },
+      "properties": {
+        "name": "Trausti Örn Þórðarson",
+        "address": "Borgarholtsbraut 37",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 5,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.81192812,
+          64.07972565
+        ]
+      },
+      "properties": {
+        "name": "Ævar Örn Jóhannsson",
+        "address": "Gulaþingi 12",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 6,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88760658,
+          64.11330386
+        ]
+      },
+      "properties": {
+        "name": "Una María Óskarsdóttir",
+        "address": "Hjallabrekku 3",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 7,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88717952,
+          64.11255899
+        ]
+      },
+      "properties": {
+        "name": "Guðmundur Pétur Pálsson",
+        "address": "Löngubrekku 1",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 8,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92691802,
+          64.11055628
+        ]
+      },
+      "properties": {
+        "name": "Eva Guðrún Hilmarsdóttir",
+        "address": "Melgerði 35",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 9,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86269076,
+          64.11248153
+        ]
+      },
+      "properties": {
+        "name": "Högni Guðmundsson",
+        "address": "Hlaðbrekku 1",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 10,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90212165,
+          64.09933014
+        ]
+      },
+      "properties": {
+        "name": "Ingibjörg Jóna Gunnarsdóttir",
+        "address": "Arnarsmára 8",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 11,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.91825223,
+          64.11290461
+        ]
+      },
+      "properties": {
+        "name": "Kolbeinn Sturla Baldursson",
+        "address": "Hófgerði 2",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 12,
+        "coord_source": "parquet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90463947,
+          64.111074
+        ]
+      },
+      "properties": {
+        "name": "Anna Pétursdóttir",
+        "address": "Fannborg 3",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 13,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88558233,
+          64.09923862
+        ]
+      },
+      "properties": {
+        "name": "Matthildur Skúladóttir",
+        "address": "Sunnusmára 11",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 14,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8705662,
+          64.09184264
+        ]
+      },
+      "properties": {
+        "name": "Sigurður Bjarni Jónsson",
+        "address": "Þrúðsölum 7",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 15,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88766899,
+          64.09877489
+        ]
+      },
+      "properties": {
+        "name": "Guðrún Stefánsdóttir",
+        "address": "Sunnusmára 25",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 16,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.85974252,
+          64.10902801
+        ]
+      },
+      "properties": {
+        "name": "Magnús Valur Böðvarsson",
+        "address": "Engihjalla 19",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 17,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88561649,
+          64.11509544
+        ]
+      },
+      "properties": {
+        "name": "Alda Viggósdóttir",
+        "address": "Furugrund 4",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 18,
+        "coord_source": "parquet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89842489,
+          64.10658704
+        ]
+      },
+      "properties": {
+        "name": "Ásgeir Önundarson",
+        "address": "Víðihvammi 7",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 19,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90341305,
+          64.11223373
+        ]
+      },
+      "properties": {
+        "name": "Kristján Atli Marteinsson",
+        "address": "Hamraborg 20",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 20,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87397798,
+          64.10905983
+        ]
+      },
+      "properties": {
+        "name": "Einar Baldursson",
+        "address": "Gnípuheiði 1",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 21,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87382308,
+          64.11169059
+        ]
+      },
+      "properties": {
+        "name": "Ragnheiður Brynjólfsdóttir",
+        "address": "Álfhólsvegi 113",
+        "party": "M - Miðflokkur",
+        "party_color": "#1B3A5C",
+        "list_rank": 22,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87229841,
+          64.11167028
+        ]
+      },
+      "properties": {
+        "name": "Jónas Már Þorvaldsson",
+        "address": "Álfhólsvegi 119",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 1,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90972976,
+          64.11435353
+        ]
+      },
+      "properties": {
+        "name": "Eydís Inga Valsdóttir",
+        "address": "Kársnesbraut 21",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 2,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90547835,
+          64.11109836
+        ]
+      },
+      "properties": {
+        "name": "Hákon Gunnarsson",
+        "address": "Fannborg 7",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 3,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92874968,
+          64.110591
+        ]
+      },
+      "properties": {
+        "name": "Sólveig Skaftadóttir",
+        "address": "Suðurbraut 5",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 4,
+        "coord_source": "parquet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86196855,
+          64.09565578
+        ]
+      },
+      "properties": {
+        "name": "Orri Thor Eggertsson",
+        "address": "Húsalind 24",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 5,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86210948,
+          64.10844415
+        ]
+      },
+      "properties": {
+        "name": "Hildur María Friðriksdóttir",
+        "address": "Fagrahjalla 28",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 6,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.82244426,
+          64.08567825
+        ]
+      },
+      "properties": {
+        "name": "Örn Arnarson",
+        "address": "Hörðukór 3",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 7,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.82211543,
+          64.08748214
+        ]
+      },
+      "properties": {
+        "name": "Mirabela Blaga",
+        "address": "Hamrakór 6",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 8,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.91378216,
+          64.11064217
+        ]
+      },
+      "properties": {
+        "name": "Björn Þór Rögnvaldsson",
+        "address": "Skjólbraut 16",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 9,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89410238,
+          64.10727531
+        ]
+      },
+      "properties": {
+        "name": "Sólveig Jóhannesdóttir Larsen",
+        "address": "Birkihvammi 22",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 10,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88923921,
+          64.11065011
+        ]
+      },
+      "properties": {
+        "name": "Sigurður Kári Harðarson",
+        "address": "Víghólastíg 8",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 11,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.81898959,
+          64.08313402
+        ]
+      },
+      "properties": {
+        "name": "Friðmey Jónsdóttir",
+        "address": "Vindakór 5",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 12,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89664732,
+          64.10134835
+        ]
+      },
+      "properties": {
+        "name": "Kristján Bjarnar Ólafsson",
+        "address": "Grófarsmári 24",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 13,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89463834,
+          64.10768661
+        ]
+      },
+      "properties": {
+        "name": "Margrét Tryggvadóttir",
+        "address": "Reynihvammi 22",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 14,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92624995,
+          64.11568818
+        ]
+      },
+      "properties": {
+        "name": "Jón Júlíusson",
+        "address": "Naustavör 28",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 15,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.9228137,
+          64.11330629
+        ]
+      },
+      "properties": {
+        "name": "Ingunn S. Unnsteinsdóttir Kristensen",
+        "address": "Holtagerði 22",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 16,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90371702,
+          64.10817476
+        ]
+      },
+      "properties": {
+        "name": "Ingi Hafliði Guðjónsson",
+        "address": "Vogatungu 26",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 17,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.93779218,
+          64.11295766
+        ]
+      },
+      "properties": {
+        "name": "Heiða Björk Þórbergsdóttir",
+        "address": "Hafnarbraut 13",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 18,
+        "coord_source": "parquet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88630068,
+          64.10312844
+        ]
+      },
+      "properties": {
+        "name": "Erlendur Geirdal",
+        "address": "Lautasmára 35",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 19,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89315482,
+          64.10940445
+        ]
+      },
+      "properties": {
+        "name": "Sigurlaug Kristín Sævarsdóttir",
+        "address": "Hrauntungu 71",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 20,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.84943272,
+          64.0938954
+        ]
+      },
+      "properties": {
+        "name": "Bergljót Kristinsdóttir",
+        "address": "Hásölum 11",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 21,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88719331,
+          64.10895799
+        ]
+      },
+      "properties": {
+        "name": "Rannveig Guðmundsdóttir",
+        "address": "Hlíðarvegi 61",
+        "party": "S - Samfylking",
+        "party_color": "#D4213D",
+        "list_rank": 22,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87175602,
+          64.11414004
+        ]
+      },
+      "properties": {
+        "name": "Anna Sigríður Hafliðadóttir",
+        "address": "Ástúni 6",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 1,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89295597,
+          64.11005494
+        ]
+      },
+      "properties": {
+        "name": "Bjarki Valberg",
+        "address": "Digranesvegi 60",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 2,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89507926,
+          64.1014713
+        ]
+      },
+      "properties": {
+        "name": "Kjartan Sveinn Guðmundsson",
+        "address": "Grófarsmári 12",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 3,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8556086,
+          64.10794552
+        ]
+      },
+      "properties": {
+        "name": "Védís Einarsdóttir",
+        "address": "Trönuhjalla 15",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 4,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89940165,
+          64.10067908
+        ]
+      },
+      "properties": {
+        "name": "Rakel Ósk Siguðardóttir",
+        "address": "Bakkasmára 24",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 5,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86286795,
+          64.11500911
+        ]
+      },
+      "properties": {
+        "name": "Ársæll Már Arnarson",
+        "address": "Álfatúni 10",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 6,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8656157,
+          64.11535872
+        ]
+      },
+      "properties": {
+        "name": "Signý Þórðardóttir",
+        "address": "Álfatúni 21",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 7,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.92486628,
+          64.11620109
+        ]
+      },
+      "properties": {
+        "name": "Ásbjörn Þ. Björgvinson",
+        "address": "Naustavör 22",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 8,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.88842927,
+          64.11311767
+        ]
+      },
+      "properties": {
+        "name": "Ólöf Sigursveinsdóttir",
+        "address": "Laufbrekku 5",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 9,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.90702593,
+          64.10772523
+        ]
+      },
+      "properties": {
+        "name": "Þóra Elfa Björnsson",
+        "address": "Kópavogsbraut 1",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 10,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.87688838,
+          64.10979209
+        ]
+      },
+      "properties": {
+        "name": "Sigurður Karl Pétursson",
+        "address": "Digranesheiði 39",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 11,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.83049685,
+          64.08310343
+        ]
+      },
+      "properties": {
+        "name": "Rebeca Lombardo",
+        "address": "Tröllakór 6",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 12,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.86561772,
+          64.10174616
+        ]
+      },
+      "properties": {
+        "name": "Kristín Einarsdóttir",
+        "address": "Kópalind 10",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 13,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89514132,
+          64.11307315
+        ]
+      },
+      "properties": {
+        "name": "Unnur Aldred",
+        "address": "Löngubrekku 30",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 14,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.85798729,
+          64.09641407
+        ]
+      },
+      "properties": {
+        "name": "Kristín Njálsdóttir",
+        "address": "Blásölum 7",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 15,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.80699397,
+          64.09295769
+        ]
+      },
+      "properties": {
+        "name": "Bergný Marvinsdóttir",
+        "address": "Ennishvarfi 7",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 16,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89940165,
+          64.10067908
+        ]
+      },
+      "properties": {
+        "name": "Margrét Júlía Rafnsdóttir",
+        "address": "Bakkasmára 24",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 17,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.8973835,
+          64.10860136
+        ]
+      },
+      "properties": {
+        "name": "Baldvin Björgvinsson",
+        "address": "Hrauntungu 42",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 18,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.80157057,
+          64.09189576
+        ]
+      },
+      "properties": {
+        "name": "Aldís Aðalbjarnardóttir",
+        "address": "Brekkuhvarfi 9",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 19,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.91683864,
+          64.11449559
+        ]
+      },
+      "properties": {
+        "name": "Sigurður Flosason",
+        "address": "Huldubraut 29",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 20,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.89102744,
+          64.11125188
+        ]
+      },
+      "properties": {
+        "name": "Þuríður Backmann",
+        "address": "Bjarnhólastíg 2",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 21,
+        "coord_source": "stadfangaskra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.93059022,
+          64.10780591
+        ]
+      },
+      "properties": {
+        "name": "Ólafur Þór Gunnarsson",
+        "address": "Sunnubraut 47",
+        "party": "V - Vinstri græn",
+        "party_color": "#6B8E23",
+        "list_rank": 22,
+        "coord_source": "stadfangaskra"
+      }
+    }
+  ]
+}
