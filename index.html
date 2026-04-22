@@ -342,6 +342,15 @@
 
     #map { flex: 1; min-height: 48vh; }
 
+    /* Filter section fills the sidebar and scrolls — candidate list not shown on mobile */
+    .filter-section {
+      flex: 1;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stats-bar, .candidate-list { display: none; }
+
     .mobile-list-btn {
       display: inline-flex !important;
       position: fixed;
