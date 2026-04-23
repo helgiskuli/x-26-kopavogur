@@ -38,11 +38,32 @@
     font-weight: 700;
     letter-spacing: -0.02em;
     color: #1a1f2e;
+    white-space: nowrap;
   }
   header h1 span {
     font-weight: 400;
     color: #6b7280;
     margin-left: 8px;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 1.25rem;
+    margin-left: 1.5rem;
+  }
+  .header-nav a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .header-nav a:hover { color: #1a1f2e; }
+  .header-nav a.active { color: #3b64dc; }
+
+  .header-left {
+    display: flex;
+    align-items: center;
   }
 
   .header-actions {
@@ -319,6 +340,7 @@
     }
 
     header h1 span { display: none; } /* hide subtitle — saves ~100px */
+    .header-nav { display: none; } /* hide nav on small phones — reachable via footer */
 
     .btn-download { display: none; } /* GeoJSON export — not a primary mobile action */
 
@@ -381,7 +403,13 @@
 <body>
 
 <header>
-  <h1>Kópavogur 2026 <span>· Framboðslisti</span></h1>
+  <div class="header-left">
+    <h1>Kópavogur 2026 <span>· Framboðslisti</span></h1>
+    <nav class="header-nav">
+      <a href="#" class="active">Framboðslisti</a>
+      <a href="fjarmal.html">Fjármál</a>
+    </nav>
+  </div>
   <div class="header-actions">
     <button class="btn" id="heatBtn" onclick="toggleHeat()">Þéttleiki</button>
     <button class="btn" onclick="resetView()">Endurstilla kort</button>
