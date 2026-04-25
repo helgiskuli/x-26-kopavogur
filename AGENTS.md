@@ -21,15 +21,15 @@ no template engine, and no server-side rendering.
 - New pages are `.html` files in the repo root, not in a `src/` or `pages/` directory.
 
 ### 3. Consistent nav order
-Every page header must contain exactly these three links **in this order**:
+Every page header must contain exactly these nine links **in this order**:
 
 ```
-Stefnumál | Fjármál | Frambjóðendur
+Stefnumál | Húsnæði | Velferð | Miðbær | Samgöngur | Skólar | Stjórnsýsla | Fjármál | Frambjóðendur
 ```
 
-New issue pages are added to the nav between Stefnumál and Fjármál.
-When you add a new nav item, update **all existing HTML files** to include it.
 The active page gets `class="active"` on its `<a>` tag.
+
+**Never edit nav links manually in individual files.** Run `scripts/sync-nav.py` to regenerate nav in all pages from the canonical list in that script.
 
 Use the canonical header markup from DESIGN.md, section "Header".
 
