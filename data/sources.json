@@ -7,7 +7,9 @@
     "year": 2022,
     "local_pdf": "data/fjarhagsgogn/arsreikningur-2022.pdf",
     "local_txt": "data/fjarhagsgogn/arsreikningur-2022.txt",
-    "used_in": ["fjarmal"]
+    "used_in": [
+      "fjarmal"
+    ]
   },
   {
     "id": "src-ar-2023",
@@ -17,7 +19,9 @@
     "year": 2023,
     "local_pdf": "data/fjarhagsgogn/arsreikningur-2023.pdf",
     "local_txt": "data/fjarhagsgogn/arsreikningur-2023.txt",
-    "used_in": ["fjarmal"]
+    "used_in": [
+      "fjarmal"
+    ]
   },
   {
     "id": "src-ar-2024",
@@ -27,7 +31,9 @@
     "year": 2024,
     "local_pdf": "data/fjarhagsgogn/arsreikningur-2024.pdf",
     "local_txt": "data/fjarhagsgogn/arsreikningur-2024.txt",
-    "used_in": ["fjarmal"]
+    "used_in": [
+      "fjarmal"
+    ]
   },
   {
     "id": "src-ar-2025",
@@ -38,7 +44,10 @@
     "local_pdf": "data/fjarhagsgogn/arsreikningur-2025.pdf",
     "local_txt": "data/fjarhagsgogn/arsreikningur-2025.txt",
     "notes": "Skýrsla bæjarstjóra 16. apríl 2026; afkoma að mestu vegna byggingarréttar í Vatnsendahvarfi",
-    "used_in": ["fjarmal", "index"]
+    "used_in": [
+      "fjarmal",
+      "index"
+    ]
   },
   {
     "id": "src-budget-2026",
@@ -50,7 +59,9 @@
     "local_pdf": "data/fjarhagsgogn/fjarhagsaaetlun-2026.pdf",
     "local_txt": "data/fjarhagsgogn/fjarhagsaaetlun-2026.txt",
     "notes": "Samþykkt af bæjarstjórn 25. nóvember 2025",
-    "used_in": ["fjarmal"]
+    "used_in": [
+      "fjarmal"
+    ]
   },
   {
     "id": "src-forecast-2027-2029",
@@ -61,7 +72,9 @@
     "date": "2025-11-25",
     "local_pdf": "data/fjarhagsgogn/thriggja-ara-aaetlun-2027-2029.pdf",
     "local_txt": "data/fjarhagsgogn/thriggja-ara-aaetlun-2027-2029.txt",
-    "used_in": ["fjarmal"]
+    "used_in": [
+      "fjarmal"
+    ]
   },
   {
     "id": "src-greinargerd-2026",
@@ -80,7 +93,9 @@
     "publisher": "Vísir",
     "date": "2026-04-20",
     "party": "d",
-    "used_in": ["index"]
+    "used_in": [
+      "index"
+    ]
   },
   {
     "id": "src-dv-20260421-orri",
@@ -89,7 +104,9 @@
     "publisher": "DV",
     "date": "2026-04-21",
     "party": "b",
-    "used_in": ["index"]
+    "used_in": [
+      "index"
+    ]
   },
   {
     "id": "src-vidreisn-20260417-maria",
@@ -98,7 +115,9 @@
     "publisher": "vidreisn.is",
     "date": "2026-04-17",
     "party": "c",
-    "used_in": ["index"]
+    "used_in": [
+      "index"
+    ]
   },
   {
     "id": "src-bylgjan-20260421-sd",
@@ -107,7 +126,9 @@
     "publisher": "Bylgjan",
     "date": "2026-04-21",
     "party": "s+d",
-    "used_in": ["index"]
+    "used_in": [
+      "index"
+    ]
   },
   {
     "id": "src-mbl-20251014-einar",
@@ -116,7 +137,9 @@
     "publisher": "Morgunblaðið",
     "date": "2025-10-14",
     "party": "m",
-    "used_in": ["index"]
+    "used_in": [
+      "index"
+    ]
   },
   {
     "id": "src-visir-20260408-einar",
@@ -125,7 +148,9 @@
     "publisher": "Vísir",
     "date": "2026-04-08",
     "party": "m",
-    "used_in": ["index"]
+    "used_in": [
+      "index"
+    ]
   },
   {
     "id": "src-greinargerd-2026-velferd",
@@ -136,7 +161,9 @@
     "local_pdf": "data/fjarhagsgogn/greinargerd-2026.pdf",
     "local_txt": "data/fjarhagsgogn/greinargerd-2026.txt",
     "notes": "Velferðarsvið: stuðnings- og stoðþjónusta, akstursþjónusta fatlaðs fólks",
-    "used_in": ["velferd"]
+    "used_in": [
+      "velferd"
+    ]
   },
   {
     "id": "src-kop-virkni-vellidan",
@@ -144,7 +171,9 @@
     "title": "Þjónustusíður Kópavogsbæjar — Virkni og vellíðan 60+",
     "publisher": "Kópavogsbær",
     "year": 2026,
-    "used_in": ["velferd"]
+    "used_in": [
+      "velferd"
+    ]
   },
   {
     "id": "src-kop-eldri-felagsstarf",
@@ -153,7 +182,9 @@
     "publisher": "Kópavogsbær",
     "year": 2026,
     "notes": "Boðinn, Gjábakki, Gullsmári",
-    "used_in": ["velferd"]
+    "used_in": [
+      "velferd"
+    ]
   },
   {
     "id": "src-xj-kop-velferd",
@@ -162,7 +193,9 @@
     "publisher": "Sósíalistaflokkur Íslands",
     "year": 2026,
     "party": "j",
-    "used_in": ["velferd"]
+    "used_in": [
+      "velferd"
+    ]
   },
   {
     "id": "src-fram-eldri-velferd",
@@ -171,7 +204,9 @@
     "publisher": "Framsóknarflokkurinn",
     "year": 2026,
     "party": "b",
-    "used_in": ["velferd"]
+    "used_in": [
+      "velferd"
+    ]
   },
   {
     "id": "src-deiliskipulag-vatnsendahvarf",
@@ -181,7 +216,9 @@
     "year": 2023,
     "date": "2023-11-14",
     "notes": "Samþykkt í bæjarstjórn 14. nóvember 2023; gerir ráð fyrir ~500 íbúðum á 29 ha svæði með leikskóla, grunnskóla og útivistarsvæðum",
-    "used_in": ["husnaedi"]
+    "used_in": [
+      "husnaedi"
+    ]
   },
   {
     "id": "src-hamraborg-faq",
@@ -190,7 +227,9 @@
     "publisher": "Kópavogsbær",
     "year": 2024,
     "notes": "Gerir ráð fyrir allt að 550 íbúðum; tveimur Borgarlínuleiðum og stækkun Kópavogsskóla",
-    "used_in": ["husnaedi"]
+    "used_in": [
+      "husnaedi"
+    ]
   },
   {
     "id": "src-xj-kop-husnaedi-2026",
@@ -199,7 +238,9 @@
     "publisher": "sosialistaflokkurinn.is",
     "year": 2026,
     "party": "j",
-    "used_in": ["husnaedi"]
+    "used_in": [
+      "husnaedi"
+    ]
   },
   {
     "id": "src-xd-stefna-husnaedi-2026",
@@ -208,7 +249,9 @@
     "publisher": "xdkop.is",
     "year": 2026,
     "party": "d",
-    "used_in": ["husnaedi"]
+    "used_in": [
+      "husnaedi"
+    ]
   },
   {
     "id": "src-framsokn-kop-husnaedi-2026",
@@ -217,7 +260,9 @@
     "publisher": "framsokn.is/sveitarfelog/kopavogur",
     "year": 2026,
     "party": "b",
-    "used_in": ["husnaedi"]
+    "used_in": [
+      "husnaedi"
+    ]
   },
   {
     "id": "src-kop-midbaer",
@@ -226,7 +271,9 @@
     "publisher": "Kópavogsbær",
     "year": 2026,
     "notes": "Upplýsingar um skipulagsferli, framkvæmdatíma, íbúasamráð, niðurrif við Fannborg 2 jan. 2026 og kærumál feb. 2026",
-    "used_in": ["midbaer"]
+    "used_in": [
+      "midbaer"
+    ]
   },
   {
     "id": "src-fram-menning-korinn",
@@ -236,7 +283,9 @@
     "year": 2026,
     "party": "b",
     "notes": "Röksemdir fyrir menningarmiðstöð í efri byggðum þar sem menning, menntun og íþróttir tengjast",
-    "used_in": ["midbaer"]
+    "used_in": [
+      "midbaer"
+    ]
   },
   {
     "id": "src-fram-menning-cost",
@@ -246,7 +295,9 @@
     "year": 2026,
     "party": "b",
     "notes": "Áætlaður rekstrarkostnaður: menningarmiðstöð í Smáralind 150 m.kr., Fannborgarbókasafn 240 m.kr. — flokksmat, ekki staðfest af óháðum gögnum",
-    "used_in": ["midbaer"]
+    "used_in": [
+      "midbaer"
+    ]
   },
   {
     "id": "src-xj-kop-midbaer",
@@ -256,7 +307,9 @@
     "year": 2026,
     "party": "j",
     "notes": "Áhersla á gagnsæi, íbúalýðræði og að framkvæmdir ráðist ekki af hagsmunatekniskum sjónarmiðum",
-    "used_in": ["midbaer"]
+    "used_in": [
+      "midbaer"
+    ]
   },
   {
     "id": "src-kop-fjarhagsaetlun-2026-skolar",
@@ -268,7 +321,9 @@
     "local_pdf": "data/fjarhagsgogn/fjarhagsaaetlun-2026.pdf",
     "local_txt": "data/fjarhagsgogn/fjarhagsaaetlun-2026.txt",
     "notes": "Fræðslu- og uppeldismál: stærsti málaflokkur Aðalsjóðs; gjöld rúmlega 29,1 ma.kr.",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-kop-kopavogsmodelio",
@@ -277,7 +332,9 @@
     "publisher": "Kópavogsbær",
     "year": 2023,
     "notes": "Innleitt haustið 2023; 30 klst./viku gjaldfrjáls leikskólavist; hvatar til styttri dvalar",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-kop-spjaldtolvur",
@@ -286,7 +343,9 @@
     "publisher": "Kópavogsbær",
     "year": 2026,
     "notes": "Sérstök Kópavogssíða um stafrænt skólaumhverfi",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-xd-100-loford",
@@ -296,7 +355,9 @@
     "year": 2026,
     "party": "d",
     "notes": "Inniheldur áherslur um Kópavogsmódelið, mönnun leikskóla, samræmd próf (Matsferill) í 4.–10. bekk og stuðning við börn af erlendum uppruna",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-xj-kop-skolar",
@@ -306,7 +367,9 @@
     "year": 2026,
     "party": "j",
     "notes": "Lægri leikskólagjöld, sterkari starfsskilyrði og virðing fyrir faglegri vinnu í skólum og leikskólum",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-xs-kop-skolar",
@@ -316,7 +379,9 @@
     "year": 2026,
     "party": "s",
     "notes": "Gagnrýning á framkvæmd Kópavogsmódelsins; grein um stafrænt skólaumhverfi barna",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-framsokn-kop-skolar",
@@ -326,7 +391,9 @@
     "year": 2026,
     "party": "b",
     "notes": "Styður Kópavogsmódelið; ókeypis íþróttir og tómstundir fyrir börn undir 9 ára; tölvuleikir í efri byggðum",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-vg-kop-skolar",
@@ -336,7 +403,9 @@
     "year": 2026,
     "party": "v",
     "notes": "Vill endurskoða Kópavogsmódelið í þágu foreldra og barna",
-    "used_in": ["skolar"]
+    "used_in": [
+      "skolar"
+    ]
   },
   {
     "id": "src-mid-kop-skjar",
@@ -346,6 +415,67 @@
     "date": "2026-04-08",
     "party": "m",
     "notes": "Miðflokkurinn beindi umræðunni að skjánotkun og spjaldtölvum fremur en Kópavogsmódelinu",
-    "used_in": ["skolar", "index"]
+    "used_in": [
+      "skolar",
+      "index"
+    ]
+  },
+  {
+    "id": "src-kop-open-data",
+    "type": "Opinbert gagnaskjal",
+    "title": "Kópavogur — Opin gögn og opið fjárhagsbókhald",
+    "publisher": "Kópavogsbær",
+    "year": 2016,
+    "notes": "Opið fjárhagsbókhald opnað 2016; sýnir hvert fé streymir, til hvaða fyrirtækja og hvaðan kostnaður er rekinn eftir deildum",
+    "used_in": [
+      "stjornsysla"
+    ]
+  },
+  {
+    "id": "src-kop-midbaer-ferli",
+    "type": "Opinbert gagnaskjal",
+    "title": "Miðbær í mótun — framkvæmdasíður Kópavogsbæjar (Fannborg og Vallartröð)",
+    "publisher": "Kópavogsbær",
+    "year": 2026,
+    "notes": "Upplýsingar um skipulagsferli, stöðuuppfærslur, íbúafundi og kærumál; óleyfisframkvæmd stöðvuð af byggingarfulltrúa febrúar 2026",
+    "used_in": [
+      "stjornsysla"
+    ]
+  },
+  {
+    "id": "src-xj-kop-stjornsysla",
+    "type": "Formleg stefnuskrá",
+    "title": "Sósíalistaflokkur Íslands — Stefnuskrá Kópavogs 2026 (stjórnsýsla og íbúalýðræði)",
+    "publisher": "sosialistaflokkurinn.is",
+    "year": 2026,
+    "party": "j",
+    "notes": "Gagnrýning á skipulagningu í lokuðum herbergjum; krafa um íbúalýðræði og opnara ferli",
+    "used_in": [
+      "stjornsysla"
+    ]
+  },
+  {
+    "id": "src-xd-kop-stjornsysla",
+    "type": "Formleg stefnuskrá",
+    "title": "Sjálfstæðisflokkurinn í Kópavogi — almælt um gagnsæi og stjórnsýslu 2026",
+    "publisher": "xdkop.is",
+    "year": 2026,
+    "party": "d",
+    "notes": "Almælt um ábyrga og gagnsæja stjórnsýslu — ekki formleg eða nákvæm stefna um samráðsferli",
+    "used_in": [
+      "stjornsysla"
+    ]
+  },
+  {
+    "id": "src-fram-kop-stjornsysla",
+    "type": "Formleg stefnuskrá",
+    "title": "Framsóknarflokkurinn — almælt um gagnsæi og stjórnsýslu í Kópavogi 2026",
+    "publisher": "framsokn.is/sveitarfelog/kopavogur",
+    "year": 2026,
+    "party": "b",
+    "notes": "Almælt um ábyrga og vandvirkna stjórnsýslu — ekki formleg eða nákvæm stefna um samráðsferli",
+    "used_in": [
+      "stjornsysla"
+    ]
   }
 ]
