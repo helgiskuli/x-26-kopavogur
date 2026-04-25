@@ -257,5 +257,95 @@
     "party": "j",
     "notes": "Áhersla á gagnsæi, íbúalýðræði og að framkvæmdir ráðist ekki af hagsmunatekniskum sjónarmiðum",
     "used_in": ["midbaer"]
+  },
+  {
+    "id": "src-kop-fjarhagsaetlun-2026-skolar",
+    "type": "Opinbert gagnaskjal",
+    "title": "Fjárhagsáætlun Kópavogsbæjar 2026 — fræðslu- og uppeldismál",
+    "publisher": "Kópavogsbær",
+    "year": 2026,
+    "date": "2025-11-25",
+    "local_pdf": "data/fjarhagsgogn/fjarhagsaaetlun-2026.pdf",
+    "local_txt": "data/fjarhagsgogn/fjarhagsaaetlun-2026.txt",
+    "notes": "Fræðslu- og uppeldismál: stærsti málaflokkur Aðalsjóðs; gjöld rúmlega 29,1 ma.kr.",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-kop-kopavogsmodelio",
+    "type": "Opinbert gagnaskjal",
+    "title": "Kópavogsmódelið — þjónustusíður Kópavogsbæjar",
+    "publisher": "Kópavogsbær",
+    "year": 2023,
+    "notes": "Innleitt haustið 2023; 30 klst./viku gjaldfrjáls leikskólavist; hvatar til styttri dvalar",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-kop-spjaldtolvur",
+    "type": "Opinbert gagnaskjal",
+    "title": "Upplýsingatækni í grunnskólum Kópavogs — auðlindasíða nemenda, foreldra og kennara",
+    "publisher": "Kópavogsbær",
+    "year": 2026,
+    "notes": "Sérstök Kópavogssíða um stafrænt skólaumhverfi",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-xd-100-loford",
+    "type": "Formleg stefnuskrá",
+    "title": "Sjálfstæðisflokkurinn í Kópavogi — Formleg stefnuskrá 2026",
+    "publisher": "xdkop.is",
+    "year": 2026,
+    "party": "d",
+    "notes": "Inniheldur áherslur um Kópavogsmódelið, mönnun leikskóla, samræmd próf (Matsferill) í 4.–10. bekk og stuðning við börn af erlendum uppruna",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-xj-kop-skolar",
+    "type": "Formleg stefnuskrá",
+    "title": "Sósíalistaflokkur Íslands — Stefnuskrá Kópavogs 2026 (skólamál)",
+    "publisher": "sosialistaflokkurinn.is",
+    "year": 2026,
+    "party": "j",
+    "notes": "Lægri leikskólagjöld, sterkari starfsskilyrði og virðing fyrir faglegri vinnu í skólum og leikskólum",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-xs-kop-skolar",
+    "type": "Grein frambjóðanda",
+    "title": "Samfylkingin í Kópavogi — greinar um leikskólakerfið og stafrænt skólaumhverfi",
+    "publisher": "samfylkingin.is",
+    "year": 2026,
+    "party": "s",
+    "notes": "Gagnrýning á framkvæmd Kópavogsmódelsins; grein um stafrænt skólaumhverfi barna",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-framsokn-kop-skolar",
+    "type": "Formleg stefnuskrá",
+    "title": "Stefnuskrá Framsóknarflokks í Kópavogi 2026 — skóla- og fjölskyldumál",
+    "publisher": "framsokn.is/sveitarfelog/kopavogur",
+    "year": 2026,
+    "party": "b",
+    "notes": "Styður Kópavogsmódelið; ókeypis íþróttir og tómstundir fyrir börn undir 9 ára; tölvuleikir í efri byggðum",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-vg-kop-skolar",
+    "type": "Grein frambjóðanda",
+    "title": "VG og óháð í Kópavogi — afstaða til Kópavogsmódelsins",
+    "publisher": "vg.is/kopavogur",
+    "year": 2026,
+    "party": "v",
+    "notes": "Vill endurskoða Kópavogsmódelið í þágu foreldra og barna",
+    "used_in": ["skolar"]
+  },
+  {
+    "id": "src-mid-kop-skjar",
+    "type": "Grein frambjóðanda",
+    "title": "Miðflokkurinn — Einar Jóhannes Guðnason um skjánotkun barna í grunnskólum",
+    "publisher": "Vísir",
+    "date": "2026-04-08",
+    "party": "m",
+    "notes": "Miðflokkurinn beindi umræðunni að skjánotkun og spjaldtölvum fremur en Kópavogsmódelinu",
+    "used_in": ["skolar", "index"]
   }
 ]
