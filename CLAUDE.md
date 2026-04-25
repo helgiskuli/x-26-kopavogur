@@ -6,27 +6,24 @@ Static GitHub Pages site for the 2026 Kópavogur municipal elections. No build s
 
 ## Site structure
 
-### Published pages
+### Published pages (all live)
 - `index.html` — Stefnumál: party platform comparison and overview
-- `fjarmal.html` — Fjármál: city finances analysis
+- `husnaedi.html` — Húsnæði og uppbygging
+- `velferd.html` — Velferð og aðgengi
+- `midbaer.html` — Miðbær, menning og framkvæmdir
+- `samgongur.html` — Samgöngur og Borgarlína
+- `skolar.html` — Leikskólar og grunnskólar
+- `stjornsysla.html` — Samráð, stjórnsýsla og gagnsæi
+- `fjarmal.html` — Fjármál: 4-part financial analysis (distinct structure from issue pages)
 - `kort.html` — Frambjóðendur: interactive candidate map (Leaflet + Leaflet.heat)
 - `stefnumal.html` — redirect to `index.html` for old links
 
-### Planned issue pages (PR4 onward)
-- `husnaedi.html` — Húsnæði og uppbygging
-- `velferd.html` — Velferð og aðgengi
-- `midbaer.html` — Miðbær, menning, framkvæmdir
-- `samgongur.html` — Samgöngur og Borgarlína
-- `skolar.html` — Leikskólar og grunnskólar
-- `stjornsysla.html` — Samráð, stjórnsýsla, gagnsæi
-
-Each issue page follows the 5-part structure + Mat höfundar defined in DESIGN.md.
-Content is drafted in `content/<slug>.md` before HTML is written.
+Each issue page (all except `index.html`, `fjarmal.html`, `kort.html`, `stefnumal.html`) follows the 5-part structure + Mat höfundar defined in DESIGN.md. Content is drafted in `content/<slug>.md` before HTML is written.
 
 ## Key conventions
 
 - Language is Icelandic; all UI text, variable names in comments, and page titles are in Icelandic
-- Consistent nav order across all pages: **Stefnumál | Fjármál | Frambjóðendur** — issue pages slot between Stefnumál and Fjármál
+- Nav order is canonical — **never edit nav links manually in individual files**. Run `scripts/sync-nav.py` instead. Current order: Stefnumál | Húsnæði | Velferð | Miðbær | Samgöngur | Skólar | Stjórnsýsla | Fjármál | Frambjóðendur
 - Site title link in the header always goes to `index.html`
 - Party colors are stored in `data/parties.json` and in the GeoJSON `party_color` property; do not hardcode them in JS logic
 - Shared CSS lives in `assets/common.css`; page-specific CSS stays in inline `<style>` blocks
@@ -55,6 +52,21 @@ The `densityData` heat map array in `kort.html` is derived from property room co
 Issue pages are planned in `content/<slug>.md` using `content/TEMPLATE.md`.
 Fill the template completely (including checklist) before writing any HTML.
 
+## Scripts / harness
+
+Four maintenance scripts live in `scripts/`. Run from the repo root.
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/sync-nav.py` | Regenerate `<nav>` in all HTML files from the canonical list in the script. **Run after any nav change** instead of editing files manually. |
+| `scripts/validate-page.py --all` | Check all pages against the AGENTS.md checklist: nav completeness, required sections, English artifacts, known typos. Run before every commit. |
+| `scripts/audit-facts.py` | Cross-check `claims.json` source IDs against `sources.json`; verify known date/fact patterns are consistent across pages. |
+| `scripts/merge-worktree.sh <path>` | Safely merge a Claude Code agent worktree: copies new HTML files, deduplicates JSON data files, runs sync-nav and validate. Use instead of manual merging. |
+
+**Before merging any agent worktree:** `scripts/merge-worktree.sh <worktree-path>`
+
+**Before every commit:** `python3 scripts/validate-page.py --all`
+
 ## Local development
 
 `kort.html` and any page using `fetch()` require a local server:
@@ -63,7 +75,7 @@ Fill the template completely (including checklist) before writing any HTML.
 python3 -m http.server 8000
 ```
 
-`index.html` and `fjarmal.html` can be opened directly from the filesystem.
+All other pages can be opened directly from the filesystem.
 
 ## Deployment
 

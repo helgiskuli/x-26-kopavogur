@@ -477,5 +477,29 @@
     "used_in": [
       "stjornsysla"
     ]
+  },
+  {
+    "id": "src-borgarlina-fossvogsbrú",
+    "type": "Opinbert gagnaskjal",
+    "title": "Borgarlínan — Fossvogsbrú: verkfærslur, samningur og framvinduupplýsingar",
+    "publisher": "Borgarlínan",
+    "year": "2025-2026",
+    "local_pdf": null,
+    "local_txt": null,
+    "used_in": [
+      "samgongur.html"
+    ]
+  },
+  {
+    "id": "src-ashb-official",
+    "type": "Opinbert gagnaskjal",
+    "title": "Almenningssamgöngur höfuðborgarsvæðisins ohf. (ASHB) — stofnun og hlutverk",
+    "publisher": "ASHB",
+    "year": "2025",
+    "local_pdf": null,
+    "local_txt": null,
+    "used_in": [
+      "samgongur.html"
+    ]
   }
 ]
