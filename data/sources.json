@@ -218,5 +218,44 @@
     "year": 2026,
     "party": "b",
     "used_in": ["husnaedi"]
+  },
+  {
+    "id": "src-kop-midbaer",
+    "type": "Opinbert gagnaskjal",
+    "title": "Kópavogsbær — Framkvæmdir í miðbæ Kópavogs (Fannborg og Vallartröð)",
+    "publisher": "Kópavogsbær",
+    "year": 2026,
+    "notes": "Upplýsingar um skipulagsferli, framkvæmdatíma, íbúasamráð, niðurrif við Fannborg 2 jan. 2026 og kærumál feb. 2026",
+    "used_in": ["midbaer"]
+  },
+  {
+    "id": "src-fram-menning-korinn",
+    "type": "Grein frambjóðanda",
+    "title": "Framsóknarflokkurinn — Menningarmiðstöð og bókasafn í Kórnum",
+    "publisher": "framsokn.is/sveitarfelog/kopavogur",
+    "year": 2026,
+    "party": "b",
+    "notes": "Röksemdir fyrir menningarmiðstöð í efri byggðum þar sem menning, menntun og íþróttir tengjast",
+    "used_in": ["midbaer"]
+  },
+  {
+    "id": "src-fram-menning-cost",
+    "type": "Grein frambjóðanda",
+    "title": "Framsóknarflokkurinn — Samanburður rekstrarkostnaðar menningarmiðstöðva",
+    "publisher": "framsokn.is/sveitarfelog/kopavogur",
+    "year": 2026,
+    "party": "b",
+    "notes": "Áætlaður rekstrarkostnaður: menningarmiðstöð í Smáralind 150 m.kr., Fannborgarbókasafn 240 m.kr. — flokksmat, ekki staðfest af óháðum gögnum",
+    "used_in": ["midbaer"]
+  },
+  {
+    "id": "src-xj-kop-midbaer",
+    "type": "Grein frambjóðanda",
+    "title": "Sósíalistaflokkur Íslands — Grein um íbúalýðræði og framkvæmdastjórnun í Kópavogi",
+    "publisher": "sosialistaflokkurinn.is",
+    "year": 2026,
+    "party": "j",
+    "notes": "Áhersla á gagnsæi, íbúalýðræði og að framkvæmdir ráðist ekki af hagsmunatekniskum sjónarmiðum",
+    "used_in": ["midbaer"]
   }
 ]
