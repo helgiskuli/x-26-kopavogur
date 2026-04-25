@@ -1,0 +1,86 @@
+[
+  {
+    "id": "b",
+    "letter": "B",
+    "name": "Framsóknarflokkurinn",
+    "name_short": "Framsókn",
+    "color": "#15803d",
+    "css_var": "--b",
+    "leader": "Orri Vignir Hlöðversson",
+    "website": "https://framsokn.is/sveitarfelog/kopavogur",
+    "coalition": "meirihluti",
+    "note": "Hluti af ríkjandi D+B meirihluta 2022–2026"
+  },
+  {
+    "id": "c",
+    "letter": "C",
+    "name": "Viðreisn",
+    "name_short": "Viðreisn",
+    "color": "#6d28d9",
+    "css_var": "--c",
+    "leader": "María Ellen Steingrímsdóttir",
+    "website": "https://vidreisn.is/kopavogur",
+    "coalition": "minnihluti",
+    "note": "Hefur ekki birt formlega stefnuskrá sérstaklega fyrir Kópavog (apríl 2026)"
+  },
+  {
+    "id": "d",
+    "letter": "D",
+    "name": "Sjálfstæðisflokkurinn",
+    "name_short": "Sjálfstæðisflokkur",
+    "color": "#1d4ed8",
+    "css_var": "--d",
+    "leader": "Ásdís Kristjánsdóttir",
+    "website": "https://xdkop.is",
+    "coalition": "meirihluti",
+    "note": "Oddviti og bæjarstjóri núverandi meirihluta"
+  },
+  {
+    "id": "j",
+    "letter": "J",
+    "name": "Sósíalistaflokkur Íslands",
+    "name_short": "Sósíalistar",
+    "color": "#b91c1c",
+    "css_var": "--j",
+    "leader": "Markús Candi",
+    "website": "https://sosialistaflokkurinn.is",
+    "coalition": "minnihluti",
+    "note": "Snýr aftur eftir átta ára hlé — full stefnuskrá ekki birt (apríl 2026)"
+  },
+  {
+    "id": "m",
+    "letter": "M",
+    "name": "Miðflokkurinn",
+    "name_short": "Miðflokkur",
+    "color": "#b45309",
+    "css_var": "--m",
+    "leader": "Einar Jóhannes Guðnason",
+    "website": "https://midflokkurinn.is",
+    "coalition": "stjórnarlauss",
+    "note": "Eini flokkurinn gegn Samgöngusáttmálanum. Full stefnuskrá birt."
+  },
+  {
+    "id": "s",
+    "letter": "S",
+    "name": "Samfylkingin",
+    "name_short": "Samfylking",
+    "color": "#be123c",
+    "css_var": "--s",
+    "leader": "Jónas Már Torfason",
+    "website": "https://xs.is/samfylkingin-i-kopavogi1",
+    "coalition": "minnihluti",
+    "note": "Stefna birt á xs.is en ekki sem formlegt PDF-skjal"
+  },
+  {
+    "id": "v",
+    "letter": "V",
+    "name": "Vinstri græn og óháð",
+    "name_short": "Vinstri græn",
+    "color": "#0f766e",
+    "css_var": "--v",
+    "leader": "Anna Sigríður Hafliðadóttir",
+    "website": "https://vg.is/sveitarfelag/kopavogur/",
+    "coalition": "minnihluti",
+    "note": "Samstarf við 'Fyrir Kópavog' (Ómar Stefánsson) brotnaði 31. mars 2026"
+  }
+]

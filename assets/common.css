@@ -1,0 +1,377 @@
+/* ── Design tokens ── */
+:root {
+  --bg:          #f4f5f7;
+  --bg-card:     #ffffff;
+  --border:      #e2e5ea;
+  --border-light:#d1d5db;
+  --text:        #1a1f2e;
+  --text-muted:  #6b7280;
+  --text-dim:    #9ca3af;
+  --accent:      #3b64dc;
+  --accent-dim:  rgba(59,100,220,0.08);
+  --neg:         #ef4444;
+  --neg-dim:     rgba(239,68,68,0.1);
+  --pos:         #059669;
+  --pos-dim:     rgba(5,150,105,0.1);
+  --warn:        #d97706;
+  --font:        'DM Sans', system-ui, sans-serif;
+  --mono:        'IBM Plex Mono', monospace;
+
+  /* Party colors */
+  --b: #15803d;
+  --c: #6d28d9;
+  --d: #1d4ed8;
+  --j: #b91c1c;
+  --m: #b45309;
+  --s: #be123c;
+  --v: #0f766e;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Base ── */
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 0 1.5rem;
+}
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  gap: 1rem;
+}
+.site-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-title span { font-weight: 400; color: var(--text-muted); margin-left: 6px; }
+nav { display: flex; gap: 1.25rem; }
+nav a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+nav a:hover { color: var(--text); }
+nav a.active { color: var(--accent); }
+
+/* ── Page layout ── */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
+}
+.page-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.5rem;
+}
+.page-eyebrow {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+h1 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+.page-question {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text);
+  max-width: 65ch;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+.page-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  max-width: 60ch;
+  line-height: 1.7;
+}
+
+/* ── Sections ── */
+.section { margin-top: 3rem; }
+.section-eyebrow {
+  font-size: 10px;
+  font-family: var(--mono);
+  color: var(--text-dim);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--text);
+}
+.section-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  max-width: 65ch;
+  line-height: 1.65;
+}
+
+/* ── Badge ── */
+.badge {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+  letter-spacing: -0.01em;
+}
+.badge-lg { width: 38px; height: 38px; font-size: 18px; border-radius: 8px; }
+.badge-sm { width: 26px; height: 26px; font-size: 13px; border-radius: 5px; }
+
+/* ── Tags ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-family: var(--mono);
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tag-pos  { background: var(--pos-dim);  color: var(--pos); }
+.tag-neg  { background: var(--neg-dim);  color: var(--neg); }
+.tag-warn { background: rgba(217,119,6,0.1); color: var(--warn); }
+.tag-dim  { background: rgba(156,163,175,0.15); color: var(--text-dim); }
+
+/* ── Callout ── */
+.callout {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  background: var(--bg-card);
+  padding: 1.1rem 1.25rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.callout.warn { border-left-color: var(--warn); }
+.callout.neg  { border-left-color: var(--neg); }
+.callout.pos  { border-left-color: var(--pos); }
+.callout-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+.callout p { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 0.5rem; }
+.callout p:last-child { margin-bottom: 0; }
+
+/* ── Divider ── */
+.divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+
+/* ── Footer ── */
+footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 1.5rem;
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: center;
+  font-family: var(--mono);
+}
+footer a { color: var(--text-muted); text-decoration: underline; }
+footer a:hover { color: var(--text); }
+
+/* ── Source badge tags ── */
+/* Used alongside .tag to label the source type of a claim or quote.  */
+/* Official/data sources: blue tint. Analysis: amber. Missing: red.    */
+.tag-official   { background: var(--accent-dim); color: var(--accent); }
+.tag-party      { background: rgba(156,163,175,0.15); color: var(--text-muted); }
+.tag-news       { background: rgba(156,163,175,0.12); color: var(--text-dim); }
+.tag-analysis   { background: rgba(217,119,6,0.1); color: var(--warn); }
+.tag-missing    { background: var(--neg-dim); color: var(--neg); }
+.tag-unverified { background: rgba(217,119,6,0.07); color: var(--warn); }
+
+/* ── Issue card ── */
+/* Used for issue/topic overview cards on the homepage and future index sections. */
+.issue-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.issue-kicker {
+  display: block;
+  font-size: 10px;
+  font-family: var(--mono);
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+.issue-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.45rem;
+  line-height: 1.35;
+}
+.issue-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+.issue-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.8rem; }
+.issue-link { font-size: 12px; font-family: var(--mono); color: var(--accent); text-decoration: none; }
+.issue-link:hover { text-decoration: underline; }
+.issue-link.disabled { color: var(--text-dim); pointer-events: none; }
+
+/* ── Party card ── */
+/* Party listing grid used on the homepage and potentially on issue pages. */
+.party-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+.party-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.party-info { flex: 1; min-width: 0; }
+.party-name { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.3; margin-bottom: 2px; }
+.party-leader { font-size: 11px; color: var(--text-muted); font-family: var(--mono); margin-bottom: 5px; }
+.party-web { font-size: 11px; font-family: var(--mono); color: var(--accent); text-decoration: none; display: inline-block; }
+.party-web:hover { text-decoration: underline; }
+
+/* ── Stance card (party-claim-card) ── */
+/* Two-column grid comparing party positions on a topic. */
+.stance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+  margin: 1rem 0;
+}
+.stance-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.stance-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.stance-pname { font-size: 13px; font-weight: 600; color: var(--text); flex: 1; min-width: 0; }
+.stance-quote { font-size: 13px; color: var(--text); font-style: italic; line-height: 1.65; margin-bottom: 0.5rem; }
+.stance-note { font-size: 12px; color: var(--text-muted); line-height: 1.6; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: flex-start; }
+
+/* ── Split grid (for/against) ── */
+.split-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 1rem; margin: 1rem 0; }
+.split-col { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.split-head { font-size: 11px; font-weight: 600; font-family: var(--mono); padding: 0.5rem 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.split-head.for     { background: var(--pos-dim); color: var(--pos); }
+.split-head.against { background: var(--neg-dim); color: var(--neg); }
+.split-body { padding: 0.75rem 1rem; }
+.split-party { display: flex; align-items: center; gap: 0.5rem; font-size: 13px; color: var(--text); margin-bottom: 0.5rem; }
+.split-note { font-size: 11px; color: var(--text-dim); font-family: var(--mono); }
+
+/* ── Fact card ── */
+/* Presents a single verified fact with a source badge. Use in a .fact-grid. */
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin: 1rem 0;
+}
+.fact-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.fact-body { font-size: 13px; color: var(--text); line-height: 1.65; margin-bottom: 0.5rem; }
+.fact-source { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+
+/* ── Metric highlight ── */
+/* Large KPI block — one per section — for a headline number. */
+.metric-highlight {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+.metric-big { font-size: 2.5rem; font-weight: 700; font-family: var(--mono); line-height: 1; flex-shrink: 0; }
+.metric-label { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+.metric-label a { color: var(--accent); }
+
+/* ── Status grid ── */
+/* Table-like party status list with column indicators. */
+.status-grid { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: var(--bg-card); }
+.status-row { display: flex; align-items: center; padding: 0.75rem 1rem; gap: 1rem; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.status-row:last-child { border-bottom: none; }
+.status-party { display: flex; align-items: center; gap: 0.6rem; min-width: 180px; }
+.status-name { font-size: 13px; font-weight: 500; color: var(--text); }
+.status-url { font-size: 11px; color: var(--text-dim); font-family: var(--mono); }
+.status-cols { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.status-col { display: flex; flex-direction: column; gap: 3px; }
+.status-col-label { font-size: 10px; color: var(--text-dim); font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ── Question list ── */
+/* Numbered voter questions in Section 5 of issue pages. */
+.question-list { margin: 1rem 0; padding-left: 1.4rem; }
+.question-list li { font-size: 14px; color: var(--text); line-height: 1.7; margin-bottom: 0.75rem; padding-left: 0.25rem; }
+.question-list li:last-child { margin-bottom: 0; }
+
+/* ── Responsive (shared) ── */
+@media (max-width: 640px) {
+  .site-title span { display: none; }
+  .stance-grid,
+  .split-grid,
+  .fact-grid { grid-template-columns: 1fr; }
+  .metric-highlight { flex-direction: column; gap: 0.5rem; }
+}
+@media (max-width: 400px) {
+  nav { display: none; }
+}

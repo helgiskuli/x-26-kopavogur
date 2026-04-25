@@ -22,14 +22,17 @@ Deployed at: https://helgiskuli.github.io/x-26-kopavogur/
 
 ## Local development
 
-The map page uses `fetch()` to load GeoJSON, so it requires a local server:
+All pages can be opened directly from the filesystem.
+
+The map page fetches GeoJSON on GitHub Pages, but falls back to bundled static data when opened via `file://`.
+Running a local server is still useful if you want to mirror production behavior exactly:
 
 ```bash
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-The other pages (`index.html`, `fjarmal.html`) have no external dependencies beyond CDN fonts and can be opened directly in a browser.
+GitHub Pages deployment bypasses Jekyll via `.nojekyll`, so the repository is published as plain static files.
 
 ## Data sources
 
