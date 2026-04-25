@@ -386,6 +386,7 @@
       -webkit-overflow-scrolling: touch;
     }
     .stats-bar, .candidate-list { display: none; }
+    .info-panel { display: none; }
 
     .mobile-list-btn {
       display: inline-flex !important;
@@ -412,6 +413,19 @@
       color: var(--accent);
     }
   }
+
+  .info-panel {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(59,100,220,0.04);
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    flex-shrink: 0;
+  }
+  .info-panel strong { color: var(--text); }
+  .info-panel p { margin-bottom: 6px; }
+  .info-panel p:last-child { margin-bottom: 0; }
 </style>
 </head>
 <body>
@@ -441,6 +455,10 @@
 
 <div class="main-container">
   <aside class="sidebar">
+    <div class="info-panel">
+      <p><strong>Markmið kortsins:</strong> Sýna landfræðilega dreifingu frambjóðenda innan og milli framboðslista — ekki til að beina athygli að heimilum einstaklinga, heldur til að varpa ljósi á hvort ákveðin hverfi séu undir- eða ofarlega fulltrúuð.</p>
+      <p><strong>Gögn:</strong> Opinberir framboðslistar Kópavogsbæjar fyrir sveitarstjórnarkosningar 2026. Kennitölur eru ekki birtar á síðunni.</p>
+    </div>
     <div class="filter-section">
       <input type="text" class="search-box" id="searchBox" placeholder="Leita að frambjóðanda..." oninput="filterCandidates()">
       <h3>Flokkar</h3>

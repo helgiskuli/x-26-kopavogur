@@ -121,9 +121,21 @@
     <h2>„3 milljarða hallarekstur án lóðatekna"</h2>
     <p class="section-desc">
       Staðhæfingin á við sér nokkra stoð í ársreikningunum. Án óreglulega lóðatekna (tekjur vegna lóðaúthlutana,
-      skýr. 18) var grunnrekstur bæjarins í halla þrjú af fjórum árum — þótt árið 2025 sé rétt undir núlllínu
+      skýr. 18) var grunnrekstur bæjarins í halla þrjú af fjórum árum — þótt árið 2025 sé rétt undir núllínu
       (−64 m.kr.). Heildartapið yfir tímabilið nemur rúmlega 2 milljörðum króna.
     </p>
+
+    <div class="callout warn">
+      <div class="callout-title">Fer talan eftir reikningssjónum? <span class="tag tag-analysis" style="margin-left:0.5rem">Mín greining</span></div>
+      <p>
+        Staðhæfingin um „3 milljarða halla án lóðatekna" er efnislega studd af reikningunum en
+        tölulega háð því hvaða reikningssjón er notuð. Í samstæðu A+B sýnir núverandi útreikningur
+        síðunnar um 2,0 ma.kr. halla 2022–2025 þegar tekjur/gjöld vegna lóðaúthlutana o.fl. eru
+        dregin frá. Ef horft er á A-hluta eða víðari lið „lóðir o.fl." getur talan færst nær
+        3 ma.kr. Niðurstaðan: fullyrðingin lýsir raunverulegri undirliggjandi áhættu, en þarf
+        alltaf að skýra með reikningssjónum — hún er ekki annaðhvort sönn eða ósönn.
+      </p>
+    </div>
 
     <div class="metric-row">
       <div class="metric-card">
@@ -151,10 +163,10 @@
     <div class="chart-card">
       <div class="chart-legend">
         <div class="leg"><div class="leg-dot" style="background:#3b64dc"></div>Skráð rekstrarniðurstaða</div>
-        <div class="leg"><div class="leg-dot" style="background:#ef4444"></div>Án lóðatekna (byggingarréttur + gatnagerð)</div>
+        <div class="leg"><div class="leg-dot" style="background:#ef4444"></div>Án tekna/gjalda vegna lóðaúthlutana o.fl.</div>
       </div>
       <div class="chart-wrap" style="height:260px">
-        <canvas id="chart1" role="img" aria-label="Samanburður rekstrarniðurstöðu við og án lóðatekna 2022 til 2025">Rekstrarniðurstaða: 2022: -2083, 2023: -799, 2024: +4459, 2025: +4612. Án lóðatekna: 2022: -2329, 2023: -925, 2024: +1308, 2025: -64.</canvas>
+        <canvas id="chart1" role="img" aria-label="Samanburður rekstrarniðurstöðu við og án tekna/gjalda vegna lóðaúthlutana 2022 til 2025">Rekstrarniðurstaða: 2022: -2083, 2023: -799, 2024: +4459, 2025: +4612. Án lóðaúthlutana: 2022: -2329, 2023: -925, 2024: +1308, 2025: -64.</canvas>
       </div>
     </div>
 
@@ -221,6 +233,13 @@
         afkoman má „að mestu rekja til tekna af úthlutun byggingarréttar í Vatnsendahvarfi"
         (skýrsla bæjarstjóra, 16. apríl 2026).
       </p>
+      <p>
+        <strong>Rekstrarniðurstaða vs. sjóðstreymi:</strong> Í rekstrarreikningi er hér horft á
+        tekjur/gjöld vegna lóðaúthlutana o.fl. samkvæmt skýringum ársreikninga. Í sjóðstreymi
+        birtast einnig greiðslur vegna byggingarréttar — t.d. 3,1 ma.kr. árið 2024 og 5,75 ma.kr.
+        árið 2025. Þetta eru skyldar en ekki sömu tölur: önnur sýnir áhrif á rekstrarniðurstöðu,
+        hin greiðsluflæði.
+      </p>
     </div>
   </div>
 
@@ -241,7 +260,7 @@
         <strong>B+D (rétt):</strong> Álagningarhlutfall fasteignaskatts á íbúðir (A-flokkur) hefur lækkað ár frá ári — úr 0,212% í 0,162%. Stjórnarstefnan hefur verið að lækka hlutfallið.
       </p>
       <p>
-        <strong>Minnihlutinn (rétt):</strong> Fasteignaskattstekjur bæjarins hafa hækkað um 22% á tímabilinu — úr 4.144 m.kr. í 5.068 m.kr. Íbúar borga meira. Ástæðan er hækkun fasteignamatsins, sem rekja má til verðlags og fasteignaverðs — ekki til stjórnarstefnu.
+        <strong>Minnihlutinn (rétt):</strong> Fasteignaskattstekjur bæjarins hafa hækkað um 22% á tímabilinu — úr 4.144 m.kr. í 5.068 m.kr. Heildartekjur bæjarins af fasteignaskatti hækkuðu á tímabilinu. Greiðsla einstakra eigenda fer hins vegar eftir fasteignamati, eignarstærð, afsláttum og gjaldflokkum. Ástæðan er hækkun fasteignamatsins, sem rekja má til verðlags og fasteignaverðs — ekki til stjórnarstefnu.
       </p>
     </div>
 
@@ -462,7 +481,8 @@
       <p>
         Af langtímaskuldum Kópavogs eru 84,5% verðtryggðar með meðalvöxtum 3,11% og 15,5% eru
         óverðtryggðar með meðalvöxtum 8,23% (ársreikningur 2025, skýr. 28). Hrein fjármagnsgjöld
-        lækkuðu úr 2.539–2.949 m.kr. árin 2022–2023 í 1.818 m.kr. árið 2025 samhliða lækkun
+        lækkuðu úr um 3,46 ma.kr. (A+B) árið 2023 í um 2,54 ma.kr. árið 2025; í A-hluta
+        lækkuðu þau úr um 2,67 ma.kr. í um 1,97 ma.kr. á sama tíma, samhliða lækkun
         stýrivaxta og niðurgreiðslu skulda.
       </p>
     </div>
