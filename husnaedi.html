@@ -8,7 +8,11 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/common.css">
 <style>
-  /* page-specific CSS only — check common.css before adding anything here */
+  .chart-card { background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:1.25rem 1.25rem 1rem;margin-bottom:1rem;box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+  .chart-legend { display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;font-size:12px;color:var(--text-muted);font-family:var(--mono); }
+  .leg { display:flex;align-items:center;gap:6px; }
+  .leg-dot { width:10px;height:10px;border-radius:2px;flex-shrink:0; }
+  .chart-wrap { position:relative;width:100%; }
 </style>
 </head>
 <body>
@@ -175,21 +179,37 @@
       Opinber skipulagsgögn og ársreikningur 2025 gefa skýra mynd af umfangi uppbyggingarinnar og tengslum hennar við fjármál bæjarins. Frekari fjárhagsgreining er á <a href="fjarmal.html">Fjármálasíðunni</a>.
     </p>
 
+    <!-- Tvær stórar uppbyggingar: samanburður -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1rem 0">
+      <div class="fact-card">
+        <div style="font-size:10px;font-family:var(--mono);color:var(--text-dim);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px">Vatnsendahvarf</div>
+        <div style="font-size:2rem;font-weight:700;font-family:var(--mono);line-height:1;color:var(--text)">~500</div>
+        <div style="font-size:12px;color:var(--text-dim);font-family:var(--mono);margin:4px 0 8px">íbúðir · 29 ha</div>
+        <p class="fact-body" style="font-size:12px">Deiliskipulag samþykkt nóvember 2023. Leikskóli, grunnskóli og útivistarsvæði fyrirhugað.</p>
+        <div class="fact-source"><span class="tag tag-official">Opinbert gagnaskjal</span></div>
+      </div>
+      <div class="fact-card">
+        <div style="font-size:10px;font-family:var(--mono);color:var(--text-dim);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px">Hamraborg / Fannborg</div>
+        <div style="font-size:2rem;font-weight:700;font-family:var(--mono);line-height:1;color:var(--text)">~550</div>
+        <div style="font-size:12px;color:var(--text-dim);font-family:var(--mono);margin:4px 0 8px">íbúðir · tvær Borgarlínuleiðir</div>
+        <p class="fact-body" style="font-size:12px">Þéttingarsvæði. Börn eiga að fara í Kópavogsskóla þar sem stækkun er möguleg.</p>
+        <div class="fact-source"><span class="tag tag-official">Opinbert gagnaskjal</span></div>
+      </div>
+    </div>
+
+    <!-- Land income chart -->
+    <div class="chart-card">
+      <p style="font-size:12px;font-weight:600;color:var(--text);margin-bottom:0.25rem">Tekjur vegna lóðaúthlutana o.fl. 2022–2025</p>
+      <p style="font-size:11px;color:var(--text-muted);font-family:var(--mono);margin-bottom:0.85rem">Einskiptistekjur — endurtaka sig ekki þegar lóðum hefur verið úthlutað · Heimild: ársreikningur 2025</p>
+      <div class="chart-legend">
+        <span class="leg"><span class="leg-dot" style="background:var(--accent)"></span>Byggingarréttartekjur (m.kr.)</span>
+      </div>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="chartLodur" role="img" aria-label="Tekjur vegna lóðaúthlutana 2022 til 2025: 2022: 246 m.kr., 2023: 126 m.kr., 2024: 3151 m.kr., 2025: 4676 m.kr."></canvas>
+      </div>
+    </div>
+
     <div class="fact-grid">
-
-      <div class="fact-card">
-        <p class="fact-body"><strong>Vatnsendahvarf — um 500 íbúðir á 29 ha.</strong> Deiliskipulag samþykkt í bæjarstjórn 14. nóvember 2023 gerir ráð fyrir fjölbreyttu íbúðaformi, leikskóla, grunnskóla, útivistarsvæðum og mögulegri verslun og þjónustu.</p>
-        <div class="fact-source">
-          <span class="tag tag-official">Opinbert gagnaskjal</span>
-        </div>
-      </div>
-
-      <div class="fact-card">
-        <p class="fact-body"><strong>Hamraborg/Fannborg — allt að 550 íbúðir.</strong> Samkvæmt FAQ Kópavogsbæjar telja umferðarsérfræðingar að svæðið ráði við fyrirhugaða þéttingu og tvær Borgarlínuleiðir muni fara um svæðið. Börn á þéttingarsvæðinu eiga að fara í Kópavogsskóla þar sem stækkunarmöguleikar séu til staðar.</p>
-        <div class="fact-source">
-          <span class="tag tag-official">Opinbert gagnaskjal</span>
-        </div>
-      </div>
 
       <div class="fact-card">
         <p class="fact-body"><strong>Byggingarréttartekjur 2025: 4.676 m.kr.</strong> Ársreikningur 2025 staðfestir að rekstrarafgangur umfram áætlanir má að mestu rekja til tekna af úthlutun byggingarréttar í Vatnsendahvarfi (skýrsla bæjarstjóra, 16. apríl 2026). Fjárstreymi vegna lóðaúthlutana tryggði að ekki þurfti nýja lántöku þrátt fyrir miklar fjárfestingar.</p>
@@ -314,5 +334,38 @@
   <a href="velferd.html">Velferð →</a>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+Chart.defaults.color = '#9ca3af';
+Chart.defaults.borderColor = '#e2e5ea';
+Chart.defaults.font.family = "'IBM Plex Mono', monospace";
+
+new Chart(document.getElementById('chartLodur'), {
+  type: 'bar',
+  data: {
+    labels: ['2022', '2023', '2024', '2025'],
+    datasets: [{
+      label: 'Byggingarréttartekjur (m.kr.)',
+      data: [246, 126, 3151, 4676],
+      backgroundColor: ['rgba(59,100,220,0.4)', 'rgba(59,100,220,0.4)', 'rgba(59,100,220,0.85)', 'rgba(59,100,220,0.85)'],
+      borderColor: ['#3b64dc', '#3b64dc', '#3b64dc', '#3b64dc'],
+      borderWidth: 1,
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.parsed.y.toLocaleString('is-IS') + ' m.kr.' } }
+    },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v >= 1000 ? (v/1000).toFixed(1) + ' ma.' : v } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+</script>
 </body>
 </html>

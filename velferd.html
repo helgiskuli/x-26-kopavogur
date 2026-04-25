@@ -8,7 +8,14 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/common.css">
 <style>
-  /* page-specific CSS only — check common.css before adding anything here */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 1rem 0; }
+  .data-table th { text-align: left; padding: 8px 10px; font-size: 11px; font-family: var(--mono); color: var(--text-dim); letter-spacing: 0.06em; border-bottom: 1px solid var(--border); font-weight: 500; }
+  .data-table td { padding: 9px 10px; border-bottom: 1px solid var(--border); color: var(--text-muted); font-family: var(--mono); font-size: 12px; }
+  .data-table td:first-child { color: var(--text); font-family: var(--font); font-size: 13px; }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table .total-row td { border-top: 2px solid var(--border); color: var(--text); font-weight: 600; border-bottom: none; }
+  .data-table .total-row td:first-child { color: var(--text); }
+  .data-table .amt { text-align: right; }
 </style>
 </head>
 <body>
@@ -185,38 +192,39 @@
       Greinargerð með fjárhagsáætlun 2026 nefnir þrjár tölulegar beiðnir velferðarsviðs. Þær eru settar fram sem fjárhagsleg þörf, ekki sem lögleg krafa.
     </p>
 
-    <div class="fact-grid">
+    <table class="data-table" aria-label="Þjónustuþrýstingur velferðarsviðs — viðbótarþörf samkvæmt fjárhagsáætlun 2026">
+      <thead>
+        <tr>
+          <th>Liður</th>
+          <th class="amt">Viðbótarþörf á ári</th>
+          <th>Heimild</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Stuðningsþjónusta — uppsafnaður halli (500 tímar/mánuði umfram heimild)</td>
+          <td class="amt">48 m.kr.</td>
+          <td><span class="tag tag-official">Fjárhagsskjöl</span></td>
+        </tr>
+        <tr>
+          <td>Stuðningsþjónusta — biðlistar (500 viðbótartímar/mánuði til að minnka biðlista)</td>
+          <td class="amt">49 m.kr.</td>
+          <td><span class="tag tag-official">Fjárhagsskjöl</span></td>
+        </tr>
+        <tr>
+          <td>Akstursþjónusta fatlaðs fólks (tekjutap og kostnaður af breyttri gjaldskrá)</td>
+          <td class="amt">8 m.kr.</td>
+          <td><span class="tag tag-official">Fjárhagsskjöl</span></td>
+        </tr>
+        <tr class="total-row">
+          <td>Samtals viðbótarþörf</td>
+          <td class="amt">97 m.kr. á ári</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
-      <div class="fact-card">
-        <p class="fact-body">
-          <strong>Stuðningsþjónusta — uppsafnaður halli:</strong> 500 tímar á mánuði eru nú þegar veittir
-          umfram heimildar tímafjölda. Áætlaður kostnaður þessara viðbótartíma: <strong>48 m.kr. á ári</strong>.
-        </p>
-        <div class="fact-source">
-          <span class="tag tag-official">Fjárhagsskjöl</span>
-        </div>
-      </div>
-
-      <div class="fact-card">
-        <p class="fact-body">
-          <strong>Stuðningsþjónusta — biðlistar:</strong> Velferðarsvið óskar eftir <strong>500 viðbótartímum
-          á mánuði</strong> til að minnka biðlista eftir þjónustu. Áætluð áhrif: <strong>49 m.kr. á ári</strong>.
-        </p>
-        <div class="fact-source">
-          <span class="tag tag-official">Fjárhagsskjöl</span>
-        </div>
-      </div>
-
-      <div class="fact-card">
-        <p class="fact-body">
-          <strong>Akstursþjónusta fatlaðs fólks:</strong> Viðbótarheimild upp á <strong>8 m.kr.</strong> vegna
-          tekjutaps og kostnaðar af breyttri gjaldskrá og nýjum 12 og 6 mánaða tímabilskortum.
-          Þjónustan á að gera fölku fólki kleift að stunda atvinnu, nám og njóta tómstunda.
-        </p>
-        <div class="fact-source">
-          <span class="tag tag-official">Fjárhagsskjöl</span>
-        </div>
-      </div>
+    <div class="fact-grid" style="margin-top:0.75rem">
 
       <div class="fact-card">
         <p class="fact-body">

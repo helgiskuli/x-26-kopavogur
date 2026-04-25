@@ -478,10 +478,36 @@
 
     <div class="callout">
       <div class="callout-title">Vaxtaáhætta: 84,5% skulda eru verðtryggðar</div>
+      <!-- Debt composition bar -->
+      <div role="img" aria-label="Lántakaskipting: 84,5% verðtryggðar á 3,11% meðalvöxtum; 15,5% óverðtryggðar á 8,23% meðalvöxtum" style="margin:0.75rem 0">
+        <div style="display:flex;height:10px;border-radius:4px;overflow:hidden;margin-bottom:6px">
+          <div style="width:84.5%;background:var(--accent)"></div>
+          <div style="width:15.5%;background:var(--warn)"></div>
+        </div>
+        <div style="display:flex;gap:1.5rem;font-size:11px;font-family:var(--mono);color:var(--text-dim)">
+          <span><span style="color:var(--accent);font-weight:600">84,5%</span> verðtryggðar · 3,11% meðalvextir</span>
+          <span><span style="color:var(--warn);font-weight:600">15,5%</span> óverðtryggðar · 8,23% meðalvextir</span>
+        </div>
+      </div>
       <p>
-        Af langtímaskuldum Kópavogs eru 84,5% verðtryggðar með meðalvöxtum 3,11% og 15,5% eru
-        óverðtryggðar með meðalvöxtum 8,23% (ársreikningur 2025, skýr. 28). Hrein fjármagnsgjöld
-        lækkuðu úr um 3,46 ma.kr. (A+B) árið 2023 í um 2,54 ma.kr. árið 2025; í A-hluta
+        Af langtímaskuldum Kópavogs eru 84,5% verðtryggðar og 15,5% óverðtryggðar (ársreikningur 2025, skýr. 28).
+        Há hlutfall verðtryggðra skulda þýðir að verðbólga hefur bein áhrif á vaxtabyrði bæjarins.
+      </p>
+      <!-- Interest cost trend -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0.75rem 0">
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:5px;padding:0.75rem 1rem">
+          <div style="font-size:10px;font-family:var(--mono);color:var(--text-dim);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px">Hrein fjármagnsgjöld 2023</div>
+          <div style="font-size:1.3rem;font-weight:700;font-family:var(--mono);line-height:1;color:var(--text)">3,46 ma.kr.</div>
+          <div style="font-size:11px;color:var(--text-dim);margin-top:3px;font-family:var(--mono)">A+B hluti</div>
+        </div>
+        <div style="background:var(--pos-dim);border:1px solid var(--border);border-radius:5px;padding:0.75rem 1rem">
+          <div style="font-size:10px;font-family:var(--mono);color:var(--text-dim);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px">Hrein fjármagnsgjöld 2025</div>
+          <div style="font-size:1.3rem;font-weight:700;font-family:var(--mono);line-height:1;color:var(--pos)">2,54 ma.kr.</div>
+          <div style="font-size:11px;color:var(--text-dim);margin-top:3px;font-family:var(--mono)">A+B hluti · ↓ 27%</div>
+        </div>
+      </div>
+      <p>
+        Hrein fjármagnsgjöld lækkuðu úr um 3,46 ma.kr. árið 2023 í um 2,54 ma.kr. árið 2025; í A-hluta
         lækkuðu þau úr um 2,67 ma.kr. í um 1,97 ma.kr. á sama tíma, samhliða lækkun
         stýrivaxta og niðurgreiðslu skulda.
       </p>
