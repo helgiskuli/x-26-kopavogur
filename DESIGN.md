@@ -7,7 +7,7 @@ already exists in at least one of the current HTML files. Reuse before inventing
 
 ## Markmið
 
-Síðan hjálpar kjósanda í Kópavogi að bera saman flokka, staðhæfingar og gögn.
+Síðan hjálpar kjósanda í Kópavogi að bera saman framboð, staðhæfingar og gögn.
 Hún er ekki kosningaherferðasíða. Hún er greiningartæki.
 
 - Gögn og tilvitnanir koma á undan ályktunum.
@@ -132,7 +132,7 @@ For issue pages, add a `page-question` between `h1` and `page-desc`:
   <h1>Velferð og aðgengi</h1>
   <p class="page-question">Er þjónustuframboð Kópavogsbæjar í velferðarmálum í samræmi
   við lögbundnar skyldur, þörf íbúa og fjárhagslegt svigrúm?</p>
-  <p class="page-desc">Heimild: ársreikningar, þjónustuskýrslur og afstaður flokkanna.</p>
+  <p class="page-desc">Heimild: ársreikningar, þjónustuskýrslur og afstaða framboðanna.</p>
 </div>
 ```
 
@@ -172,7 +172,7 @@ content model) between `h1` and `page-desc`. See the Page Header block component
 | # | Section eyebrow | Content |
 |---|---|---|
 | 1 | `Af hverju skiptir þetta máli` | One callout or `section-desc` explaining why this issue matters for the 2026 election. No party positions yet. |
-| 2 | `Hvað segja flokkarnir` | Stance grid — one card per party with quote, tag, and source. |
+| 2 | `Hvað segja framboðin` | Stance grid — one card per party with quote, tag, and source. |
 | 3 | `Hvað segja gögnin` | Metric cards, charts, or data tables drawn from official sources. |
 | 4 | `Hvað er óljóst` | A `callout warn` listing open questions, missing data, or positions not yet published. |
 | 5 | `Spurningar til kjósanda` | A plain `<ol>` of questions voters should put to candidates. No answers. |
@@ -218,7 +218,7 @@ Used alongside `.tag` to label the source type of a claim, quote, or metric. Col
 | `tag-news` | `Frétt/viðtal` | Coverage in Vísir, Mbl., RÚV, DV or equivalent |
 | `tag-analysis` | `Mín greining` | Site author's conclusions from primary sources |
 | `tag-missing` | `Vantar heimild` | Claim exists but primary source is absent |
-| `tag-unverified` | `Þarf að staðfesta` | Position reported but not verifiable |
+| `tag-unverified` | `Óstaðfest` | Position reported but not verifiable |
 
 ```html
 <span class="tag tag-official">Opinbert gagnaskjal</span>
@@ -226,7 +226,7 @@ Used alongside `.tag` to label the source type of a claim, quote, or metric. Col
 <span class="tag tag-news">Frétt/viðtal</span>
 <span class="tag tag-analysis">Mín greining</span>
 <span class="tag tag-missing">Vantar heimild</span>
-<span class="tag tag-unverified">Þarf að staðfesta</span>
+<span class="tag tag-unverified">Óstaðfest</span>
 ```
 
 **Rule:** never use `tag-pos` / `tag-neg` for source labels — those signal data sentiment only.

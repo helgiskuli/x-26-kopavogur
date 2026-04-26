@@ -22,9 +22,9 @@ Heimild: Greinargerð með fjárhagsáætlun 2026 (src-greinargerd-2026).
 
 ---
 
-## Hluti 2 — Hvað segja flokkarnir?
+## Hluti 2 — Hvað segja framboðin?
 
-| Flokkur | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
+| Framboð | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
 |---------|---------|-------------------------|---------|------------------|
 | B | Áhersla á félagslega heilsu eldri íbúa | Framsókn leggur áherslu á félagslegar tengingar, helgaropnanir félagsmiðstöðva og verkefnið Virkni og vellíðan | FRAM-ELDRI | Grein frambjóðanda |
 | C | Stefna ekki birt | Engin þekkt afstaða til velferðar- eða þjónustumála birt | — | Óstaðfest |
@@ -64,14 +64,14 @@ Heimild: Greinargerð með fjárhagsáætlun 2026 (src-greinargerd-2026).
 - [ ] Meðalbiðtími eftir þjónustu er ekki þekktur
 - [ ] Þjónustutímar skipt niður eftir notendahópi eru ekki til
 - [ ] Aðgengisúttektir fyrir nýja uppbyggingu (Hamraborg, Kórinn) eru ekki birtar
-- [ ] Fimm af sjö flokkum hafa ekki birt formlega stefnu í velferðarmálum
+- [ ] Fimm af sjö framboðum hafa ekki birt formlega stefnu í velferðarmálum
 
 ---
 
 ## Hluti 5 — Spurningar til framboða
 
-1. Vilja flokkarnir fjármagna 500+500 viðbótartíma í stuðnings- og stoðþjónustu áfram eftir 2026?
-2. Hver er ásættanlegur biðtími eftir stuðningsþjónustu að mati flokksins?
+1. Vilja framboðin fjármagna 500+500 viðbótartíma í stuðnings- og stoðþjónustu áfram eftir 2026?
+2. Hver er ásættanlegur biðtími eftir stuðningsþjónustu að mati framboðsins?
 3. Á að birta mælaborð um biðlista og þjónustutíma í velferðarþjónustu?
 4. Hvernig á að tryggja að ný uppbygging verði aðgengileg frá upphafi?
 5. Á að styrkja þjónustu við eldri íbúa í öllum hverfum bæjarins?
@@ -81,14 +81,14 @@ Heimild: Greinargerð með fjárhagsáætlun 2026 (src-greinargerd-2026).
 
 ## Mat höfundar
 
-Greinargerð með fjárhagsáætlun 2026 sýnir skýrt að þjónustuþrýstingur í stuðnings- og stoðþjónustu er raunverulegur og fjárhagslega mælanlegur — 1.000 viðbótartímar á mánuði og 97 m.kr. í ársáhrifum. Af sjö flokkum hafa aðeins tveir (B og J) birt einhverja afstöðu til velferðarmála, og þeirra afstöður ná ekki til þessa fjárhagsþrýstings. Kjósandinn þarf sérstaklega að spyrja hvaða flokk hyggst fjármagna þjónustuaukninguna og hvort einhver hyggst birta biðlistagögn opinberlega.
+Greinargerð með fjárhagsáætlun 2026 sýnir skýrt að þjónustuþrýstingur í stuðnings- og stoðþjónustu er raunverulegur og fjárhagslega mælanlegur — 1.000 viðbótartímar á mánuði og 97 m.kr. í ársáhrifum. Af sjö framboðum hafa tvö (B og J) birt afstöðu til velferðarmála, og þeirra afstöður ná ekki til þessa fjárhagsþrýstings. Kjósendur þurfa sérstaklega að spyrja hvaða framboð hyggjast fjármagna þjónustuaukninguna og hvort einhver hyggist birta biðlistagögn opinberlega.
 
 ---
 
 ## Vinnuseðill — eyða þegar síða er birt
 
 - [x] Kjarnaspurning samþykkt og skýr
-- [x] Öll sjö flokkurnar meðhöndlaðar í hluta 2 (jafnvel þótt afstaða sé óþekkt)
+- [x] Öll sjö framboðin meðhöndluð í hluta 2 (jafnvel þótt afstaða sé óþekkt)
 - [x] Öll gögn í hluta 3 með nafngreindri heimild og tegund
 - [x] Óvissa skráð í hluta 4
 - [x] Spurningar til framboða tilbúnar (hluti 5)

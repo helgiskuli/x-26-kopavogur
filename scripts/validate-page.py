@@ -32,7 +32,7 @@ PARTY_LETTERS = ["B", "C", "D", "J", "M", "S", "V"]
 # The three mandatory section eyebrows for issue pages
 REQUIRED_EYEBROWS = [
     "Af hverju skiptir þetta máli",
-    "Hvað segja flokkarnir",
+    "Hvað segja framboðin",
     "Spurningar til kjósanda",
 ]
 

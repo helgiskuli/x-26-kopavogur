@@ -22,14 +22,14 @@ Heimild: Kópavogsbær framkvæmdasíður (KOP-MIDBAER), Hamraborg/Fannborg FAQ 
 
 ---
 
-## Hluti 2 — Hvað segja flokkarnir?
+## Hluti 2 — Hvað segja framboðin?
 
-| Flokkur | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
+| Framboð | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
 |---------|---------|-------------------------|---------|------------------|
 | B | Styður | Menningarmiðstöð í Kórnum, áætlaður rekstrarkostnaður 150 m.kr. borinn saman við 240 m.kr. rekstur Fannborgarbókasafns | FRAM-MENNING-COST, FRAM-MENNING-KORINN | Grein frambjóðanda |
-| C | Óstaðfest | Gagnrýnir samkvæmt gögnum kostn./forgangsröðun, en engin prímær tilvitnun staðfest | VIDREISN-KOP | Óstaðfest |
+| C | Óstaðfest | Gagnrýnir samkvæmt gögnum kostnað og forgangsröðun, en engin frumheimild er staðfest | VIDREISN-KOP | Óstaðfest |
 | D | Styður (sem hluti meirihluta) | Framsetur menningar- og miðbæjarverkefni sem uppbyggingu þjónustu og lífsgæða | — | Óstaðfest |
-| J | Gagnrýnir ferli | Leggur áherslu á íbúalýðræði og gagnsæi; uppbygging á ekki að ráðast af hagsmunatekniskum sjónarmiðum | XJ-KOP | Grein frambjóðanda |
+| J | Gagnrýnir ferli | Leggur áherslu á íbúalýðræði og gagnsæi; uppbygging á ekki að ráðast af sérhagsmunum | XJ-KOP | Grein frambjóðanda |
 | M | Stefna ekki birt | Engin birt afstaða til miðbæjarframkvæmda | — | Óstaðfest |
 | S | Stefna ekki birt | Engin birt afstaða sem tengist þessum framkvæmdum sérstaklega | — | Óstaðfest |
 | V | Stefna ekki birt | Engin birt afstaða til miðbæjarframkvæmda | — | Óstaðfest |
@@ -69,11 +69,11 @@ Heimild: Kópavogsbær framkvæmdasíður (KOP-MIDBAER).
 
 ## Hluti 4 — Óvissa
 
-- [ ] Viðreisn hefur ekki gefið út formlega primary-tilvitnun um miðbæjarframkvæmdir
+- [ ] Viðreisn hefur ekki gefið út formlega frumheimild um miðbæjarframkvæmdir
 - [ ] Miðflokkurinn hefur ekki birt afstöðu til miðbæjaruppbyggingar
 - [ ] Samfylkingin hefur ekki birt afstöðu sem tengist þessum framkvæmdum sérstaklega
 - [ ] Vinstri græn og óháð hafa ekki birt afstöðu til miðbæjarframkvæmda
-- [ ] Sjálfstæðisflokkurinn hefur ekki birt eigin primary-tilvitnun um miðbæjarframkvæmdir
+- [ ] Sjálfstæðisflokkurinn hefur ekki birt eigin frumheimild um miðbæjarframkvæmdir
 - [ ] Kostnaðartölur Framsóknar (150 m.kr. / 240 m.kr.) eru flokksins eigin mat, ekki staðfestar af óháðum fjárhagsáætlunargögnum
 
 ---
@@ -85,21 +85,21 @@ Heimild: Kópavogsbær framkvæmdasíður (KOP-MIDBAER).
 3. Hvernig verða tafir, ryk, bílastæði og aðgengi mæld og bætt á framkvæmdatíma?
 4. Hvernig verður aðgengi hreyfihamlaðra tryggt bæði í framkvæmd og að lokinni framkvæmd?
 5. Hvar á menningarstarf að vera: Fannborg/Hamraborg, Smáralind, Kórinn eða dreift kerfi?
-6. Hver er raunverulegur rekstrarkostnaður fyrirhuguðra menningarverkefna og hvað greiðir?
+6. Hver er raunverulegur rekstrarkostnaður fyrirhuguðra menningarverkefna og hvernig er hann fjármagnaður?
 7. Hvernig á að tryggja að skólar og leikskólar ráði við þéttinguna?
 
 ---
 
 ## Mat höfundar
 
-Miðbærinn er undir mikilli þrýsting og þrjár spurningar standa enn opnar: hvar menningarlegt þungi á heima (Fannborg, Smáralind eða Kórinn), hvernig framkvæmdatíminn verður í reynd meðhöndlaður gagnvart íbúum og fyrirtækjum, og hvort skólakerfi og samgöngur ráði við þéttinguna. Framsókn hefur birt skýrar tölur en þær eru flokksins eigin mat. Önnur framboð hafa ekki tekið skýra afstöðu. Kjósandinn þarf að krefjast svara um hvernig framkvæmdastjórnun og upplýsingagjöf verði tryggð á meðan framkvæmdirnar standa yfir.
+Miðbærinn er undir miklum þrýstingi og þrjár spurningar standa enn opnar: hvar þungamiðja menningarstarfs á að vera (Fannborg, Smáralind eða Kórinn), hvernig framkvæmdatíminn verður í reynd meðhöndlaður gagnvart íbúum og fyrirtækjum, og hvort skólakerfi og samgöngur ráði við þéttinguna. Framsókn hefur birt skýrar tölur en þær eru flokksins eigin mat. Önnur framboð hafa ekki tekið skýra afstöðu. Kjósendur þurfa að spyrja hvernig framkvæmdastjórnun og upplýsingagjöf verði tryggð á meðan framkvæmdirnar standa yfir.
 
 ---
 
 ## Vinnuseðill
 
 - [x] Kjarnaspurning samþykkt og skýr
-- [x] Öll sjö flokkurnar meðhöndlaðar í hluta 2 (jafnvel þótt afstaða sé óþekkt)
+- [x] Öll sjö framboðin meðhöndluð í hluta 2 (jafnvel þótt afstaða sé óþekkt)
 - [x] Öll gögn í hluta 3 með nafngreindri heimild og tegund
 - [x] Óvissa skráð í hluta 4
 - [x] Spurningar til framboða tilbúnar (hluti 5)

@@ -456,7 +456,7 @@
 <div class="main-container">
   <aside class="sidebar">
     <div class="info-panel">
-      <p><strong>Markmið kortsins:</strong> Sýna landfræðilega dreifingu frambjóðenda innan og milli framboðslista — ekki til að beina athygli að heimilum einstaklinga, heldur til að varpa ljósi á hvort ákveðin hverfi séu undir- eða ofarlega fulltrúuð.</p>
+      <p><strong>Markmið kortsins:</strong> Sýna landfræðilega dreifingu frambjóðenda innan og milli framboðslista — ekki til að beina athygli að heimilum einstaklinga, heldur til að varpa ljósi á hvort ákveðin hverfi eigi hlutfallslega fáa eða marga fulltrúa á listunum.</p>
       <p><strong>Gögn:</strong> Opinberir framboðslistar Kópavogsbæjar fyrir sveitarstjórnarkosningar 2026. Kennitölur eru ekki birtar á síðunni.</p>
     </div>
     <div class="filter-section">
@@ -466,7 +466,7 @@
     </div>
     <div class="stats-bar">
       <span id="visibleCount">151 frambjóðendur</span>
-      <span id="partyCountLabel">7 flokkar</span>
+      <span id="partyCountLabel">7 framboð</span>
     </div>
     <div class="candidate-list" id="candidateList"></div>
   </aside>
@@ -699,7 +699,7 @@ function focusCandidate(lat, lon, name) {
 function updateStats(count) {
   document.getElementById('visibleCount').textContent = `${count} frambjóðendur`;
   const visibleParties = selectedParty ? 1 : Object.keys(partyMeta).length;
-  document.getElementById('partyCountLabel').textContent = `${visibleParties} flokkar`;
+  document.getElementById('partyCountLabel').textContent = `${visibleParties} framboð`;
 }
 
 function resetView() {

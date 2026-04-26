@@ -32,12 +32,12 @@ Heimild (ef við á): [skjal eða frétt sem staðfestir að þetta er raunverul
 
 ---
 
-## Hluti 2 — Hvað segja flokkarnir?
+## Hluti 2 — Hvað segja framboðin?
 
 Notaðu þessa töflu til að skipuleggja gögn áður en þú innleiðir stance-grid í HTML.
 Hvern flokk þarf að fylla út áður en kafli 2 er skrifaður.
 
-| Flokkur | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
+| Framboð | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
 |---------|---------|-------------------------|---------|------------------|
 | D | | | | |
 | B | | | | |
@@ -55,7 +55,7 @@ Hvern flokk þarf að fylla út áður en kafli 2 er skrifaður.
 - Mín greining
 - Óstaðfest
 
-Ef afstaða flokks er ekki þekkt: skrá „Stefna ekki birt" í dálk Afstaða og
+Ef afstaða framboðs er ekki þekkt: skrá „Stefna ekki birt" í dálk Afstaða og
 `Óstaðfest` í Tegund heimildar.
 
 ---
@@ -81,10 +81,10 @@ sleppa þessum hluta og skrá það í Óvissu.]
 
 ## Hluti 4 — Óvissa
 
-[Listi yfir það sem við vitum ekki. Hér má geta um flokka sem hafa ekki birt stefnu,
+[Listi yfir það sem við vitum ekki. Hér má geta um framboð sem hafa ekki birt stefnu,
 gögn sem eru ekki til, túlkunarmun á gögnum, o.s.frv.]
 
-- [ ] [Flokkur X] hefur ekki birt stefnu
+- [ ] [Framboð X] hefur ekki birt stefnu
 - [ ] Gögn um [þema] eru ekki til fyrir Kópavog sérstaklega
 - [ ] [Staðhæfing] er óstaðfest
 
@@ -109,7 +109,7 @@ spurningar sem krefjast svara. Engin svör hér.]
 Merkja sem `Mín greining` í HTML.]
 
 Dæmisniðurstaða:
-> Gögnin benda til þess að [X], en þar sem [Y flokkur] hefur ekki birt stefnu
+> Gögnin benda til þess að [X], en þar sem [framboð Y] hefur ekki birt stefnu
 > er erfitt að gera fulla samanburð. Kjósandinn þarf að spyrja sérstaklega um [Z].
 
 ---
@@ -117,7 +117,7 @@ Dæmisniðurstaða:
 ## Vinnuseðill — eyða þegar síða er birt
 
 - [ ] Kjarnaspurning samþykkt og skýr
-- [ ] Öll sjö flokkurnar meðhöndlaðar í hluta 2 (jafnvel þótt afstaða sé óþekkt)
+- [ ] Öll sjö framboðin meðhöndluð í hluta 2 (jafnvel þótt afstaða sé óþekkt)
 - [ ] Öll gögn í hluta 3 með nafngreindri heimild og tegund
 - [ ] Óvissa skráð í hluta 4
 - [ ] Spurningar til framboða tilbúnar (hluti 5)

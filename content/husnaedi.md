@@ -24,9 +24,9 @@ Heimild: Ársreikningur Kópavogsbæjar 2025 (skýrsla bæjarstjóra, 16. apríl
 
 ---
 
-## Hluti 2 — Hvað segja flokkarnir?
+## Hluti 2 — Hvað segja framboðin?
 
-| Flokkur | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
+| Framboð | Afstaða | Tilvitnun eða samantekt | Heimild | Tegund heimildar |
 |---------|---------|-------------------------|---------|------------------|
 | D | Styður núverandi uppbyggingarlíkan; leggur áherslu á lóðaframboð og innviðafjárfestingar | „Við höfum afhent 500 lóðir á kjörtímabilinu og fjárfest í skólum, göngustígum og íþróttamannvirkjum." | xdkop.is, stefnuskrá 2026 | Formleg stefnuskrá |
 | B | Styður uppbyggingu; leggur áherslu á að sala lóða hafi tryggt fjármögnun án nýrrar lántöku | „Sterkur rekstur og sala lóða í Vatnsendahvarfi gerðu það að verkum að við þurftum ekki að taka ný lán á árinu." | framsokn.is/sveitarfelog/kopavogur | Formleg stefnuskrá |
@@ -34,7 +34,7 @@ Heimild: Ársreikningur Kópavogsbæjar 2025 (skýrsla bæjarstjóra, 16. apríl
 | V | Leggur áherslu á félagslegt húsnæði, lýðræðislegt skipulagsferli og umhverfislegar kröfur | Stefna ekki birt sem formlegt PDF-skjal | vg.is/sveitarfelag/kopavogur/ | Óstaðfest |
 | C | Hefur ekki birt formlega húsnæðisstefnu sérstaklega fyrir Kópavog | Stefna ekki birt | vidreisn.is/kopavogur | Óstaðfest |
 | J | Krefst óhagnaðardrifinna íbúða; gagnrýnir að fjárfestar og einkaaðilar stýri uppbyggingu bæjarins | „Húsnæðisöryggi er grundvallaréttur, ekki markaðsvara — bærinn verður að tryggja óhagnaðardrifnar leiguíbúðar." | sosialistaflokkurinn.is, Kópavogslisti 2026 | Grein frambjóðanda |
-| M | Stefna um húsnæðismál í Kópavogi ekki þekkt; flokkurinn hefur aðallega gert sér fregn af samgöngumálum | Stefna ekki birt | midflokkurinn.is | Óstaðfest |
+| M | Stefna um húsnæðismál í Kópavogi ekki þekkt; flokkurinn hefur aðallega fjallað um samgöngumál | Stefna ekki birt | midflokkurinn.is | Óstaðfest |
 
 ---
 
@@ -65,8 +65,8 @@ Heimild: Ársreikningur Kópavogsbæjar 2025 (skýrsla bæjarstjóra, 16. apríl
 - [x] Vinstri græn hafa ekki birt formlegt PDF-skjal um húsnæðismál
 - [x] Miðflokkurinn hefur ekki birt þekkta húsnæðisstefnu í Kópavogi
 - [x] Ósvarað er hversu stór hluti nýrra íbúða verður félagslegar eða óhagnaðardrifnar
-- [x] Óljóst hvort innviðir (skólar, leikskólar, samgöngur) fylgi uppbyggingunni í takt
-- [x] Tímaáætlun Hamraborg/Fannborg er óljós og háð skipulagsferli sem er enn í gangi
+- [x] Ekki liggur fyrir hvort innviðir (skólar, leikskólar, samgöngur) fylgi uppbyggingunni í takt
+- [x] Tímaáætlun Hamraborg/Fannborg er háð skipulagsferli sem er enn í gangi
 - [x] Ekki vitað hvaða áhrif minnkandi byggingarréttartekjur hafa á framtíðarfjárfestingar
 
 ---
@@ -85,14 +85,14 @@ Heimild: Ársreikningur Kópavogsbæjar 2025 (skýrsla bæjarstjóra, 16. apríl
 
 ## Mat höfundar
 
-Gögnin sýna skýrt að tvær stórar uppbyggingar — Vatnsendahvarf og Hamraborg/Fannborg — eru í gangi og munu hafa veruleg áhrif á skólaþörf, samgöngur og fjármál bæjarins. Tekjur af byggingarrétti í Vatnsendahvarfi hafa verið lykilþáttur í rekstrarlegu jafnvægi 2024–2025, en þær tekjur eru einstæðar og endurtaka sig ekki. Minnihlutaflokkarnir hafa lýst áhyggjum af því að uppbygging sé markaðsdrifin á kostnað félagslegs húsnæðis og lýðræðislegs samráðs, en vegna þess að Viðreisn, Vinstri græn og Miðflokkurinn hafa ekki birt formlegar stefnur um húsnæðismál í Kópavogi er erfitt að gera fulla samanburð á afstöðu allra sjö flokka.
+Gögnin sýna skýrt að tvær stórar uppbyggingar — Vatnsendahvarf og Hamraborg/Fannborg — eru í gangi og munu hafa veruleg áhrif á skólaþörf, samgöngur og fjármál bæjarins. Tekjur af byggingarrétti í Vatnsendahvarfi hafa verið lykilþáttur í rekstrarlegu jafnvægi 2024–2025, en þær tekjur eru einstæðar og endurtaka sig ekki. Framboð í minnihluta hafa lýst áhyggjum af því að uppbygging sé markaðsdrifin á kostnað félagslegs húsnæðis og lýðræðislegs samráðs, en vegna þess að Viðreisn, Vinstri græn og Miðflokkurinn hafa ekki birt formlegar stefnur um húsnæðismál í Kópavogi er erfitt að gera fullan samanburð á afstöðu allra sjö framboða.
 
 ---
 
 ## Vinnuseðill — eyða þegar síða er birt
 
 - [x] Kjarnaspurning samþykkt og skýr
-- [x] Öll sjö flokkurnar meðhöndlaðar í hluta 2 (jafnvel þótt afstaða sé óþekkt)
+- [x] Öll sjö framboðin meðhöndluð í hluta 2 (jafnvel þótt afstaða sé óþekkt)
 - [x] Öll gögn í hluta 3 með nafngreindri heimild og tegund
 - [x] Óvissa skráð í hluta 4
 - [x] Spurningar til framboða tilbúnar (hluti 5)

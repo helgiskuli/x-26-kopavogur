@@ -339,7 +339,7 @@
   {
     "id": "src-kop-spjaldtolvur",
     "type": "Opinbert gagnaskjal",
-    "title": "Upplýsingatækni í grunnskólum Kópavogs — auðlindasíða nemenda, foreldra og kennara",
+    "title": "Upplýsingatækni í grunnskólum Kópavogs — upplýsingasíða nemenda, foreldra og kennara",
     "publisher": "Kópavogsbær",
     "year": 2026,
     "notes": "Sérstök Kópavogssíða um stafrænt skólaumhverfi",
@@ -457,11 +457,11 @@
   {
     "id": "src-xd-kop-stjornsysla",
     "type": "Formleg stefnuskrá",
-    "title": "Sjálfstæðisflokkurinn í Kópavogi — almælt um gagnsæi og stjórnsýslu 2026",
+    "title": "Sjálfstæðisflokkurinn í Kópavogi — almenn áhersla á gagnsæi og stjórnsýslu 2026",
     "publisher": "xdkop.is",
     "year": 2026,
     "party": "d",
-    "notes": "Almælt um ábyrga og gagnsæja stjórnsýslu — ekki formleg eða nákvæm stefna um samráðsferli",
+    "notes": "Almennt orðað um ábyrga og gagnsæja stjórnsýslu — ekki formleg eða útfærð stefna um samráðsferli",
     "used_in": [
       "stjornsysla"
     ]
@@ -469,11 +469,11 @@
   {
     "id": "src-fram-kop-stjornsysla",
     "type": "Formleg stefnuskrá",
-    "title": "Framsóknarflokkurinn — almælt um gagnsæi og stjórnsýslu í Kópavogi 2026",
+    "title": "Framsóknarflokkurinn — almenn áhersla á gagnsæi og stjórnsýslu í Kópavogi 2026",
     "publisher": "framsokn.is/sveitarfelog/kopavogur",
     "year": 2026,
     "party": "b",
-    "notes": "Almælt um ábyrga og vandvirkna stjórnsýslu — ekki formleg eða nákvæm stefna um samráðsferli",
+    "notes": "Almennt orðað um ábyrga og vandaða stjórnsýslu — ekki formleg eða útfærð stefna um samráðsferli",
     "used_in": [
       "stjornsysla"
     ]

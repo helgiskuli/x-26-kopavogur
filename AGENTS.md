@@ -39,8 +39,17 @@ Every factual assertion that could be disputed must have a source.
 - Numbers in metric cards → cite in the nearest `callout` or the sources section.
 - Quotes in `stance-quote` elements → must include `— Name, Publication, date`.
 - Party positions described without a direct quote → use `stance-note` and note
-  "Heimild vantar" or "Stefna ekki birt" if the source is missing.
+  "Vantar heimild" or "Stefna ekki birt" if the source is missing.
 - Do not invent or paraphrase data. If you cannot find a primary source, omit the claim.
+
+### 4b. Terminology consistency
+Use the same Icelandic status labels across all pages and avoid older variants.
+
+- Policy overview heading: `Yfirlit yfir birta stefnu`
+- Short/table label: `Birting stefnu`
+- Standard status labels: `Formleg stefna`, `Grein eða viðtal`,
+  `Almenn áhersla`, `Óstaðfest`, `Stefna ekki birt`, `Vantar heimild`
+- Do not use `Stefnuþekja`, `Almælt`, or `Almælt í stefnuskrá`.
 
 ### 5. Reuse existing components
 Before writing new CSS or new HTML patterns, check DESIGN.md.
