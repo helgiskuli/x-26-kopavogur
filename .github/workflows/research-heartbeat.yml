@@ -1,0 +1,53 @@
+# .github/workflows/research-heartbeat.yml
+name: Kópavogur Political Research Heartbeat
+
+on:
+  schedule:
+    # Run twice daily: 8am and 6pm Iceland time (UTC+0)
+    - cron: '0 8,18 * * *'
+  workflow_dispatch: # Manual trigger for testing
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install google-genai
+
+      - name: Run research agent
+        run: python scripts/research-agent/research_agent.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Check for new content
+        id: check
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create PR if updates found
+        if: steps.check.outputs.changes == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="auto/updates-$(date +%Y%m%d-%H%M)"
+          git config user.name "Research Bot"
+          git config user.email "bot@noreply"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "🗳️ Nýjar uppfærslur frá rannsóknarbóti"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "🗳️ Uppfærslur $(date +%d.%m.%Y)" \
+            --body "$(cat _data/latest_digest.md)" \
+            --base main \
+            --head "$BRANCH"

@@ -1,0 +1,347 @@
+"""
+Kópavogur Political Research Agent
+===================================
+Runs on a GitHub Actions heartbeat. Uses Gemini 3 Flash Preview with
+Google Search grounding to find new political news about Kópavogur
+municipal elections (May 16, 2026).
+
+Free tier: Gemini 3 Flash Preview = 5,000 grounded search queries/month free.
+At 2 runs/day × ~3 queries/run × 20 days = ~120 queries. Well within limits.
+"""
+
+import json
+import os
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+from google import genai
+from google.genai import types
+
+# ---------------------------------------------------------------------------
+# Config
+# ---------------------------------------------------------------------------
+
+MODEL = "gemini-3-flash-preview"
+
+# Parties and their known web presences — the agent checks these specifically
+PARTIES = {
+    "B": {"name": "Framsóknarflokkurinn", "url": "https://framsokn.is/sveitarfelog/kopavogur", "oddviti": "Orri Vignir Hlöðversson"},
+    "C": {"name": "Viðreisn", "url": "https://vidreisn.is/kopavogur", "oddviti": "María Ellen Steingrímsdóttir"},
+    "D": {"name": "Sjálfstæðisflokkurinn", "url": "https://xdkop.is", "oddviti": "Ásdís Kristjánsdóttir"},
+    "J": {"name": "Sósíalistaflokkur Íslands", "url": "https://sosialistaflokkurinn.is", "oddviti": "Markús Candi"},
+    "M": {"name": "Miðflokkurinn", "url": "https://midflokkurinn.is", "oddviti": "Einar Jóhannes Guðnason"},
+    "S": {"name": "Samfylkingin", "url": "https://xs.is/samfylkingin-i-kopavogi1", "oddviti": "Jónas Már Torfason"},
+    "V": {"name": "VG og óháð", "url": "https://vg.is/sveitarfelag/kopavogur/", "oddviti": "Anna Sigríður Hafliðadóttir"},
+}
+
+# Policy areas tracked on the site — agent looks for updates in these
+POLICY_AREAS = [
+    "skólamál og Kópavogsmódelið",
+    "samgöngur og Borgarlína",
+    "húsnæðismál og lóðir",
+    "velferð og aðgengi",
+    "stjórnsýsla og gagnsæi",
+    "fjármál og fasteignagjöld",
+    "miðbæjarframkvæmdir",
+]
+
+# Initial policy gaps — loaded from _data/tracked_updates.json if available,
+# otherwise seeded from this default. Edit _data/tracked_updates.json manually
+# to close a gap after confirming it's filled via a merged PR.
+DEFAULT_GAPS = {
+    "C": ["húsnæði", "velferð", "stjórnsýsla"],
+    "M": ["húsnæði", "velferð", "stjórnsýsla", "samgöngur"],
+    "V": ["velferð", "stjórnsýsla"],
+    "S": ["velferð", "stjórnsýsla"],
+}
+
+TRACKED_FILE = Path("_data/tracked_updates.json")
+DIGEST_FILE = Path("_data/latest_digest.md")
+UPDATES_DIR = Path("_updates")
+
+
+# ---------------------------------------------------------------------------
+# Gemini client
+# ---------------------------------------------------------------------------
+
+def get_client():
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        print("ERROR: GEMINI_API_KEY not set")
+        sys.exit(1)
+    return genai.Client(api_key=api_key)
+
+
+def search_with_gemini(client: genai.Client, query: str) -> str:
+    """Run a grounded search query via Gemini 3 Flash."""
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=query,
+        config=types.GenerateContentConfig(
+            tools=[types.Tool(google_search=types.GoogleSearch())],
+            temperature=0.3,  # Low temp for factual research
+        ),
+    )
+    return response.text
+
+
+# ---------------------------------------------------------------------------
+# Research prompts
+# ---------------------------------------------------------------------------
+
+def build_news_prompt(gaps: dict) -> str:
+    today = datetime.now(timezone.utc).strftime("%d. %B %Y")
+    party_list = "\n".join(
+        f"- {k}: {v['name']} (oddviti: {v['oddviti']}, vef: {v['url']})"
+        for k, v in PARTIES.items()
+    )
+    areas = "\n".join(f"- {a}" for a in POLICY_AREAS)
+
+    # Build dynamic gaps text from current state
+    if gaps:
+        gap_lines = []
+        for letter, missing in gaps.items():
+            if missing:
+                name = PARTIES.get(letter, {}).get("name", letter)
+                gap_lines.append(f"- {name} ({letter}): vantar stefnu um {', '.join(missing)}")
+        gaps_text = "Þekktar eyður — framboð sem hafa EKKI birt stefnu:\n" + "\n".join(gap_lines)
+    else:
+        gaps_text = "Engar þekktar eyður eftir — öll framboð hafa birt stefnu í öllum málaflokkum."
+
+    return f"""Dagsetning í dag: {today}
+Sveitarstjórnarkosningar í Kópavogi eru 16. maí 2026.
+
+Leitaðu að NÝJUSTU fréttum og uppfærslum um sveitarstjórnarkosningarnar í Kópavogi.
+Athugaðu fréttamiðla og heimasíður flokkanna.
+Fréttamiðlar í forgangsröð:
+1. RÚV (ruv.is) — áreiðanlegastur
+2. Vísir (visir.is) og Morgunblaðið (mbl.is)
+3. DV (dv.is) — til viðbótar
+
+Framboðin:
+{party_list}
+
+Málaflokkarnir sem við fylgjumst með:
+{areas}
+
+{gaps_text}
+
+Skilaðu niðurstöðum á JSON formi og ENGU ÖÐRU (engin markdown, engar skýringar):
+{{
+  "updates": [
+    {{
+      "source_url": "slóð á heimild",
+      "source_name": "nafn miðils eða flokks",
+      "party_letter": "B/C/D/J/M/S/V eða null",
+      "headline_is": "stutt lýsing á íslensku",
+      "summary_is": "nánari lýsing á íslensku, 2-4 setningar",
+      "policy_area": "málaflokkur ef við á",
+      "category": "stefna|frambjodandi|umraeda|frettir|kosningaherferð",
+      "fills_known_gap": true/false,
+      "date": "ISO dagsetning ef þekkt"
+    }}
+  ],
+  "has_updates": true/false,
+  "search_summary": "stutt samantekt á íslensku um hvað fannst"
+}}
+
+Ef EKKERT nýtt fannst, skilaðu has_updates: false og tómum updates lista.
+Skilgreindu "nýtt" sem eitthvað sem hefur birst á síðustu 48 klukkustundum.
+Ekki skila gömlum fréttum eða upplýsingum sem þegar eru þekktar."""
+
+
+def build_party_check_prompt() -> str:
+    """Secondary search specifically checking party homepages for new content."""
+    urls = "\n".join(f"- {v['name']}: {v['url']}" for v in PARTIES.values())
+
+    return f"""Athugaðu hvort einhver þessara flokka hafi uppfært heimasíður sínar
+með nýrri stefnuskrá, nýjum frambjóðendum eða öðru kosningatengdu efni
+fyrir sveitarstjórnarkosningarnar í Kópavogi 16. maí 2026:
+
+{urls}
+
+Skilaðu niðurstöðum á sama JSON formi og áður.
+Ef EKKERT nýtt, skilaðu has_updates: false.
+Skilgreindu "nýtt" sem efni sem virðist hafa birst á síðustu 48 klukkustundum."""
+
+
+# ---------------------------------------------------------------------------
+# State management
+# ---------------------------------------------------------------------------
+
+def load_tracked() -> dict:
+    if TRACKED_FILE.exists():
+        data = json.loads(TRACKED_FILE.read_text(encoding="utf-8"))
+        # Ensure gaps key exists (migration from older format)
+        if "gaps" not in data:
+            data["gaps"] = dict(DEFAULT_GAPS)
+        return data
+    return {"updates": [], "last_run": None, "gaps": dict(DEFAULT_GAPS)}
+
+
+def save_tracked(data: dict):
+    TRACKED_FILE.parent.mkdir(parents=True, exist_ok=True)
+    data["last_run"] = datetime.now(timezone.utc).isoformat()
+    TRACKED_FILE.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def is_duplicate(update: dict, existing: list[dict]) -> bool:
+    """Check if an update is already tracked (by headline similarity)."""
+    new_headline = update.get("headline_is", "").lower().strip()
+    if not new_headline:
+        return True  # Skip empty headlines
+
+    for prev in existing:
+        prev_headline = prev.get("headline_is", "").lower().strip()
+        # Exact match or one is substring of the other
+        if new_headline == prev_headline:
+            return True
+        if len(new_headline) > 20 and len(prev_headline) > 20:
+            if new_headline in prev_headline or prev_headline in new_headline:
+                return True
+    return False
+
+
+# ---------------------------------------------------------------------------
+# Output
+# ---------------------------------------------------------------------------
+
+def write_digest(new_updates: list[dict], search_summary: str):
+    """Write a markdown digest for the PR body and the updates page."""
+    now = datetime.now(timezone.utc)
+    date_str = now.strftime("%Y-%m-%d")
+
+    # PR body digest
+    lines = [
+        f"## Rannsóknarsamantekt {now.strftime('%d.%m.%Y %H:%M')} UTC\n",
+        f"{search_summary}\n",
+        f"### {len(new_updates)} nýjar uppfærslur\n",
+    ]
+    for u in new_updates:
+        party = u.get("party_letter", "")
+        party_tag = f"**[{party}]** " if party else ""
+        gap_tag = " 🆕 _Fylli þekkta eyðu_" if u.get("fills_known_gap") else ""
+        lines.append(f"#### {party_tag}{u['headline_is']}{gap_tag}\n")
+        lines.append(f"{u.get('summary_is', '')}\n")
+        source = u.get("source_url") or u.get("source_name", "")
+        if source:
+            lines.append(f"_Heimild: {source}_\n")
+        lines.append("")
+
+    DIGEST_FILE.parent.mkdir(parents=True, exist_ok=True)
+    DIGEST_FILE.write_text("\n".join(lines), encoding="utf-8")
+
+    # Site-facing update file
+    UPDATES_DIR.mkdir(parents=True, exist_ok=True)
+    update_path = UPDATES_DIR / f"{date_str}.md"
+
+    site_lines = [
+        "---",
+        f"date: {now.isoformat()}",
+        f"count: {len(new_updates)}",
+        "---",
+        "",
+    ]
+    for u in new_updates:
+        party = u.get("party_letter", "")
+        party_tag = f"[{party}] " if party else ""
+        site_lines.append(f"## {party_tag}{u['headline_is']}")
+        cat = u.get("category", "")
+        area = u.get("policy_area", "")
+        meta_parts = [x for x in [cat, area] if x]
+        if meta_parts:
+            site_lines.append(f"*{' · '.join(meta_parts)}*")
+        site_lines.append("")
+        site_lines.append(u.get("summary_is", ""))
+        source = u.get("source_url") or u.get("source_name", "")
+        if source:
+            site_lines.append(f"\n[Heimild]({source})")
+        site_lines.append("")
+
+    # Append if file exists (multiple runs per day)
+    mode = "a" if update_path.exists() else "w"
+    with open(update_path, mode, encoding="utf-8") as f:
+        if mode == "a":
+            f.write("\n---\n\n")
+        f.write("\n".join(site_lines))
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+def parse_response(raw: str) -> dict:
+    """Extract JSON from Gemini response, handling fences and preamble text."""
+    text = raw.strip()
+    start = text.find('{')
+    end = text.rfind('}')
+    if start != -1 and end != -1 and end > start:
+        text = text[start:end + 1]
+
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        print(f"WARNING: Failed to parse JSON: {e}")
+        print(f"Raw response:\n{raw[:500]}")
+        return {"updates": [], "has_updates": False, "search_summary": "Villa í svari frá Gemini"}
+
+
+def main():
+    client = get_client()
+    tracked = load_tracked()
+
+    all_new = []
+    search_summary_parts = []
+
+    # Search 1: General news search
+    print("🔍 Leita að fréttum um Kópavogskosningar...")
+    try:
+        raw1 = search_with_gemini(client, build_news_prompt(tracked.get("gaps", {})))
+        result1 = parse_response(raw1)
+        search_summary_parts.append(result1.get("search_summary", ""))
+
+        for u in result1.get("updates", []):
+            if not is_duplicate(u, tracked["updates"]):
+                all_new.append(u)
+    except Exception as e:
+        print(f"WARNING: News search failed: {e}")
+
+    # Search 2: Party homepage check
+    print("🔍 Athuga heimasíður flokkanna...")
+    try:
+        raw2 = search_with_gemini(client, build_party_check_prompt())
+        result2 = parse_response(raw2)
+        search_summary_parts.append(result2.get("search_summary", ""))
+
+        for u in result2.get("updates", []):
+            if not is_duplicate(u, tracked["updates"]) and not is_duplicate(u, all_new):
+                all_new.append(u)
+    except Exception as e:
+        print(f"WARNING: Party check failed: {e}")
+
+    # Results
+    if not all_new:
+        print("✅ Ekkert nýtt fannst.")
+        save_tracked(tracked)  # Update last_run timestamp
+        return
+
+    print(f"📰 Fann {len(all_new)} nýjar uppfærslur!")
+    for u in all_new:
+        gap = " [FYLLI EYÐU]" if u.get("fills_known_gap") else ""
+        print(f"  → {u.get('party_letter', '?')}: {u.get('headline_is', '?')}{gap}")
+
+    tracked["updates"].extend(all_new)
+    save_tracked(tracked)
+
+    summary = " ".join(s for s in search_summary_parts if s)
+    write_digest(all_new, summary)
+
+    print("✅ Búið að skrifa uppfærslur og PR-texta.")
+
+
+if __name__ == "__main__":
+    main()
