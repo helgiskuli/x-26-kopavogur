@@ -1,0 +1,25 @@
+{
+  "updates": [],
+  "last_run": "2026-04-26T15:02:16.095143+00:00",
+  "gaps": {
+    "C": [
+      "húsnæði",
+      "velferð",
+      "stjórnsýsla"
+    ],
+    "M": [
+      "húsnæði",
+      "velferð",
+      "stjórnsýsla",
+      "samgöngur"
+    ],
+    "V": [
+      "velferð",
+      "stjórnsýsla"
+    ],
+    "S": [
+      "velferð",
+      "stjórnsýsla"
+    ]
+  }
+}
