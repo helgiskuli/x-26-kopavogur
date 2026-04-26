@@ -1,0 +1,48 @@
+{
+  "updates": [
+    {
+      "source_url": "https://www.ruv.is/frettir/innlent/sveitarstjornarkosningar-2026/",
+      "source_name": "RÚV",
+      "party_letter": "D",
+      "headline_is": "Sjálfstæðisflokkurinn stærstur í Kópavogi samkvæmt nýrri skoðanakönnun",
+      "summary_is": "Ný skoðanakönnun Maskínu sýnir að Sjálfstæðisflokkurinn heldur sínum fjórum bæjarfulltrúum í Kópavogi, en meirihluti þeirra og Framsóknar myndi falla. Samfylkingin mælist með þrefalt meira fylgi en í síðustu kosningum.",
+      "policy_area": null,
+      "category": "frettir",
+      "fills_known_gap": false,
+      "date": "2026-04-26T11:16:00Z"
+    },
+    {
+      "source_url": "https://www.ruv.is/frettir/innlent/sveitarstjornarkosningar-2026/clashes-over-kopavogur-model",
+      "source_name": "RÚV",
+      "party_letter": null,
+      "headline_is": "Oddvitar tókust á um Kópavogsmódelið í umræðum",
+      "summary_is": "Oddvitar framboða í Kópavogi ræddu Kópavogsmódelið í leikskólamálum í oddvitaumræðum í vikunni. Oddvitar Viðreisnar, Samfylkingar og Sósíalistaflokksins vilja lækka leikskólagjöld, en oddvitar Sjálfstæðisflokks og Framsóknarflokks verja núverandi kerfi.",
+      "policy_area": "skólamál og Kópavogsmódelið",
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-04-24T00:00:00Z"
+    }
+  ],
+  "last_run": "2026-04-26T15:17:22.831289+00:00",
+  "gaps": {
+    "C": [
+      "húsnæði",
+      "velferð",
+      "stjórnsýsla"
+    ],
+    "M": [
+      "húsnæði",
+      "velferð",
+      "stjórnsýsla",
+      "samgöngur"
+    ],
+    "V": [
+      "velferð",
+      "stjórnsýsla"
+    ],
+    "S": [
+      "velferð",
+      "stjórnsýsla"
+    ]
+  }
+}
