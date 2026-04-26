@@ -178,6 +178,23 @@ Skilgreindu "nýtt" sem eitthvað sem hefur birst á síðustu 48 klukkustundum.
 Ekki skila gömlum fréttum eða upplýsingum sem þegar eru þekktar."""
 
 
+def build_events_prompt() -> str:
+    """Search for broadcast and event content: debates, interviews, appearances, press conferences."""
+    return """Leitaðu að umræðum, viðtölum, kosningaviðburðum og kynningum tengdum
+sveitarstjórnarkosningum í Kópavogi (16. maí 2026).
+
+Einbeittu þér að þessum tegundum efnis — EKKI venjulegum fréttagreinum:
+- Kosningaumræður í útvarpi eða sjónvarpi (t.d. RÚV, Bylgjan, Útvarp Saga)
+- Viðtöl við oddvita eða frambjóðendur
+- Kynningarfundir og opnir fundir (borgarbúafundir)
+- Fréttatilkynningar frá framboðum
+- Kosningaviðburðir og kynningar
+
+Skilaðu niðurstöðum á sama JSON formi og áður.
+Ef EKKERT nýtt, skilaðu has_updates: false.
+Skilgreindu "nýtt" sem efni sem virðist hafa birst á síðustu 48 klukkustundum."""
+
+
 def build_party_check_prompt() -> str:
     """Secondary search specifically checking party homepages for new content."""
     urls = "\n".join(f"- {v['name']}: {v['url']}" for v in PARTIES.values())
@@ -324,10 +341,10 @@ def main():
     all_new = []
     search_summary_parts = []
 
-    # Search 1: General news search
-    print("🔍 Leita að fréttum um Kópavogskosningar...")
+    # Search 1: Party homepages (slow-moving but high-value — run first)
+    print("🔍 Athuga heimasíður flokkanna...")
     try:
-        raw1 = search_with_gemini(client, build_news_prompt(tracked.get("gaps", {})))
+        raw1 = search_with_gemini(client, build_party_check_prompt())
         result1 = parse_response(raw1)
         search_summary_parts.append(result1.get("search_summary", ""))
 
@@ -335,15 +352,14 @@ def main():
             if not is_duplicate(u, tracked["updates"]):
                 all_new.append(u)
     except Exception as e:
-        print(f"WARNING: News search failed: {e}")
+        print(f"WARNING: Party check failed: {e}")
 
-    # Brief pause between searches to stay within RPM limits
     time.sleep(15)
 
-    # Search 2: Party homepage check
-    print("🔍 Athuga heimasíður flokkanna...")
+    # Search 2: Debates, interviews, events, press conferences
+    print("🔍 Leita að umræðum, viðtölum og kosningaviðburðum...")
     try:
-        raw2 = search_with_gemini(client, build_party_check_prompt())
+        raw2 = search_with_gemini(client, build_events_prompt())
         result2 = parse_response(raw2)
         search_summary_parts.append(result2.get("search_summary", ""))
 
@@ -351,7 +367,22 @@ def main():
             if not is_duplicate(u, tracked["updates"]) and not is_duplicate(u, all_new):
                 all_new.append(u)
     except Exception as e:
-        print(f"WARNING: Party check failed: {e}")
+        print(f"WARNING: Events search failed: {e}")
+
+    time.sleep(15)
+
+    # Search 3: Written news articles (most frequent, runs last)
+    print("🔍 Leita að fréttum um Kópavogskosningar...")
+    try:
+        raw3 = search_with_gemini(client, build_news_prompt(tracked.get("gaps", {})))
+        result3 = parse_response(raw3)
+        search_summary_parts.append(result3.get("search_summary", ""))
+
+        for u in result3.get("updates", []):
+            if not is_duplicate(u, tracked["updates"]) and not is_duplicate(u, all_new):
+                all_new.append(u)
+    except Exception as e:
+        print(f"WARNING: News search failed: {e}")
 
     # Results
     if not all_new:

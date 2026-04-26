@@ -3,8 +3,8 @@ name: Kópavogur Political Research Heartbeat
 
 on:
   schedule:
-    # Run once daily at 9am Iceland time (UTC+0)
-    - cron: '0 9 * * *'
+    # 9am and 6pm Iceland time (UTC+0)
+    - cron: '0 9,18 * * *'
   workflow_dispatch: # Manual trigger for testing
 
 jobs:
