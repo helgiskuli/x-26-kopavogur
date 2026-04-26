@@ -7,9 +7,9 @@ content is found.
 ## Architecture
 
 ```
-GitHub Actions cron (2×/day)
-  → scripts/research_agent.py
-    → Gemini 3 Flash Preview + Google Search grounding
+GitHub Actions cron (1×/day, 09:00 UTC)
+  → scripts/research-agent/research_agent.py
+    → Gemini 2.5 Flash + Google Search grounding
     → compares against _data/tracked_updates.json
     → opens PR if new content detected
 ```
@@ -18,15 +18,15 @@ GitHub Actions cron (2×/day)
 
 **Free.** Uses the Gemini API free tier via Google AI Studio.
 
-- Gemini 3 Flash Preview: 5,000 grounded search queries/month free
-- Agent usage: ~120 queries/month (2 runs/day × ~3 queries × 20 days)
+- Gemini 2.5 Flash: 1,500 grounded search queries/day free (15 RPM)
+- Agent usage: ~2 queries/run × 1 run/day × 20 days = ~40 queries/month
 - No credit card required
 
-## Why Gemini 3 Flash
+## Why Gemini 2.5 Flash
 
-Gemini 3 Flash Preview ranks **#4 on Miðeind's Icelandic LLM Leaderboard**
-(85.97% average), ahead of GPT-5.4 and Claude Opus 4.6 on Icelandic
-benchmarks. It's the best free option for Icelandic language work.
+Gemini 2.5 Flash ranks near the top of Miðeind's Icelandic LLM Leaderboard
+and is the best free option for Icelandic language work with built-in
+Google Search grounding.
 
 Leaderboard: https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard
 
@@ -51,15 +51,47 @@ Leaderboard: https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard
 3. Check "Allow GitHub Actions to create and approve pull requests"
 4. Save
 
-### 4. Test
+### 4. Test via GitHub UI
 
 Actions → "Kópavogur Political Research Heartbeat" → Run workflow
+
+## Local development
+
+Dependencies are managed with [uv](https://docs.astral.sh/uv/).
+
+```bash
+# Install uv if needed
+brew install uv
+
+# From repo root — generate lockfile (once, then commit it)
+cd scripts/research-agent && uv lock && cd ../..
+
+# Store your API key in the repo root (already gitignored)
+echo 'GEMINI_API_KEY=your_key_here' > .env
+
+# Run from the script directory
+cd scripts/research-agent
+
+# Preview prompts without making API calls
+uv run python research_agent.py --dry-run
+
+# Full local run (loads .env automatically, writes to _data/ and _updates/)
+uv run python research_agent.py
+
+# Use a non-default .env path
+uv run python research_agent.py --env-file /path/to/.env
+```
+
+`--dry-run` never calls the API — it just prints both prompts to stdout. Useful
+for tuning prompt wording without spending quota.
 
 ## Files
 
 | File | Purpose |
 |------|---------|
 | `scripts/research-agent/research_agent.py` | Main agent script |
+| `scripts/research-agent/pyproject.toml` | uv project + dependency declaration |
+| `scripts/research-agent/uv.lock` | Pinned lockfile — commit this |
 | `scripts/research-agent/README.md` | This file |
 | `.github/workflows/research-heartbeat.yml` | Cron schedule and CI |
 | `_data/tracked_updates.json` | Persistent state (dedup + gap tracking) |
@@ -68,8 +100,8 @@ Actions → "Kópavogur Political Research Heartbeat" → Run workflow
 
 ## How it works
 
-1. **Search 1:** Searches Icelandic news (RÚV, Vísir, MBL, DV) for
-   Kópavogur election coverage
+1. **Search 1:** Searches Icelandic news (RÚV, Vísir, MBL, DV, Heimildin) for
+   Kópavogur election coverage, prioritising RÚV, Vísir, and MBL
 2. **Search 2:** Checks party homepages for new policy documents
 3. **Dedup:** Compares findings against `_data/tracked_updates.json`
 4. **Gap tracking:** Watches for parties filling known policy gaps and
@@ -91,8 +123,8 @@ Initial gaps (as of April 2026):
 
 ## Customization
 
-- **Frequency:** Edit cron in the workflow. Default: `0 8,18 * * *` (8am/6pm UTC)
-- **Model:** Change `MODEL` in the script. `gemini-2.5-flash` also works (ranked #16)
+- **Frequency:** Edit `cron` in the workflow. Default: `0 9 * * *` (9am UTC)
+- **Model:** Change `MODEL` in the script. Currently `gemini-2.5-flash`
 - **Stop date:** Disable or delete the workflow after May 16, 2026
 
 ## What to do with PRs

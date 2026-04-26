@@ -1,0 +1,4 @@
+- [Kópavogur financial data folder](kopavogur_data_folder.md) — location and contents of the Kópavogur fjárhagsgögn PDFs
+- [Kópavogur key-figure conventions](kopavogur_conventions.md) — how lóðatekjur are reported (operating vs cash flow), and A/B hluti rate precision
+- [Claim verification — fjarmal.html (2026-04-24)](project_fjarmal_verification.md) — audit of the Kópavogur campaign site claims about 2022–2025 finances
+- [Kópavogur fiscal outlook 2026–2029](kopavogur_fiscal_outlook_2026_2029.md) — debt, capex, pension, Samgöngusáttmáli, and thin operating surpluses projected 2026–2029

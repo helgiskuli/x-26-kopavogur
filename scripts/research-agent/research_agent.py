@@ -9,12 +9,29 @@ Free tier: Gemini 2.5 Flash (GA, 15 RPM / 1500 RPD)
 At 1 run/day × 2 queries/run × 20 days = ~40 queries. Well within limits.
 """
 
+import argparse
 import json
 import os
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+
+_REPO_ROOT = Path(__file__).parent.parent.parent
+
+
+def load_dotenv(path: Path = _REPO_ROOT / ".env") -> None:
+    """Load KEY=VALUE pairs from a .env file into os.environ (no-op if missing)."""
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        os.environ.setdefault(key, value)
 
 from google import genai
 from google.genai import types
@@ -57,9 +74,9 @@ DEFAULT_GAPS = {
     "S": ["velferð", "stjórnsýsla"],
 }
 
-TRACKED_FILE = Path("_data/tracked_updates.json")
-DIGEST_FILE = Path("_data/latest_digest.md")
-UPDATES_DIR = Path("_updates")
+TRACKED_FILE = _REPO_ROOT / "_data/tracked_updates.json"
+DIGEST_FILE = _REPO_ROOT / "_data/latest_digest.md"
+UPDATES_DIR = _REPO_ROOT / "_updates"
 
 
 # ---------------------------------------------------------------------------
@@ -126,9 +143,8 @@ Sveitarstjórnarkosningar í Kópavogi eru 16. maí 2026.
 Leitaðu að NÝJUSTU fréttum og uppfærslum um sveitarstjórnarkosningarnar í Kópavogi.
 Athugaðu fréttamiðla og heimasíður flokkanna.
 Fréttamiðlar í forgangsröð:
-1. RÚV (ruv.is) — áreiðanlegastur
-2. Vísir (visir.is) og Morgunblaðið (mbl.is)
-3. DV (dv.is) — til viðbótar
+1. RÚV (ruv.is), Vísir (visir.is) og Morgunblaðið (mbl.is) — áreiðanlegastir
+2. DV (dv.is) og Heimildin (https://heimildin.is/) — til viðbótar
 
 Framboðin:
 {party_list}
@@ -357,5 +373,36 @@ def main():
     print("✅ Búið að skrifa uppfærslur og PR-texta.")
 
 
+def dry_run(tracked: dict) -> None:
+    print("=" * 60)
+    print("PROMPT 1 — Fréttaleit")
+    print("=" * 60)
+    print(build_news_prompt(tracked.get("gaps", {})))
+    print()
+    print("=" * 60)
+    print("PROMPT 2 — Heimasíður flokkanna")
+    print("=" * 60)
+    print(build_party_check_prompt())
+
+
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Kópavogur research agent")
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print prompts without calling the API",
+    )
+    parser.add_argument(
+        "--env-file",
+        default=None,
+        metavar="FILE",
+        help="Path to .env file (default: .env in repo root)",
+    )
+    args = parser.parse_args()
+
+    load_dotenv(Path(args.env_file) if args.env_file else _REPO_ROOT / ".env")
+
+    if args.dry_run:
+        dry_run(load_tracked())
+    else:
+        main()

@@ -13,15 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v5
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
-        run: pip install google-genai
-
       - name: Run research agent
-        run: python scripts/research-agent/research_agent.py
+        run: uv run --project scripts/research-agent python scripts/research-agent/research_agent.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 

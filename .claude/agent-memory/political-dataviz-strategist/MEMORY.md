@@ -1,0 +1,5 @@
+- [User profile](user_profile.md) — Head of Data & AI at Varist; builds this election site as a civic project alongside commercial work
+- [Site structure & data](project_site_structure.md) — 9 pages, 7 parties, Chart.js already loaded on fjarmal.html, no build step
+- [Party color system](project_party_colors.md) — 7 canonical CSS vars (--b through --v); never hardcode hex in chart config
+- [Visualization patterns that work](feedback_viz_patterns.md) — what renders cleanly in this CSS context; chart types to prefer/avoid
+- [Neutrality pitfalls](feedback_neutrality.md) — known asymmetric-data problems per page that must be flagged before charting
