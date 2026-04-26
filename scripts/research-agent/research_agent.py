@@ -5,8 +5,8 @@ Runs on a GitHub Actions heartbeat. Uses Gemini 3 Flash Preview with
 Google Search grounding to find new political news about Kópavogur
 municipal elections (May 16, 2026).
 
-Free tier: Gemini 3 Flash Preview = 5,000 grounded search queries/month free.
-At 2 runs/day × ~3 queries/run × 20 days = ~120 queries. Well within limits.
+Free tier: Gemini 3 Flash Lite Preview
+At 2 runs/day × ~3 queries/run × 20 days = ~120 queries. Should fit within limits.
 """
 
 import json
@@ -23,7 +23,7 @@ from google.genai import types
 # Config
 # ---------------------------------------------------------------------------
 
-MODEL = "gemini-3.1-flash-lite"
+MODEL = "gemini-3.1-flash-lite-preview"
 
 # Parties and their known web presences — the agent checks these specifically
 PARTIES = {
