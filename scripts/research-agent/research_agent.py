@@ -235,6 +235,11 @@ def save_tracked(data: dict):
 
 def is_duplicate(update: dict, existing: list[dict]) -> bool:
     """Check if an update is already tracked (by headline similarity)."""
+    # Reject Gemini grounding redirect URLs — they are not real article links
+    url = update.get("source_url", "")
+    if "vertexaisearch.cloud.google.com" in url:
+        return True
+
     new_headline = update.get("headline_is", "").lower().strip()
     if not new_headline:
         return True  # Skip empty headlines

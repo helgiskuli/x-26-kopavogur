@@ -8,6 +8,34 @@ Future work items for the site. Ordered roughly by priority.
 - [ ] Disable research-heartbeat workflow (no longer needed)
 - [ ] Archive the site as a static snapshot
 
+## Next up
+
+### Automated update promoter
+
+A second agent (`scripts/promoter/promoter_agent.py`) that takes approved
+entries from `tracked_updates.json` and generates page edits automatically,
+opening a PR for human review.
+
+**Flow:**
+1. Research agent PR merged → promoter triggers (automatic or `workflow_dispatch`)
+2. Reads entries where `promoted: false`
+3. Routes each entry to the correct page via `policy_area` → page mapping
+4. Uses Claude API to generate HTML following the existing design system
+5. Opens a PR with proposed page additions — human reviews, tweaks, merges
+
+**Key design decisions:**
+- Trigger: automatic on research PR merge vs manual `workflow_dispatch`
+- HTML generation: Claude API (understands design system, not template-based)
+- Entries without `policy_area` (polls, general news) are skipped and flagged
+- Add `promoted: false` flag to `research_agent.py` for all future entries
+- Backfill existing 17 entries as `promoted: true` (promoted manually 2026-04-26)
+
+**Why Claude API over Gemini for this step:**
+Gemini handles grounded web search; Claude is better at following a complex
+design system from examples. The promoter needs to place content in the right
+section of a page — that requires understanding stance cards, callouts, and
+the 5-part page structure.
+
 ## Before election day (if time permits)
 
 ### "Hvað er nýtt" page
