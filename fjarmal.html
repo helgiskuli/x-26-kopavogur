@@ -8,61 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/common.css">
 <style>
-  /* ── Metric cards ── */
-  .metric-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 1.5rem; }
-  .metric-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  }
-  .metric-year { font-size: 11px; font-family: var(--mono); color: var(--text-dim); margin-bottom: 6px; }
-  .metric-value { font-size: 1.35rem; font-weight: 600; font-family: var(--mono); line-height: 1.2; }
-  .metric-value.neg { color: var(--neg); }
-  .metric-value.pos { color: var(--pos); }
-  .metric-sub { font-size: 11px; color: var(--text-dim); margin-top: 4px; font-family: var(--mono); }
-
-  /* ── Chart container ── */
-  .chart-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1.25rem 1.25rem 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  }
-  .chart-legend { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; font-size: 12px; color: var(--text-muted); font-family: var(--mono); }
-  .leg { display: flex; align-items: center; gap: 6px; }
-  .leg-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
-  .chart-wrap { position: relative; width: 100%; }
-
-  /* ── Data table ── */
-  .data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 1rem 0; }
-  .data-table th {
-    text-align: left;
-    padding: 8px 10px;
-    font-size: 11px;
-    font-family: var(--mono);
-    color: var(--text-dim);
-    letter-spacing: 0.06em;
-    border-bottom: 1px solid var(--border);
-    font-weight: 500;
-  }
-  .data-table td {
-    padding: 9px 10px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-muted);
-    font-family: var(--mono);
-    font-size: 12px;
-  }
-  .data-table td:first-child { color: var(--text); font-family: var(--font); font-size: 13px; }
-  .data-table tr:last-child td { border-bottom: none; }
-  .data-table .neg { color: var(--neg); font-weight: 500; }
-  .data-table .pos { color: var(--pos); font-weight: 500; }
-  .data-table .total-row td { border-top: 1px solid var(--border-light); color: var(--text); font-weight: 500; }
-  .data-table .total-row td:first-child { color: var(--text); }
-
   /* ── Rate table ── */
   .rate-row { display: flex; align-items: center; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
   .rate-row:last-child { border-bottom: none; }
@@ -162,8 +107,8 @@
 
     <div class="chart-card">
       <div class="chart-legend">
-        <div class="leg"><div class="leg-dot" style="background:#3b64dc"></div>Skráð rekstrarniðurstaða</div>
-        <div class="leg"><div class="leg-dot" style="background:#ef4444"></div>Án tekna/gjalda vegna lóðaúthlutana o.fl.</div>
+        <div class="leg"><div class="leg-dot" style="background:var(--accent)"></div>Skráð rekstrarniðurstaða</div>
+        <div class="leg"><div class="leg-dot" style="background:var(--neg)"></div>Án tekna/gjalda vegna lóðaúthlutana o.fl.</div>
       </div>
       <div class="chart-wrap" style="height:260px">
         <canvas id="chart1" role="img" aria-label="Samanburður rekstrarniðurstöðu við og án tekna/gjalda vegna lóðaúthlutana 2022 til 2025">Rekstrarniðurstaða: 2022: -2083, 2023: -799, 2024: +4459, 2025: +4612. Án lóðaúthlutana: 2022: -2329, 2023: -925, 2024: +1308, 2025: -64.</canvas>
@@ -268,8 +213,8 @@
       <p style="font-size:11px;font-family:var(--mono);color:var(--text-dim);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1rem">Þróun álagningarhlutfalls og tekna</p>
       <div class="chart-legend">
         <div class="leg"><div class="leg-dot" style="background:var(--accent)"></div>A-flokkur (íbúðir) — vinstri ás</div>
-        <div class="leg"><div class="leg-dot" style="background:#d97706"></div>C-flokkur (atvinnuhúsnæði) — vinstri ás</div>
-        <div class="leg"><div class="leg-dot" style="background:#3b64dc; border-radius:50%"></div>Fasteignaskattstekjur — hægri ás</div>
+        <div class="leg"><div class="leg-dot" style="background:var(--warn)"></div>C-flokkur (atvinnuhúsnæði) — vinstri ás</div>
+        <div class="leg"><div class="leg-dot" style="background:var(--accent); border-radius:50%"></div>Fasteignaskattstekjur — hægri ás</div>
       </div>
       <div class="chart-wrap" style="height:240px">
         <canvas id="chart2" role="img" aria-label="Þróun álagningarhlutfalls og fasteignaskattstekna 2022 til 2025">A-flokkur: 2022: 0.212%, 2023: 0.170%, 2024: 0.165%, 2025: 0.162%. Tekjur: 2022: 4144, 2023: 4517, 2024: 4850, 2025: 5068 m.kr.</canvas>
@@ -455,8 +400,8 @@
       <p style="font-size:11px;font-family:var(--mono);color:var(--text-dim);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1rem">Fjárfesting á ári (m.kr.) — rauntölur 2022–2025, áætlun 2026–2029</p>
       <div class="chart-legend">
         <div class="leg"><div class="leg-dot" style="background:rgba(59,100,220,0.65)"></div>Rauntölur</div>
-        <div class="leg"><div class="leg-dot" style="background:rgba(59,100,220,0.25);border:1px solid #3b64dc"></div>Áætlun</div>
-        <div class="leg"><div class="leg-dot" style="background:#9ca3af"></div>Afskriftir (~2.100 m.kr./ári)</div>
+        <div class="leg"><div class="leg-dot" style="background:rgba(59,100,220,0.25);border:1px solid var(--accent)"></div>Áætlun</div>
+        <div class="leg"><div class="leg-dot" style="background:var(--text-dim)"></div>Afskriftir (~2.100 m.kr./ári)</div>
       </div>
       <div class="chart-wrap" style="height:220px">
         <canvas id="chart3" role="img" aria-label="Fjárfesting 2022 til 2029. Rauntölur: 2022: 3700, 2023: 4900, 2024: 5791, 2025: 9251. Áætlun: 2026: 5295, 2027: 7514, 2028: 7002, 2029: 3361 m.kr. Afskriftir: ~2100 m.kr. á ári."></canvas>

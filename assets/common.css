@@ -364,6 +364,65 @@ footer a:hover { color: var(--text); }
 .question-list li { font-size: 14px; color: var(--text); line-height: 1.7; margin-bottom: 0.75rem; padding-left: 0.25rem; }
 .question-list li:last-child { margin-bottom: 0; }
 
+/* ── Chart card ── */
+/* Wrapper for a Chart.js <canvas>. Also used in fjarmal.html and husnaedi.html. */
+.chart-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.25rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.chart-legend { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; font-size: 12px; color: var(--text-muted); font-family: var(--mono); }
+.leg { display: flex; align-items: center; gap: 6px; }
+.leg-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+.chart-wrap { position: relative; width: 100%; }
+
+/* ── Metric cards ── */
+/* Small KPI cards in a four-column grid (fjarmal.html). */
+.metric-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 1.5rem; }
+.metric-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.metric-year  { font-size: 11px; font-family: var(--mono); color: var(--text-dim); margin-bottom: 6px; }
+.metric-value { font-size: 1.35rem; font-weight: 600; font-family: var(--mono); line-height: 1.2; }
+.metric-value.neg { color: var(--neg); }
+.metric-value.pos { color: var(--pos); }
+.metric-sub   { font-size: 11px; color: var(--text-dim); margin-top: 4px; font-family: var(--mono); }
+
+/* ── Data table ── */
+/* Used on fjarmal.html (financial tables) and velferd.html (service-pressure table). */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 1rem 0; }
+.data-table th {
+  text-align: left;
+  padding: 8px 10px;
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+}
+.data-table td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.data-table td:first-child { color: var(--text); font-family: var(--font); font-size: 13px; }
+.data-table tr:last-child td { border-bottom: none; }
+.data-table .neg { color: var(--neg); font-weight: 500; }
+.data-table .pos { color: var(--pos); font-weight: 500; }
+.data-table .amt { text-align: right; }
+.data-table .total-row td { border-top: 1px solid var(--border-light); color: var(--text); font-weight: 600; border-bottom: none; }
+.data-table .total-row td:first-child { color: var(--text); }
+
 /* ── Responsive (shared) ── */
 @media (max-width: 640px) {
   .site-title span { display: none; }

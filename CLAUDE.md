@@ -32,6 +32,8 @@ Each issue page (all except `index.html`, `fjarmal.html`, `kort.html`, `stefnuma
 
 - `assets/common.css` — shared design tokens, layout, components; linked from all pages except `kort.html`
 - `assets/site.js` — shared JS utilities (Icelandic number formatting); load only when needed
+- `assets/kort-density.js` — pre-aggregated heat map density array (`window.densityData`); loaded by `kort.html`
+- `assets/kort-fallback-data.js` — bundled candidate GeoJSON fallback for `file://` use; loaded by `kort.html`
 
 ## Data files
 
@@ -45,7 +47,7 @@ Each issue page (all except `index.html`, `fjarmal.html`, `kort.html`, `stefnuma
 - `data/claims.json` — fact-tracking journal of party claims; fields include assessment and confidence — **internal only, never render confidence scores to users**
 - `data/fjarhagsgogn/` — original municipal PDFs and extracted text: ársreikningar 2022–2025, fjárhagsáætlun 2026, þriggja ára áætlun 2027–2029, greinargerð 2026
 
-The `densityData` heat map array in `kort.html` is derived from property room counts and is stored inline because it is pre-aggregated and not standard GeoJSON.
+The heat map density array (`window.densityData`) is derived from property room counts and is loaded from `assets/kort-density.js`; `assets/kort-fallback-data.js` bundles the candidate GeoJSON for offline (`file://`) use.
 
 ## Content model
 

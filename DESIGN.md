@@ -30,6 +30,7 @@ Paste the full `:root` block into every new page. The canonical set is:
   --text-muted:  #6b7280;   /* secondary text */
   --text-dim:    #9ca3af;   /* tertiary / metadata */
   --accent:      #3b64dc;   /* primary accent (links, active nav, eyebrows) */
+  --accent-dim:  rgba(59,100,220,0.08); /* accent tint for tag-official background */
   --neg:         #ef4444;   /* negative / deficit */
   --neg-dim:     rgba(239,68,68,0.1);
   --pos:         #059669;   /* positive / surplus */

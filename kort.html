@@ -538,8 +538,8 @@ function showLoadError(error) {
 // ============ MAP INIT ============
 function initMap() {
   map = L.map('map', {
-    center: [64.1020, -21.9000],
-    zoom: 14,
+    center: [64.1020, -21.8650],
+    zoom: 13,
     zoomControl: false,
     attributionControl: true
   });
@@ -706,7 +706,7 @@ function resetView() {
   selectedParty = null;
   document.getElementById('searchBox').value = '';
   searchText = '';
-  map.setView([64.1020, -21.9000], 14);
+  map.setView([64.1020, -21.8650], 13);
   renderPartyFilters();
   renderMarkers();
   renderCandidateList();
