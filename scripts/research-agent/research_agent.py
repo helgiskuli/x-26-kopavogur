@@ -12,6 +12,7 @@ At 2 runs/day × ~3 queries/run × 20 days = ~120 queries. Well within limits.
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,7 +23,7 @@ from google.genai import types
 # Config
 # ---------------------------------------------------------------------------
 
-MODEL = "gemini-3-flash-preview"
+MODEL = "gemini-3.1-flash-lite"
 
 # Parties and their known web presences — the agent checks these specifically
 PARTIES = {
@@ -73,17 +74,27 @@ def get_client():
     return genai.Client(api_key=api_key)
 
 
-def search_with_gemini(client: genai.Client, query: str) -> str:
-    """Run a grounded search query via Gemini 3 Flash."""
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=query,
-        config=types.GenerateContentConfig(
-            tools=[types.Tool(google_search=types.GoogleSearch())],
-            temperature=0.3,  # Low temp for factual research
-        ),
-    )
-    return response.text
+def search_with_gemini(client: genai.Client, query: str, max_retries: int = 3) -> str:
+    """Run a grounded search query via Gemini, with exponential backoff on 429s."""
+    for attempt in range(max_retries):
+        try:
+            response = client.models.generate_content(
+                model=MODEL,
+                contents=query,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                    temperature=0.3,
+                ),
+            )
+            return response.text
+        except Exception as e:
+            is_rate_limit = any(s in str(e) for s in ("429", "RESOURCE_EXHAUSTED", "quota"))
+            if is_rate_limit and attempt < max_retries - 1:
+                wait = 30 * (2 ** attempt)  # 30s, 60s
+                print(f"Rate limited. Bíð {wait}s (tilraun {attempt + 2}/{max_retries})...")
+                time.sleep(wait)
+            else:
+                raise
 
 
 # ---------------------------------------------------------------------------
@@ -309,6 +320,9 @@ def main():
                 all_new.append(u)
     except Exception as e:
         print(f"WARNING: News search failed: {e}")
+
+    # Brief pause between searches to stay within RPM limits
+    time.sleep(15)
 
     # Search 2: Party homepage check
     print("🔍 Athuga heimasíður flokkanna...")
