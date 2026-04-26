@@ -5,8 +5,8 @@ Runs on a GitHub Actions heartbeat. Uses Gemini 3 Flash Preview with
 Google Search grounding to find new political news about Kópavogur
 municipal elections (May 16, 2026).
 
-Free tier: Gemini 3 Flash Lite Preview
-At 2 runs/day × ~3 queries/run × 20 days = ~120 queries. Should fit within limits.
+Free tier: Gemini 2.5 Flash (GA, 15 RPM / 1500 RPD)
+At 1 run/day × 2 queries/run × 20 days = ~40 queries. Well within limits.
 """
 
 import json
@@ -23,7 +23,7 @@ from google.genai import types
 # Config
 # ---------------------------------------------------------------------------
 
-MODEL = "gemini-3.1-flash-lite-preview"
+MODEL = "gemini-2.5-flash"
 
 # Parties and their known web presences — the agent checks these specifically
 PARTIES = {
