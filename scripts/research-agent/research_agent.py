@@ -105,7 +105,7 @@ def search_with_gemini(client: genai.Client, query: str, max_retries: int = 3) -
             )
             return response.text
         except Exception as e:
-            is_rate_limit = any(s in str(e) for s in ("429", "RESOURCE_EXHAUSTED", "quota"))
+            is_rate_limit = any(s in str(e) for s in ("429", "RESOURCE_EXHAUSTED", "quota", "503", "UNAVAILABLE"))
             if is_rate_limit and attempt < max_retries - 1:
                 wait = 30 * (2 ** attempt)  # 30s, 60s
                 print(f"Rate limited. Bíð {wait}s (tilraun {attempt + 2}/{max_retries})...")
