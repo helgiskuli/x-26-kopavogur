@@ -9,7 +9,8 @@
       "policy_area": "skólamál og Kópavogsmódelið",
       "category": "umraeda",
       "fills_known_gap": false,
-      "date": "2026-04-24T00:00:00Z"
+      "date": "2026-04-24T00:00:00Z",
+      "applied_date": null
     },
     {
       "source_url": "https://www.ruv.is/frettir/kosningar/sveitarstjornarkosningar-2026/sjalfstaedisflokkurinn-staerstur-i-kopavogi",
@@ -20,7 +21,8 @@
       "policy_area": null,
       "category": "frettir",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.mbl.is/frettir/kosningar/2026/04/25/meirihlutinn_i_kopavogi_fallinn/",
@@ -31,7 +33,8 @@
       "policy_area": null,
       "category": "frettir",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -42,7 +45,8 @@
       "policy_area": null,
       "category": "frettir",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -53,7 +57,8 @@
       "policy_area": "samgöngur",
       "category": "frettir",
       "fills_known_gap": true,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -64,7 +69,8 @@
       "policy_area": null,
       "category": "frettir",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -75,7 +81,8 @@
       "policy_area": null,
       "category": "frettir",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -86,7 +93,8 @@
       "policy_area": null,
       "category": "frettir",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -97,7 +105,8 @@
       "policy_area": null,
       "category": "frettir",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -108,7 +117,8 @@
       "policy_area": "stjórnsýsla og gagnsæi",
       "category": "umraeda",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -119,7 +129,8 @@
       "policy_area": "stjórnsýsla og gagnsæi",
       "category": "stefna",
       "fills_known_gap": true,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -130,7 +141,8 @@
       "policy_area": "fjármál og fasteignagjöld",
       "category": "umraeda",
       "fills_known_gap": false,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -141,7 +153,8 @@
       "policy_area": "samgöngur og Borgarlína",
       "category": "stefna",
       "fills_known_gap": true,
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -152,7 +165,8 @@
       "policy_area": "velferð og aðgengi",
       "category": "stefna",
       "fills_known_gap": true,
-      "date": "2026-04-26"
+      "date": "2026-04-26",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -163,7 +177,8 @@
       "policy_area": "velferð og aðgengi",
       "category": "umraeda",
       "fills_known_gap": false,
-      "date": "2026-04-26"
+      "date": "2026-04-26",
+      "applied_date": null
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/sterkari-studningur-vid-born-i-grunnskolum-kopavogs",
@@ -174,10 +189,107 @@
       "policy_area": "skólamál og Kópavogsmódelið",
       "category": "stefna",
       "fills_known_gap": false,
-      "date": "2026-04-24"
+      "date": "2026-04-24",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.visir.is/g/20262694586d/orvaentir-ekki-yfir-fregnum-af-falli-meirihlutans",
+      "source_name": "Vísir",
+      "party_letter": "D",
+      "headline_is": "Bæjarstjóri Kópavogs örvæntir ekki yfir fregnum af falli meirihlutans",
+      "summary_is": "Ásdís Kristjánsdóttir, bæjarstjóri og oddviti Sjálfstæðisflokksins, segist ekki örvænta þrátt fyrir að ný könnun sýni fall meirihlutans. Hún trúir því að Kópavogsbúar vilji áfram sömu forystu og að kosningarnar snúist um málefnin og hverjum íbúar treysta til að stýra bænum.",
+      "policy_area": "stjórnsýsla og gagnsæi",
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-04-25",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.dv.is/frettir/2026/04/25/ny-konnun-i-kopavogi-miklar-sviptingar-og-margir-moguleikar-i-stodunni/",
+      "source_name": "DV",
+      "party_letter": null,
+      "headline_is": "Ný könnun í Kópavogi: Miklar sviptingar og margir möguleikar í stöðunni",
+      "summary_is": "Könnun Maskínu fyrir DV sýnir miklar sveiflur í fylgi flokka í Kópavogi. Sjálfstæðisflokkurinn er enn stærstur en Samfylkingin tekur risastökk. Ýmsir möguleikar eru til staðar fyrir meirihlutamyndun.",
+      "policy_area": null,
+      "category": "frettir",
+      "fills_known_gap": false,
+      "date": "2026-04-25",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.visir.is/g/20262694602d/framikalli-svarad-med-poti-i-oddvitarimmu",
+      "source_name": "Vísir",
+      "party_letter": "D",
+      "headline_is": "Framíkalli svarað með poti í oddvitarimmu á Sprengisandi",
+      "summary_is": "Hart var tekist á í umræðum oddvita Sjálfstæðisflokksins, Ásdísar Kristjánsdóttur, og Samfylkingarinnar, Jónasar Más Torfasonar, í Kópavogi á Sprengisandi. Ásdís svaraði framíkalli Jónasar með því að pota í hann.",
+      "policy_area": null,
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-04-26",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.visir.is/g/20262694595d/skritid-ad-domsmalaradherra-blandi-ser-i-umraeduna",
+      "source_name": "Vísir",
+      "party_letter": "M",
+      "headline_is": "Oddviti Miðflokksins furðar sig á afskiptum dómsmálaráðherra",
+      "summary_is": "Einar Jóhannes Guðnason, oddviti Miðflokksins í Kópavogi, segir ummæli dómsmálaráðherra um „snákaolíu“ í tengslum við heimgreiðslur til foreldra ekki koma á óvart en að það sé skrítið að ráðherra blandi sér í sveitarstjórnarmál á þennan hátt.",
+      "policy_area": "velferð og aðgengi",
+      "category": "umraeda",
+      "fills_known_gap": true,
+      "date": "2026-04-26",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.visir.is/g/20262694589d/hann-gripur-alltaf-fram-i-oddvitar-bednir-um-ad-syna-hvor-odrum-kurteisi",
+      "source_name": "Vísir",
+      "party_letter": null,
+      "headline_is": "Oddvitar í Kópavogi beðnir um kurteisi í umræðum á Sprengisandi",
+      "summary_is": "Oddvitar Sjálfstæðisflokksins og Samfylkingarinnar í Kópavogi tókust á um velferðarmál, leikskólamál og ársreikning bæjarins í umræðum á Sprengisandi. Þáttastjórnandi þurfti að biðja þá um að sýna hvor öðrum kurteisi vegna framíkalla. Ásdís Kristjánsdóttir (D) nefndi að fasteignagjöld í Kópavogi væru þau lægstu á höfuðborgarsvæðinu.",
+      "policy_area": "velferð og aðgengi, fjármál og fasteignagjöld",
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-04-26",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.visir.is/g/20262694608d/jonas-upplifdi-pot-asdisar-ekki-sem-aras",
+      "source_name": "Vísir",
+      "party_letter": "S",
+      "headline_is": "Jónas Már upplifði pot Ásdísar ekki sem árás",
+      "summary_is": "Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, tjáði sig um atvikið á Sprengisandi þar sem Ásdís Kristjánsdóttir, oddviti Sjálfstæðisflokksins, potaði í hann. Jónas sagði að hann hefði ekki upplifað það sem árás.",
+      "policy_area": null,
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-04-27",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.ruv.is/frettir/innlent/2026/04/23/tokust-a-um-kopavogsmodelid/",
+      "source_name": "RÚV",
+      "party_letter": null,
+      "headline_is": "Oddvitar tókust á um Kópavogsmódelið í leikskólamálum",
+      "summary_is": "Í oddvitaumræðum RÚV tókust oddvitar framboðanna í Kópavogi á um Kópavogsmódelið. Oddvitar Viðreisnar (C), Samfylkingarinnar (S) og Sósíalistaflokksins (J) vilja lækka leikskólagjöld. Oddviti Sjálfstæðisflokksins (D) ver Kópavogsmódelið en oddviti Framsóknarflokksins (B) er stoltur af því en segir það ekki heilagt.",
+      "policy_area": "skólamál og Kópavogsmódelið, velferð og aðgengi",
+      "category": "umraeda",
+      "fills_known_gap": true,
+      "date": "2026-04-23",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.kopavogur.is/is/stjornsysla/sveitarstjornarkosningar-2026",
+      "source_name": "Kópavogsbær",
+      "party_letter": null,
+      "headline_is": "Kjörskrá vegna sveitarstjórnarkosninga 2026 liggur frammi",
+      "summary_is": "Kjörskrá vegna sveitarstjórnarkosninga 16. maí 2026 liggur frammi í þjónustuveri á Bæjarskrifstofum Kópavogs frá og með 24. apríl næstkomandi. Athugasemdum við kjörskrá skal beina til bæjarlögmanns.",
+      "policy_area": null,
+      "category": "frettir",
+      "fills_known_gap": false,
+      "date": "2026-04-24",
+      "applied_date": null
     }
   ],
-  "last_run": "2026-04-26T19:39:18.802006+00:00",
+  "last_run": "2026-04-27T12:38:50.118264+00:00",
   "gaps": {
     "C": [
       "húsnæði",

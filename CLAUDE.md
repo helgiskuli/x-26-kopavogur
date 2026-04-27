@@ -86,3 +86,4 @@ GitHub Pages serves the `main` branch root. Push to `main` triggers automatic de
 ## Skills
 
 - `/kopavogur-issue-page` — use when building or refactoring any issue page; enforces the AGENTS.md checklist and 5-part structure from DESIGN.md
+- `/kopavogur-updates` — use when new research output has arrived in `_data/` and `_updates/`; reads the digest and tracked_updates.json, filters what's actionable, checks current page coverage, and makes targeted HTML edits

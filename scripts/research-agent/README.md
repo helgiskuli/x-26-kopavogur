@@ -94,9 +94,10 @@ for tuning prompt wording without spending quota.
 | `scripts/research-agent/uv.lock` | Pinned lockfile — commit this |
 | `scripts/research-agent/README.md` | This file |
 | `.github/workflows/research-heartbeat.yml` | Cron schedule and CI |
-| `_data/tracked_updates.json` | Persistent state (dedup + gap tracking) |
-| `_data/latest_digest.md` | PR body content for latest run |
-| `_updates/YYYY-MM-DD.md` | Daily update files (site-facing) |
+| `_data/tracked_updates.json` | Persistent state: all updates with `applied_date` tracking and `gaps` object |
+| `_data/latest_digest.md` | Canonical skill input: unapplied items only, with frontmatter (`date`, `count_total`, `count_unapplied`) |
+| `_data/pr_body.md` | PR body: new items from the current run only, no frontmatter |
+| `_updates/YYYY-MM-DD.md` | Transactional archive: every item found on that date, appended across runs |
 
 ## How it works
 
@@ -129,9 +130,7 @@ Initial gaps (as of April 2026):
 
 ## What to do with PRs
 
-The agent finds raw material. You decide:
-- Is this genuinely new?
-- Does it warrant updating a site page?
-- Which page and section does it belong on?
-
-The PR provides findings. You do the editorial work.
+Merge the PR to pull `_data/latest_digest.md` and `_data/tracked_updates.json`
+into `main`, then run `/kopavogur-updates` in a Claude Code session. The skill
+reads the digest, filters what's actionable, makes targeted HTML edits, and
+marks applied items in `tracked_updates.json` with `applied_date`.

@@ -45,6 +45,6 @@ jobs:
           git push origin "$BRANCH"
           gh pr create \
             --title "🗳️ Uppfærslur $(date +%d.%m.%Y)" \
-            --body "$(cat _data/latest_digest.md)" \
+            --body "$(cat _data/pr_body.md)" \
             --base main \
             --head "$BRANCH"

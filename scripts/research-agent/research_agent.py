@@ -76,6 +76,7 @@ DEFAULT_GAPS = {
 
 TRACKED_FILE = _REPO_ROOT / "_data/tracked_updates.json"
 DIGEST_FILE = _REPO_ROOT / "_data/latest_digest.md"
+PR_BODY_FILE = _REPO_ROOT / "_data/pr_body.md"
 UPDATES_DIR = _REPO_ROOT / "_updates"
 
 
@@ -268,32 +269,66 @@ def is_duplicate(update: dict, existing: list[dict]) -> bool:
 # Output
 # ---------------------------------------------------------------------------
 
-def write_digest(new_updates: list[dict], search_summary: str):
-    """Write a markdown digest for the PR body and the updates page."""
+def _format_update_block(u: dict) -> list[str]:
+    """Render one update entry as markdown lines (shared by digest and archive)."""
+    party = u.get("party_letter", "")
+    party_tag = f"**[{party}]** " if party else ""
+    gap_tag = " 🆕 _Fylli þekkta eyðu_" if u.get("fills_known_gap") else ""
+    lines = [f"#### {party_tag}{u['headline_is']}{gap_tag}\n"]
+    lines.append(f"{u.get('summary_is', '')}\n")
+    source = u.get("source_url") or u.get("source_name", "")
+    if source:
+        lines.append(f"_Heimild: {source}_\n")
+    lines.append("")
+    return lines
+
+
+def write_digest(new_updates: list[dict], search_summary: str, all_tracked: list[dict]):
+    """Write the canonical digest and the transactional archive entry.
+
+    latest_digest.md — canonical input for the update skill. Contains only
+    unapplied items (applied_date is None/missing) so the skill never
+    re-processes already-incorporated content.
+
+    _updates/YYYY-MM-DD.md — full transactional archive. Contains every item
+    found in this run regardless of applied status. Append if the file exists
+    (multiple runs per day).
+    """
     now = datetime.now(timezone.utc)
     date_str = now.strftime("%Y-%m-%d")
 
-    # PR body digest
-    lines = [
+    # Unapplied items across the full tracked list (not just this run's new items)
+    unapplied = [u for u in all_tracked if not u.get("applied_date")]
+
+    DIGEST_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    # --- latest_digest.md (canonical skill input, unapplied only, with frontmatter) ---
+    digest_lines = [
+        "---",
+        f"date: {now.isoformat()}",
+        f"count_total: {len(all_tracked)}",
+        f"count_unapplied: {len(unapplied)}",
+        "---",
+        "",
+        f"## Rannsóknarsamantekt {now.strftime('%d.%m.%Y %H:%M')} UTC\n",
+        f"{search_summary}\n",
+        f"### {len(unapplied)} óúrvinnsluð uppfærsla(r)\n",
+    ]
+    for u in unapplied:
+        digest_lines.extend(_format_update_block(u))
+    DIGEST_FILE.write_text("\n".join(digest_lines), encoding="utf-8")
+
+    # --- pr_body.md (PR body only: new items from this run, no frontmatter) ---
+    pr_lines = [
         f"## Rannsóknarsamantekt {now.strftime('%d.%m.%Y %H:%M')} UTC\n",
         f"{search_summary}\n",
         f"### {len(new_updates)} nýjar uppfærslur\n",
     ]
     for u in new_updates:
-        party = u.get("party_letter", "")
-        party_tag = f"**[{party}]** " if party else ""
-        gap_tag = " 🆕 _Fylli þekkta eyðu_" if u.get("fills_known_gap") else ""
-        lines.append(f"#### {party_tag}{u['headline_is']}{gap_tag}\n")
-        lines.append(f"{u.get('summary_is', '')}\n")
-        source = u.get("source_url") or u.get("source_name", "")
-        if source:
-            lines.append(f"_Heimild: {source}_\n")
-        lines.append("")
+        pr_lines.extend(_format_update_block(u))
+    PR_BODY_FILE.write_text("\n".join(pr_lines), encoding="utf-8")
 
-    DIGEST_FILE.parent.mkdir(parents=True, exist_ok=True)
-    DIGEST_FILE.write_text("\n".join(lines), encoding="utf-8")
-
-    # Site-facing update file
+    # --- _updates/YYYY-MM-DD.md (archive, new items from this run only) ---
     UPDATES_DIR.mkdir(parents=True, exist_ok=True)
     update_path = UPDATES_DIR / f"{date_str}.md"
 
@@ -320,7 +355,6 @@ def write_digest(new_updates: list[dict], search_summary: str):
             site_lines.append(f"\n[Heimild]({source})")
         site_lines.append("")
 
-    # Append if file exists (multiple runs per day)
     mode = "a" if update_path.exists() else "w"
     with open(update_path, mode, encoding="utf-8") as f:
         if mode == "a":
@@ -409,11 +443,14 @@ def main():
         gap = " [FYLLI EYÐU]" if u.get("fills_known_gap") else ""
         print(f"  → {u.get('party_letter', '?')}: {u.get('headline_is', '?')}{gap}")
 
+    for u in all_new:
+        u.setdefault("applied_date", None)
+
     tracked["updates"].extend(all_new)
     save_tracked(tracked)
 
     summary = " ".join(s for s in search_summary_parts if s)
-    write_digest(all_new, summary)
+    write_digest(all_new, summary, tracked["updates"])
 
     print("✅ Búið að skrifa uppfærslur og PR-texta.")
 
