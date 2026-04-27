@@ -25,10 +25,10 @@ jobs:
       - name: Check for new content
         id: check
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "changes=false" >> $GITHUB_OUTPUT
-          else
+          if git status --porcelain | grep -q "_data/pr_body.md"; then
             echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Create PR if updates found

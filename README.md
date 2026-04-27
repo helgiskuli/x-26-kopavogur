@@ -50,6 +50,12 @@ python3 -m http.server 8000
 
 GitHub Pages deployment bypasses Jekyll via `.nojekyll`, so the repository is published as plain static files.
 
+## Automated research pipeline
+
+A GitHub Actions cron job runs twice daily (09:00 and 18:00 UTC) and monitors Icelandic news sources for new content about the Kópavogur election. When new content is found it opens a pull request. Empty runs (no new content) produce no PR.
+
+See [`scripts/research-agent/README.md`](scripts/research-agent/README.md) for setup, cost, and the PR review workflow.
+
 ## Scripts / harness
 
 Four maintenance scripts live in `scripts/`:

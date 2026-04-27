@@ -47,6 +47,12 @@ Each issue page (all except `index.html`, `fjarmal.html`, `kort.html`, `stefnuma
 - `data/claims.json` — fact-tracking journal of party claims; fields include assessment and confidence — **internal only, never render confidence scores to users**
 - `data/fjarhagsgogn/` — original municipal PDFs and extracted text: ársreikningar 2022–2025, fjárhagsáætlun 2026, þriggja ára áætlun 2027–2029, greinargerð 2026
 
+### Research pipeline output (written by the automated agent — not loaded at runtime)
+- `_data/tracked_updates.json` — persistent state: all updates ever found, with `applied_date` tracking and `gaps` object
+- `_data/latest_digest.md` — canonical `/kopavogur-updates` input: unapplied items only, with frontmatter (`date`, `count_total`, `count_unapplied`)
+- `_data/pr_body.md` — PR body text: new items from the most recent agent run only (only present after a run that found new content)
+- `_updates/YYYY-MM-DD.md` — transactional archive: every item found on that date, appended across runs
+
 The heat map density array (`window.densityData`) is derived from property room counts and is loaded from `assets/kort-density.js`; `assets/kort-fallback-data.js` bundles the candidate GeoJSON for offline (`file://`) use.
 
 ## Content model
