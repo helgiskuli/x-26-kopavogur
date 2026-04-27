@@ -19,7 +19,7 @@ GitHub Actions cron (2×/day, 09:00 and 18:00 UTC)
 **Free.** Uses the Gemini API free tier via Google AI Studio.
 
 - Gemini 2.5 Flash: 1,500 grounded search queries/day free (15 RPM)
-- Agent usage: ~3 queries/run × 2 runs/day × 20 days = ~120 queries/month
+- Agent usage: ~2 queries/run × 2 runs/day × 20 days = ~80 queries/month
 - No credit card required
 
 ## Why Gemini 2.5 Flash
@@ -102,8 +102,7 @@ for tuning prompt wording without spending quota.
 ## How it works
 
 1. **Search 1:** Party homepages — new policy documents, candidate announcements (slow-moving; runs first so it always completes)
-2. **Search 2:** Debates, interviews, radio/TV appearances, candidate events, press conferences
-3. **Search 3:** Written news articles across Icelandic media (RÚV, Vísir, MBL prioritised)
+2. **Search 2:** News articles + debates, interviews, radio/TV appearances, and events (merged into one call to reduce burst pressure on shared CI IPs)
 3. **Dedup:** Compares findings against `_data/tracked_updates.json`
 4. **Gap tracking:** Watches for parties filling known policy gaps and
    flags them with 🆕. Gaps auto-close when filled.

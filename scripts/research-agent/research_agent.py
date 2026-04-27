@@ -6,12 +6,13 @@ Google Search grounding to find new political news about Kópavogur
 municipal elections (May 16, 2026).
 
 Free tier: Gemini 2.5 Flash (GA, 15 RPM / 1500 RPD)
-At 1 run/day × 2 queries/run × 20 days = ~40 queries. Well within limits.
+At 2 runs/day × 2 queries/run × 20 days = ~80 queries. Well within limits.
 """
 
 import argparse
 import json
 import os
+import random
 import sys
 import time
 from datetime import datetime, timezone
@@ -93,7 +94,7 @@ def get_client():
 
 
 def search_with_gemini(client: genai.Client, query: str, max_retries: int = 3) -> str:
-    """Run a grounded search query via Gemini, with exponential backoff on 429s."""
+    """Run a grounded search query via Gemini, with exponential backoff on 429/503."""
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
@@ -106,10 +107,16 @@ def search_with_gemini(client: genai.Client, query: str, max_retries: int = 3) -
             )
             return response.text
         except Exception as e:
-            is_rate_limit = any(s in str(e) for s in ("429", "RESOURCE_EXHAUSTED", "quota", "503", "UNAVAILABLE"))
-            if is_rate_limit and attempt < max_retries - 1:
-                wait = 30 * (2 ** attempt)  # 30s, 60s
-                print(f"Rate limited. Bíð {wait}s (tilraun {attempt + 2}/{max_retries})...")
+            err = str(e)
+            is_503 = any(s in err for s in ("503", "UNAVAILABLE"))
+            is_429 = any(s in err for s in ("429", "RESOURCE_EXHAUSTED", "quota"))
+            if (is_503 or is_429) and attempt < max_retries - 1:
+                # 503 (regional overload) typically outlasts a 429 burst limit —
+                # start from 120s instead of 30s so we clear the overload window.
+                base = 120 if is_503 else 30
+                wait = base * (2 ** attempt) + random.random() * 10
+                kind = "503 Unavailable" if is_503 else "429 Rate limit"
+                print(f"{kind}. Bíð {wait:.0f}s (tilraun {attempt + 2}/{max_retries})...")
                 time.sleep(wait)
             else:
                 raise
@@ -119,15 +126,20 @@ def search_with_gemini(client: genai.Client, query: str, max_retries: int = 3) -
 # Research prompts
 # ---------------------------------------------------------------------------
 
-def build_news_prompt(gaps: dict) -> str:
+
+def build_events_and_news_prompt(gaps: dict) -> str:
+    """Combined search: written news articles + broadcast/event content.
+
+    Merging these two searches into one call halves the number of grounded
+    requests per run, reducing burst pressure on shared CI IPs.
+    """
     today = datetime.now(timezone.utc).strftime("%d. %B %Y")
     party_list = "\n".join(
-        f"- {k}: {v['name']} (oddviti: {v['oddviti']}, vef: {v['url']})"
+        f"- {k}: {v['name']} (oddviti: {v['oddviti']})"
         for k, v in PARTIES.items()
     )
     areas = "\n".join(f"- {a}" for a in POLICY_AREAS)
 
-    # Build dynamic gaps text from current state
     if gaps:
         gap_lines = []
         for letter, missing in gaps.items():
@@ -141,7 +153,7 @@ def build_news_prompt(gaps: dict) -> str:
     return f"""Dagsetning í dag: {today}
 Sveitarstjórnarkosningar í Kópavogi eru 16. maí 2026.
 
-Leitaðu að NÝJUSTU fréttum og uppfærslum um sveitarstjórnarkosningarnar í Kópavogi.
+Leitaðu að NÝJUSTU fréttum, umræðum og viðburðum um sveitarstjórnarkosningarnar í Kópavogi.
 Þrengdu leitina að þessum áreiðanlegu fréttamiðlum með site: leitarstirkjum:
 site:ruv.is OR site:visir.is OR site:mbl.is OR site:dv.is OR site:heimildin.is
 
@@ -152,6 +164,14 @@ Málaflokkarnir sem við fylgjumst með:
 {areas}
 
 {gaps_text}
+
+Leitaðu að báðum þessum tegundum efnis:
+1. Venjulegar fréttagreinar um stefnu, frambjóðendur og kosningamál
+2. Umræður, viðtöl og viðburðir:
+   - Kosningaumræður í útvarpi eða sjónvarpi (t.d. RÚV, Bylgjan, Útvarp Saga)
+   - Viðtöl við oddvita eða frambjóðendur
+   - Kynningarfundir og opnir fundir (borgarbúafundir)
+   - Fréttatilkynningar frá framboðum
 
 Skilaðu niðurstöðum á JSON formi og ENGU ÖÐRU (engin markdown, engar skýringar):
 {{
@@ -175,26 +195,6 @@ Skilaðu niðurstöðum á JSON formi og ENGU ÖÐRU (engin markdown, engar ský
 Ef EKKERT nýtt fannst, skilaðu has_updates: false og tómum updates lista.
 Skilgreindu "nýtt" sem eitthvað sem hefur birst á síðustu 48 klukkustundum.
 Ekki skila gömlum fréttum eða upplýsingum sem þegar eru þekktar."""
-
-
-def build_events_prompt() -> str:
-    """Search for broadcast and event content: debates, interviews, appearances, press conferences."""
-    return """Leitaðu að umræðum, viðtölum, kosningaviðburðum og kynningum tengdum
-sveitarstjórnarkosningum í Kópavogi (16. maí 2026).
-
-Þrengdu leitina að þessum lénum með site: leitarstirkjum:
-site:ruv.is OR site:visir.is OR site:mbl.is OR site:dv.is OR site:heimildin.is
-
-Einbeittu þér að þessum tegundum efnis — EKKI venjulegum fréttagreinum:
-- Kosningaumræður í útvarpi eða sjónvarpi (t.d. RÚV, Bylgjan, Útvarp Saga)
-- Viðtöl við oddvita eða frambjóðendur
-- Kynningarfundir og opnir fundir (borgarbúafundir)
-- Fréttatilkynningar frá framboðum
-- Kosningaviðburðir og kynningar
-
-Skilaðu niðurstöðum á sama JSON formi og áður.
-Ef EKKERT nýtt, skilaðu has_updates: false.
-Skilgreindu "nýtt" sem efni sem virðist hafa birst á síðustu 48 klukkustundum."""
 
 
 def build_party_check_prompt() -> str:
@@ -404,12 +404,12 @@ def main():
     except Exception as e:
         print(f"WARNING: Party check failed: {e}")
 
-    time.sleep(15)
+    time.sleep(60)
 
-    # Search 2: Debates, interviews, events, press conferences
-    print("🔍 Leita að umræðum, viðtölum og kosningaviðburðum...")
+    # Search 2: News articles + events/debates combined (reduces grounded calls from 3→2)
+    print("🔍 Leita að fréttum, umræðum og kosningaviðburðum...")
     try:
-        raw2 = search_with_gemini(client, build_events_prompt())
+        raw2 = search_with_gemini(client, build_events_and_news_prompt(tracked.get("gaps", {})))
         result2 = parse_response(raw2)
         search_summary_parts.append(result2.get("search_summary", ""))
 
@@ -417,22 +417,7 @@ def main():
             if not is_duplicate(u, tracked["updates"]) and not is_duplicate(u, all_new):
                 all_new.append(u)
     except Exception as e:
-        print(f"WARNING: Events search failed: {e}")
-
-    time.sleep(15)
-
-    # Search 3: Written news articles (most frequent, runs last)
-    print("🔍 Leita að fréttum um Kópavogskosningar...")
-    try:
-        raw3 = search_with_gemini(client, build_news_prompt(tracked.get("gaps", {})))
-        result3 = parse_response(raw3)
-        search_summary_parts.append(result3.get("search_summary", ""))
-
-        for u in result3.get("updates", []):
-            if not is_duplicate(u, tracked["updates"]) and not is_duplicate(u, all_new):
-                all_new.append(u)
-    except Exception as e:
-        print(f"WARNING: News search failed: {e}")
+        print(f"WARNING: News/events search failed: {e}")
 
     # Results
     if not all_new:
@@ -459,14 +444,14 @@ def main():
 
 def dry_run(tracked: dict) -> None:
     print("=" * 60)
-    print("PROMPT 1 — Fréttaleit")
-    print("=" * 60)
-    print(build_news_prompt(tracked.get("gaps", {})))
-    print()
-    print("=" * 60)
-    print("PROMPT 2 — Heimasíður flokkanna")
+    print("PROMPT 1 — Heimasíður flokkanna")
     print("=" * 60)
     print(build_party_check_prompt())
+    print()
+    print("=" * 60)
+    print("PROMPT 2 — Fréttir, umræður og viðburðir (sameinað)")
+    print("=" * 60)
+    print(build_events_and_news_prompt(tracked.get("gaps", {})))
 
 
 if __name__ == "__main__":
