@@ -251,7 +251,8 @@
     "party": "d",
     "used_in": [
       "husnaedi"
-    ]
+    ],
+    "url": "https://xdkop.is"
   },
   {
     "id": "src-framsokn-kop-husnaedi-2026",
@@ -357,7 +358,8 @@
     "notes": "Inniheldur áherslur um Kópavogsmódelið, mönnun leikskóla, samræmd próf (Matsferill) í 4.–10. bekk og stuðning við börn af erlendum uppruna",
     "used_in": [
       "skolar"
-    ]
+    ],
+    "url": "https://xdkop.is"
   },
   {
     "id": "src-xj-kop-skolar",
@@ -464,7 +466,8 @@
     "notes": "Almennt orðað um ábyrga og gagnsæja stjórnsýslu — ekki formleg eða útfærð stefna um samráðsferli",
     "used_in": [
       "stjornsysla"
-    ]
+    ],
+    "url": "https://xdkop.is"
   },
   {
     "id": "src-fram-kop-stjornsysla",
@@ -500,6 +503,26 @@
     "local_txt": null,
     "used_in": [
       "samgongur.html"
+    ]
+  },
+  {
+    "id": "src-xd-aherslur-2026",
+    "type": "Formleg stefnuskrá",
+    "title": "Áherslur Sjálfstæðisflokks í Kópavogi 2026–2030 — 50 liðir",
+    "publisher": "Sjálfstæðisfélag Kópavogs (xdkop.is)",
+    "year": 2026,
+    "party": "d",
+    "url": "https://xdkop.is",
+    "local_md": "docs/xd-aherslur.md",
+    "notes": "50 áherslur í 7 þemum: rekstur (1-6), skólar (7-16), skipulag (17-20), samgöngur (21-30), lýðheilsa (31-41), umhverfi (42-46), menning (47-50)",
+    "used_in": [
+      "husnaedi",
+      "skolar",
+      "samgongur",
+      "midbaer",
+      "velferd",
+      "stjornsysla",
+      "fjarmal"
     ]
   }
 ]

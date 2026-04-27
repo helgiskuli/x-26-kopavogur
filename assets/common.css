@@ -210,6 +210,10 @@ footer {
 footer a { color: var(--text-muted); text-decoration: underline; }
 footer a:hover { color: var(--text); }
 
+/* Links within section content (e.g. Heimildir references) */
+.section p a { color: var(--accent); text-decoration: underline; }
+.section p a:hover { opacity: 0.8; }
+
 /* ── Source badge tags ── */
 /* Used alongside .tag to label the source type of a claim or quote.  */
 /* Official/data sources: blue tint. Analysis: amber. Missing: red.    */

@@ -22,7 +22,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.mbl.is/frettir/kosningar/2026/04/25/meirihlutinn_i_kopavogi_fallinn/",
@@ -34,7 +34,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -46,7 +46,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -70,7 +70,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -82,7 +82,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -94,7 +94,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -106,7 +106,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -118,7 +118,7 @@
       "category": "umraeda",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262624424d/samfylking-og-midflokkur-a-flugi-i-kopavogi",
@@ -202,7 +202,7 @@
       "category": "umraeda",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.dv.is/frettir/2026/04/25/ny-konnun-i-kopavogi-miklar-sviptingar-og-margir-moguleikar-i-stodunni/",
@@ -214,7 +214,7 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-25",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262694602d/framikalli-svarad-med-poti-i-oddvitarimmu",
@@ -226,7 +226,7 @@
       "category": "umraeda",
       "fills_known_gap": false,
       "date": "2026-04-26",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262694595d/skritid-ad-domsmalaradherra-blandi-ser-i-umraeduna",
@@ -250,7 +250,7 @@
       "category": "umraeda",
       "fills_known_gap": false,
       "date": "2026-04-26",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.visir.is/g/20262694608d/jonas-upplifdi-pot-asdisar-ekki-sem-aras",
@@ -262,7 +262,7 @@
       "category": "umraeda",
       "fills_known_gap": false,
       "date": "2026-04-27",
-      "applied_date": null
+      "applied_date": "2026-04-27"
     },
     {
       "source_url": "https://www.ruv.is/frettir/innlent/2026/04/23/tokust-a-um-kopavogsmodelid/",
@@ -286,7 +286,91 @@
       "category": "frettir",
       "fills_known_gap": false,
       "date": "2026-04-24",
-      "applied_date": null
+      "applied_date": "2026-04-27"
+    },
+    {
+      "source_url": "https://xdkop.is",
+      "source_name": "Sjálfstæðisflokkurinn (xdkop.is)",
+      "party_letter": "D",
+      "headline_is": "XD: Heimgreiðslur frá 12 mánaða — og endurskoðun á áhrifum spjaldtölvukennslu",
+      "summary_is": "Formleg stefnuskrá XD 2026–2030 kynnir tvær athyglisverðar áherslu í skólamálum: (1) Lækka aldur heimgreiðslna úr 15 í 12 mánaða (liður 16). (2) Gagnrýna og greina heildaráhrif eigin spjaldtölvustefnu á námsframvindu og skjátíma barna (liður 10) — þrátt fyrir að vera frumkvöðull stefnunnar. Einnig fartölvur á unglingastigi (liður 9) og nýtt námsumsjónarkerfi í stað Mentor (liður 12).",
+      "policy_area": "skólamál og Kópavogsmódelið",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-04-27",
+      "applied_date": "2026-04-27"
+    },
+    {
+      "source_url": "https://xdkop.is",
+      "source_name": "Sjálfstæðisflokkurinn (xdkop.is)",
+      "party_letter": "D",
+      "headline_is": "XD: Fjölskyldubíllinn friðhelgur — gegn umferðarþrengingum",
+      "summary_is": "XD tekur skýra afstöðu í samgöngumálum: mun ekki þrengja að fjölskyldubílnum, lausnin er valkostir ekki þrengingar (liður 27). Auk þess göngu- og hjólabrú yfir Reykjanesbraut milli Linda- og Smárahverfis á kjörtímabilinu (liður 28), og heildstætt hjólanet á Kársnesi (liður 30). Á lengri sviði: Reykjanesbraut í göng.",
+      "policy_area": "samgöngur og Borgarlína",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-04-27",
+      "applied_date": "2026-04-27"
+    },
+    {
+      "source_url": "https://xdkop.is",
+      "source_name": "Sjálfstæðisflokkurinn (xdkop.is)",
+      "party_letter": "D",
+      "headline_is": "XD: Eigin hitaveita í Kópavogi — undirbúningsfélag til að lækka kostnað",
+      "summary_is": "XD vill stofna undirbúningsfélag sem skoðar möguleika á eigin hitaveitu fyrir Kópavog með markmiðið að lækka hitaveitukostnað íbúa og fyrirtækja (liður 4). Auk þess: áframhald lægstu fasteignagjalda á höfuðborgarsvæðinu (liður 1) og frekari lækkun á fasteignasköttum fyrirtækja (liður 6).",
+      "policy_area": "fjármál og rekstur",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-04-27",
+      "applied_date": "2026-04-27"
+    },
+    {
+      "source_url": "https://xdkop.is",
+      "source_name": "Sjálfstæðisflokkurinn (xdkop.is)",
+      "party_letter": "D",
+      "headline_is": "XD: Kórinn sem samfélagskjarni — íþróttir, bókasafn og menning",
+      "summary_is": "XD vill þróa Kórinn í efri byggðum sem þjónustukjarna þar sem íþróttir, bókasafn, menning og afþreying blandast saman (liður 19). Liður 36 bætir við líkamsrækt og endurhæfingu í kjallara Kórsins. Lifandi miðbæjarkjarnar í Hamraborginni og Smáranum (liður 18) og árleg Kópavogsbæjarhátíð með fyrstu hátíð í ágúst 2026 (liður 47).",
+      "policy_area": "miðbær og menning",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-04-27",
+      "applied_date": "2026-04-27"
+    },
+    {
+      "source_url": "https://xdkop.is",
+      "source_name": "Sjálfstæðisflokkurinn (xdkop.is)",
+      "party_letter": "D",
+      "headline_is": "XD: Lífsgæðakjarnar í Gunnarshólma og Geirlandi — búsetukjarnar fyrir fatlað fólk",
+      "summary_is": "XD vill byggja lífsgæðakjarna fyrir eldri borgara í Gunnarshólma og Geirlandi (liður 22) og halda áfram uppbyggingu búsetukjarna fyrir fatlað fólk í efri byggðum (liður 23). Efling Virkni og vellíðan með heimahreyfingu fyrir þá sem geta ekki komist á æfingastaði (liður 35).",
+      "policy_area": "velferð og aðgengi",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-04-27",
+      "applied_date": "2026-04-27"
+    },
+    {
+      "source_url": "https://xdkop.is",
+      "source_name": "Sjálfstæðisflokkurinn (xdkop.is)",
+      "party_letter": "D",
+      "headline_is": "XD: Vaxtarmörk endurskoðuð — stúdentaíbúðir við Fossvogsbrú, bílastæði í allri uppbyggingu",
+      "summary_is": "XD vill endurskoða vaxtarmörk til að Kópavogur geti brotið nýtt land (liður 17). Bílastæði á að fylgja öllum íbúðum og fyrirtækjum í uppbyggingu (liður 20). Stúdentaíbúðir á Kársnesi við Fossvogsbrúna nær Háskóla Íslands og HR (liður 25).",
+      "policy_area": "húsnæði og uppbygging",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-04-27",
+      "applied_date": "2026-04-27"
+    },
+    {
+      "source_url": "https://xdkop.is",
+      "source_name": "Sjálfstæðisflokkurinn (xdkop.is)",
+      "party_letter": "D",
+      "headline_is": "XD: Samskipti við bæinn á einum stað — aukin sjálfvirkni í þjónustu",
+      "summary_is": "XD vill að íbúar og fyrirtæki eigi öll samskipti við bæinn á einum stað með einfalda heildarsýn (liður 3). Einföldun stjórnsýslu með aukinni sjálfvirkni (liður 5). Leyfisveitingaferlar einfalda (liður 6).",
+      "policy_area": "stjórnsýsla og gagnsæi",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-04-27",
+      "applied_date": "2026-04-27"
     }
   ],
   "last_run": "2026-04-27T12:38:50.118264+00:00",
