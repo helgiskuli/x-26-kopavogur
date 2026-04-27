@@ -216,7 +216,13 @@ Skilgreindu "nýtt" sem efni sem virðist hafa birst á síðustu 48 klukkustund
 
 def load_tracked() -> dict:
     if TRACKED_FILE.exists():
-        data = json.loads(TRACKED_FILE.read_text(encoding="utf-8"))
+        try:
+            data = json.loads(TRACKED_FILE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            raise SystemExit(
+                f"ERROR: {TRACKED_FILE} contains invalid JSON: {e}\n"
+                "Fix the file manually or delete it to reset state."
+            ) from e
         # Ensure gaps key exists (migration from older format)
         if "gaps" not in data:
             data["gaps"] = dict(DEFAULT_GAPS)
@@ -227,10 +233,13 @@ def load_tracked() -> dict:
 def save_tracked(data: dict):
     TRACKED_FILE.parent.mkdir(parents=True, exist_ok=True)
     data["last_run"] = datetime.now(timezone.utc).isoformat()
-    TRACKED_FILE.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    serialized = json.dumps(data, ensure_ascii=False, indent=2)
+    # Round-trip verify before touching the file
+    try:
+        json.loads(serialized)
+    except json.JSONDecodeError as e:
+        raise RuntimeError(f"save_tracked produced invalid JSON — not writing file: {e}") from e
+    TRACKED_FILE.write_text(serialized, encoding="utf-8")
 
 
 def is_duplicate(update: dict, existing: list[dict]) -> bool:
