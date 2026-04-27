@@ -287,9 +287,33 @@
       "fills_known_gap": false,
       "date": "2026-04-24",
       "applied_date": null
+    },
+    {
+      "source_url": "https://www.mbl.is/frettir/kosningar/2026/04/27/godur_rekstur_skilar_ser_til_kopavogsbua/",
+      "source_name": "mbl.is",
+      "party_letter": "D",
+      "headline_is": "Góður rekstur skilar sér til Kópavogsbúa",
+      "summary_is": "Ásdís Kristjánsdóttir, oddviti Sjálfstæðisflokksins í Kópavogi, skrifar um ábyrgan og traustan rekstur bæjarins. Hún nefnir góðan rekstur, öfluga þjónustu og lægstu fasteignagjöld á höfuðborgarsvæðinu sem árangur af pólitískri ákvörðun. Áhersla er lögð á skýra forgangsröðun og vandað aðhald í stjórnsýslu Kópavogsbæjar.",
+      "policy_area": "fjármál og fasteignagjöld, stjórnsýsla og gagnsæi",
+      "category": "stefna",
+      "fills_known_gap": false,
+      "date": "2026-04-27",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://skrollid.com/frettir/oddvitar-i-kopavogi-um-nyjustu-konnun-visir/",
+      "source_name": "Vísir.is",
+      "party_letter": null,
+      "headline_is": "Oddvitar í Kópavogi um nýjustu könnun",
+      "summary_is": "Oddvitar framboðanna í Kópavogi ræða niðurstöður nýjustu skoðanakönnunar um fylgi flokkanna í sveitarfélaginu. Greinin, sem birtist á Vísi, fjallar um stöðu flokkanna og mögulegar áhrif könnunarinnar á kosningabaráttuna fram að kjördegi. Þetta er umræða um almenna stöðu kosninganna í Kópavogi.",
+      "policy_area": null,
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-04-26",
+      "applied_date": null
     }
   ],
-  "last_run": "2026-04-27T12:38:50.118264+00:00",
+  "last_run": "2026-04-27T15:52:41.820954+00:00",
   "gaps": {
     "C": [
       "húsnæði",
