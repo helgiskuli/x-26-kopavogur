@@ -142,10 +142,8 @@ def build_news_prompt(gaps: dict) -> str:
 Sveitarstjórnarkosningar í Kópavogi eru 16. maí 2026.
 
 Leitaðu að NÝJUSTU fréttum og uppfærslum um sveitarstjórnarkosningarnar í Kópavogi.
-Athugaðu fréttamiðla og heimasíður flokkanna.
-Fréttamiðlar í forgangsröð:
-1. RÚV (ruv.is), Vísir (visir.is) og Morgunblaðið (mbl.is) — áreiðanlegastir
-2. DV (dv.is) og Heimildin (https://heimildin.is/) — til viðbótar
+Þrengdu leitina að þessum áreiðanlegu fréttamiðlum með site: leitarstirkjum:
+site:ruv.is OR site:visir.is OR site:mbl.is OR site:dv.is OR site:heimildin.is
 
 Framboðin:
 {party_list}
@@ -184,6 +182,9 @@ def build_events_prompt() -> str:
     return """Leitaðu að umræðum, viðtölum, kosningaviðburðum og kynningum tengdum
 sveitarstjórnarkosningum í Kópavogi (16. maí 2026).
 
+Þrengdu leitina að þessum lénum með site: leitarstirkjum:
+site:ruv.is OR site:visir.is OR site:mbl.is OR site:dv.is OR site:heimildin.is
+
 Einbeittu þér að þessum tegundum efnis — EKKI venjulegum fréttagreinum:
 - Kosningaumræður í útvarpi eða sjónvarpi (t.d. RÚV, Bylgjan, Útvarp Saga)
 - Viðtöl við oddvita eða frambjóðendur
@@ -202,8 +203,9 @@ def build_party_check_prompt() -> str:
 
     return f"""Athugaðu hvort einhver þessara flokka hafi uppfært heimasíður sínar
 með nýrri stefnuskrá, nýjum frambjóðendum eða öðru kosningatengdu efni
-fyrir sveitarstjórnarkosningarnar í Kópavogi 16. maí 2026:
+fyrir sveitarstjórnarkosningarnar í Kópavogi 16. maí 2026.
 
+Leitaðu beint á heimasíðum flokkanna — notaðu site: leitarstirki þar sem við á:
 {urls}
 
 Skilaðu niðurstöðum á sama JSON formi og áður.
