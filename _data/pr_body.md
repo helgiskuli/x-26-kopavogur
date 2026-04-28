@@ -1,14 +1,8 @@
----
-date: 2026-04-28T12:21:17.205043+00:00
-count_total: 32
-count_unapplied: 1
----
-
 ## Rannsóknarsamantekt 28.04.2026 12:21 UTC
 
 Ein ný frétt fannst frá síðustu 48 klukkustundum sem lýsir samskiptum Jónasar Más Torfasonar (S) og Ásdísar Kristjánsdóttur (D) í kosningaumræðum.
 
-### 1 óúrvinnsluð uppfærsla(r)
+### 1 nýjar uppfærslur
 
 #### **[S, D]** Jónas upplifði pot Ásdísar ekki sem árás
 

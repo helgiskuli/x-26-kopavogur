@@ -68,6 +68,7 @@ Four maintenance scripts live in `scripts/`. Run from the repo root.
 |--------|---------|
 | `scripts/sync-nav.py` | Regenerate `<nav>` in all HTML files from the canonical list in the script. **Run after any nav change** instead of editing files manually. |
 | `scripts/validate-page.py --all` | Check all pages against the AGENTS.md checklist: nav completeness, required sections, English artifacts, known typos. Run before every commit. |
+| `scripts/verify-urls.py` | Check that every `source_url` in `_data/tracked_updates.json` returns HTTP 200. Default: unapplied entries only. `--all` checks every entry. Exits 1 if any 404s found. Also runs automatically in CI after each research agent run. |
 | `scripts/audit-facts.py` | Cross-check `claims.json` source IDs against `sources.json`; verify known date/fact patterns are consistent across pages. |
 | `scripts/merge-worktree.sh <path>` | Safely merge a Claude Code agent worktree: copies new HTML files, deduplicates JSON data files, runs sync-nav and validate. Use instead of manual merging. |
 

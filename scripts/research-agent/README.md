@@ -104,9 +104,16 @@ for tuning prompt wording without spending quota.
 1. **Search 1:** Party homepages — new policy documents, candidate announcements (slow-moving; runs first so it always completes)
 2. **Search 2:** News articles + debates, interviews, radio/TV appearances, and events (merged into one call to reduce burst pressure on shared CI IPs)
 3. **Dedup:** Compares findings against `_data/tracked_updates.json`
-4. **Gap tracking:** Watches for parties filling known policy gaps and
+4. **URL verification:** Every new `source_url` is HTTP-checked before being written to state:
+   - **404** → entry is dropped silently (hallucinated or dead link)
+   - **403 / 5xx / timeout** → entry kept but flagged with `url_unverified: true` (some sites block automated requests)
+   - **200** → kept as-is
+   - First-party sites (`xdkop.is`, `kopavogur.is`) are trusted and skip the check
+5. **Gap tracking:** Watches for parties filling known policy gaps and
    flags them with 🆕. Gaps auto-close when filled.
-5. **PR:** Creates a branch and PR with a markdown digest
+6. **PR:** Creates a branch and PR with a markdown digest
+
+After the agent writes state, the CI step **Verify source URLs in queue** runs `scripts/verify-urls.py` against all unapplied entries as a second-pass audit. It uses `continue-on-error: true` so PR creation still proceeds, but any failures are visible in the Actions log.
 
 ## Policy gap tracking
 

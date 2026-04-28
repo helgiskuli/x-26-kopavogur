@@ -15,8 +15,12 @@ import os
 import random
 import sys
 import time
+import urllib.error
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 _REPO_ROOT = Path(__file__).parent.parent.parent
 
@@ -268,6 +272,83 @@ def is_duplicate(update: dict, existing: list[dict]) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# URL verification
+# ---------------------------------------------------------------------------
+
+# These domains are first-party or municipal — skip HTTP verification
+_TRUSTED_DOMAINS = {"xdkop.is", "kopavogur.is"}
+
+
+def _check_url(url: str, timeout: int = 10) -> int | None:
+    """Return HTTP status code, or None on connection error.
+
+    Tries HEAD first; falls back to GET on 405 (method not allowed).
+    """
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; research-bot/1.0)"}
+    for method in ("HEAD", "GET"):
+        try:
+            req = urllib.request.Request(url, headers=headers, method=method)
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.status
+        except urllib.error.HTTPError as e:
+            if method == "HEAD" and e.code == 405:
+                continue
+            return e.code
+        except Exception:
+            return None
+    return None
+
+
+def filter_verified_urls(updates: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Split updates into (kept, dropped) based on HTTP reachability of source_url.
+
+    - 200 → kept as-is
+    - 404 → dropped (hallucinated or dead link)
+    - 403 / 5xx / timeout → kept with url_unverified=True (bot-blocked or flaky)
+    - Trusted domains (xdkop.is, kopavogur.is) → skip check, always kept
+
+    Deduplicates URLs before checking — many entries may share one source.
+    """
+    to_check: dict[str, int | None] = {}
+    for u in updates:
+        url = u.get("source_url", "")
+        if not url:
+            continue
+        domain = urlparse(url).netloc.lstrip("www.")
+        if domain not in _TRUSTED_DOMAINS:
+            to_check[url] = None
+
+    if to_check:
+        print(f"  🔗 Staðfesti {len(to_check)} einstaka slóð(ir)...")
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            futures = {pool.submit(_check_url, url): url for url in to_check}
+            for fut in as_completed(futures):
+                url = futures[fut]
+                to_check[url] = fut.result()
+
+    kept: list[dict] = []
+    dropped: list[dict] = []
+    for u in updates:
+        url = u.get("source_url", "")
+        if not url or url not in to_check:
+            kept.append(u)
+            continue
+        status = to_check[url]
+        if status == 404:
+            print(f"  ✂️  404 — sleppt: {u.get('headline_is', url)}")
+            dropped.append(u)
+        elif status == 200:
+            kept.append(u)
+        else:
+            print(f"  ⚠️  {status} — óstaðfest, heldur: {u.get('headline_is', url)}")
+            flagged = dict(u)
+            flagged["url_unverified"] = True
+            kept.append(flagged)
+
+    return kept, dropped
+
+
+# ---------------------------------------------------------------------------
 # Output
 # ---------------------------------------------------------------------------
 
@@ -425,10 +506,20 @@ def main():
         save_tracked(tracked)  # Update last_run timestamp
         return
 
-    print(f"📰 Fann {len(all_new)} nýjar uppfærslur!")
+    print(f"📰 Fann {len(all_new)} nýjar uppfærslur — staðfesti slóðir...")
+    all_new, dropped_404 = filter_verified_urls(all_new)
+    if dropped_404:
+        print(f"  Sleppti {len(dropped_404)} uppfærslu(m) með bilaðar slóðir (404).")
+    if not all_new:
+        print("✅ Ekkert nýtt eftir slóðastaðfestingu.")
+        save_tracked(tracked)
+        return
+
+    print(f"📰 {len(all_new)} uppfærslu(r) samþykktar:")
     for u in all_new:
         gap = " [FYLLI EYÐU]" if u.get("fills_known_gap") else ""
-        print(f"  → {u.get('party_letter', '?')}: {u.get('headline_is', '?')}{gap}")
+        unverified = " [ÓSTAÐFEST]" if u.get("url_unverified") else ""
+        print(f"  → {u.get('party_letter', '?')}: {u.get('headline_is', '?')}{gap}{unverified}")
 
     for u in all_new:
         u.setdefault("applied_date", None)
