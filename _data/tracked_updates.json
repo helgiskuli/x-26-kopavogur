@@ -383,9 +383,45 @@
       "fills_known_gap": false,
       "date": "2026-04-27",
       "applied_date": "2026-04-28"
+    },
+    {
+      "source_url": "https://www.kopavogur.is/is/stjornsysla/fundargerdir/baejarrad/1338-fundur-28042026",
+      "source_name": "Kópavogur.is",
+      "party_letter": null,
+      "headline_is": "Bæjarstjórn Kópavogs samþykkir viðauka við fjárhagsáætlun og kosningar í hverfakjörstjórnir",
+      "summary_is": "Bæjarstjórn Kópavogs hélt fund þann 28. apríl 2026 þar sem meðal annars var samþykktur viðauki nr. 1 við fjárhagsáætlun 2026 vegna endurnýjunar tennisvalla. Einnig voru kjörnar nýir aðal- og varamenn í hverfiskjörstjórnir fyrir Smárann og Kórinn.",
+      "policy_area": "fjármál og fasteignagjöld, stjórnsýsla og gagnsæi",
+      "category": "fréttir, stjórnsýsla",
+      "fills_known_gap": false,
+      "date": "2026-04-28",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://vidreisn.is/sveitarstjornarkosningar/kopavogur/",
+      "source_name": "Viðreisn",
+      "party_letter": "C",
+      "headline_is": "Vísindaferð til Viðreisnar í Kópavogi x Uppreisn",
+      "summary_is": "Viðreisn í Kópavogi stóð fyrir vísindaferð í samstarfi við Uppreisn þann 28. apríl 2026 kl. 19:30. Þetta var viðburður sem tengist kosningaherferð flokksins.",
+      "policy_area": null,
+      "category": "viðburður, kosningaherferð",
+      "fills_known_gap": false,
+      "date": "2026-04-28",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://samfylkingin.is/vidburdir/fyrsta-mai-kaffi-i-kopavogi/",
+      "source_name": "Samfylkingin",
+      "party_letter": "S",
+      "headline_is": "Fyrsta maí kaffi hjá Samfylkingunni í Kópavogi",
+      "summary_is": "Samfylkingin í Kópavogi býður til Fyrsta maí kaffis í Siglingaklúbbnum Ými þann 1. maí 2026 kl. 15:00. Þetta er opinn viðburður til að fagna baráttudegi verkalýðshreyfingarinnar og er hluti af kosningaherferð flokksins.",
+      "policy_area": null,
+      "category": "viðburður, kosningaherferð",
+      "fills_known_gap": false,
+      "date": "2026-04-29",
+      "applied_date": null
     }
   ],
-  "last_run": "2026-04-28T20:51:56.094587+00:00",
+  "last_run": "2026-04-29T19:25:26.526764+00:00",
   "gaps": {
     "C": [
       "húsnæði",
