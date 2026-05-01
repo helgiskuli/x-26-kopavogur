@@ -386,6 +386,25 @@
     ]
   },
   {
+    "id": "src-xs-stefna-2026",
+    "type": "Formleg stefnuskrá",
+    "title": "Samfylkingin í Kópavogi — Formleg stefnuskrá 2026–2030: Létum daglega lífið í Kópavogi",
+    "publisher": "xs.is",
+    "year": 2026,
+    "party": "s",
+    "url": "https://xs.is/lettum-daglega-lifi%C3%B0-i-kopavogi",
+    "local_pdf": "data/samfylkingin-kosningastefna-kopavogur-2026.pdf",
+    "notes": "27 bls. málefnaskjal, 15 kaflar: húsnæði, leikskólar, grunnskólar, frístundir, velferð, innflytjendamál, atvinnumál, skipulag og umhverfi, samgöngur, menning, heilbrigðismál, innviðir, stjórnsýsla. Lykilloforð: leikskólagjöld að hámarki 50.000 kr/mán, 100% systkinaafsláttur, frjáls strætó 12–17 ára, félagslegt húsnæði, námsmannabústaðir, Borgarlína Hamraborg–Ártúnshöfða og áfram að Smáralind, Kópavogsvöllur uppfærður í alþjóðlegar kröfur, menningarmiðstöð í Kórnum.",
+    "used_in": [
+      "husnaedi",
+      "skolar",
+      "samgongur",
+      "midbaer",
+      "velferd",
+      "stjornsysla"
+    ]
+  },
+  {
     "id": "src-framsokn-kop-skolar",
     "type": "Formleg stefnuskrá",
     "title": "Stefnuskrá Framsóknarflokks í Kópavogi 2026 — skóla- og fjölskyldumál",
@@ -523,6 +542,24 @@
       "velferd",
       "stjornsysla",
       "fjarmal"
+    ]
+  },
+  {
+    "id": "src-vidreisn-stefna-2026",
+    "type": "Formleg stefnuskrá",
+    "title": "Viðreisn í Kópavogi — Formleg stefnuskrá 2026–2030",
+    "publisher": "vidreisn.is",
+    "year": 2026,
+    "party": "c",
+    "url": "https://vidreisn.is/kopavogur/stefnan/",
+    "notes": "10 kaflar: börn og ungmenni, fjármál og stjórnsýsla, skólar, íþrótt og tómstundir, samfélag og grænt rými, atvinnulíf, samgöngur, skipulag og húsnæði, velferð, loftslag og umhverfi. Kjörorð: Fjölskyldan í forgang.",
+    "used_in": [
+      "husnaedi",
+      "skolar",
+      "samgongur",
+      "midbaer",
+      "velferd",
+      "stjornsysla"
     ]
   }
 ]
