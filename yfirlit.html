@@ -29,12 +29,12 @@
 
   /* Party column header color accents */
   .yfirlit-table thead th:nth-child(2) { border-bottom-color: var(--b); background: rgba(21,128,61,0.05); }
-  .yfirlit-table thead th:nth-child(3) { border-bottom-color: var(--c); background: rgba(109,40,217,0.05); }
+  .yfirlit-table thead th:nth-child(3) { border-bottom-color: var(--c); background: rgba(255,125,20,0.05); }
   .yfirlit-table thead th:nth-child(4) { border-bottom-color: var(--d); background: rgba(29,78,216,0.05); }
   .yfirlit-table thead th:nth-child(5) { border-bottom-color: var(--j); background: rgba(185,28,28,0.05); }
-  .yfirlit-table thead th:nth-child(6) { border-bottom-color: var(--m); background: rgba(180,83,9,0.05); }
+  .yfirlit-table thead th:nth-child(6) { border-bottom-color: var(--m); background: rgba(15,35,76,0.05); }
   .yfirlit-table thead th:nth-child(7) { border-bottom-color: var(--s); background: rgba(190,18,60,0.05); }
-  .yfirlit-table thead th:nth-child(8) { border-bottom-color: var(--v); background: rgba(15,118,110,0.05); }
+  .yfirlit-table thead th:nth-child(8) { border-bottom-color: var(--v); background: rgba(107,178,77,0.05); }
 
   /* Body rows */
   .yfirlit-table tbody td { padding: 10px 8px; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
@@ -44,12 +44,12 @@
 
   /* Subtle party column tinting on body */
   .yfirlit-table tbody td:nth-child(2) { background-color: rgba(21,128,61,0.04); }
-  .yfirlit-table tbody td:nth-child(3) { background-color: rgba(109,40,217,0.04); }
+  .yfirlit-table tbody td:nth-child(3) { background-color: rgba(255,125,20,0.04); }
   .yfirlit-table tbody td:nth-child(4) { background-color: rgba(29,78,216,0.04); }
   .yfirlit-table tbody td:nth-child(5) { background-color: rgba(185,28,28,0.04); }
-  .yfirlit-table tbody td:nth-child(6) { background-color: rgba(180,83,9,0.04); }
+  .yfirlit-table tbody td:nth-child(6) { background-color: rgba(15,35,76,0.04); }
   .yfirlit-table tbody td:nth-child(7) { background-color: rgba(190,18,60,0.04); }
-  .yfirlit-table tbody td:nth-child(8) { background-color: rgba(15,118,110,0.04); }
+  .yfirlit-table tbody td:nth-child(8) { background-color: rgba(107,178,77,0.04); }
 
   /* Tally footer row */
   .yfirlit-table tfoot td {
@@ -80,6 +80,22 @@
   .dot-s { background: var(--pos); }
   .dot-o { border: 2.5px solid var(--warn); }
   .dot-e { border: 1.5px dashed var(--border-light); }
+
+  /* Party-colored dot overrides (solid = confirmed, outline = vague) */
+  .dot-s.party-b { background: var(--b); }
+  .dot-s.party-c { background: var(--c); }
+  .dot-s.party-d { background: var(--d); }
+  .dot-s.party-j { background: var(--j); }
+  .dot-s.party-m { background: var(--m); }
+  .dot-s.party-s { background: var(--s); }
+  .dot-s.party-v { background: var(--v); }
+  .dot-o.party-b { border-color: var(--b); }
+  .dot-o.party-c { border-color: var(--c); }
+  .dot-o.party-d { border-color: var(--d); }
+  .dot-o.party-j { border-color: var(--j); }
+  .dot-o.party-m { border-color: var(--m); }
+  .dot-o.party-s { border-color: var(--s); }
+  .dot-o.party-v { border-color: var(--v); }
 
   /* Legend */
   .legend { display: flex; gap: 1.5rem; margin: 0.75rem 0 0; flex-wrap: wrap; align-items: center; }
@@ -198,69 +214,69 @@
         <tbody>
           <tr>
             <td class="row-issue"><a href="husnaedi.html">Húsnæði</a></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-b" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-c" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-d" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-j" aria-label="Óljóst"></span></td>
             <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-v" aria-label="Óljóst"></span></td>
           </tr>
           <tr>
             <td class="row-issue"><a href="velferd.html">Velferð</a></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-b" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-c" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-d" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-j" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o party-m" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-s" aria-label="Staðfest"></span></td>
             <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
           </tr>
           <tr>
             <td class="row-issue"><a href="midbaer.html">Miðbær</a></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-b" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-c" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-d" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-j" aria-label="Óljóst"></span></td>
             <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-s" aria-label="Staðfest"></span></td>
             <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
           </tr>
           <tr>
             <td class="row-issue"><a href="samgongur.html">Samgöngur</a></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o party-b" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-c" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-d" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-j" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-m" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-v" aria-label="Óljóst"></span></td>
           </tr>
           <tr>
             <td class="row-issue"><a href="skolar.html">Skólar</a></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-b" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-c" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-d" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-j" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o party-m" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-v" aria-label="Óljóst"></span></td>
           </tr>
           <tr>
             <td class="row-issue"><a href="stjornsysla.html">Stjórnsýsla</a></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
-            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o party-b" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s party-c" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o party-d" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o party-j" aria-label="Óljóst"></span></td>
             <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
-            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s party-s" aria-label="Staðfest"></span></td>
             <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             <td>Staðfest / 6</td>
-            <td class="tally-mid">3/6</td>
+            <td class="tally-mid">4/6</td>
             <td class="tally-hi">6/6</td>
             <td class="tally-hi">5/6</td>
             <td class="tally-lo">0/6</td>
@@ -281,6 +297,7 @@
     <div class="footnotes">
       <p>* Sósíalistar (J): Afstaða byggir á þjóðarstefnu frá sosialistaflokkurinn.is — sértæk Kópavogsstefna hefur ekki verið birt sem formlegt skjal (apríl 2026).</p>
       <p>** Vinstri græn og óháð (V): Samstarf við „Fyrir Kópavog" (Ómar Stefánsson) brotnaði 31. mars 2026. Fjöldi „Ekki birt" endurspeglar skort á gögnum, ekki endilega skort á stefnu.</p>
+      <p>† Framsóknarflokkurinn (B) — Samgöngur: Formleg stefnuskrá birt maí 2026 en afstaða til Borgarlínu er almennt orðuð („rýna vel áform") — flokkuð sem óljóst (◌) í þessari töflu, ekki óbirt.</p>
     </div>
   </div>
 
@@ -292,7 +309,8 @@
     <h2>Borgarlína — eitt framboð á móti sex</h2>
     <p class="section-desc">
       Miðflokkurinn er eini flokkurinn sem hafnar Samgöngusáttmálanum og Borgarlínu skýrt.
-      Afstaða Framsóknarflokks og Vinstri grænna til rekstrarkostnaðar og þjónustustigs er enn óskjalfest.
+      Framsóknarflokkurinn birti formlega stefnuskrá í maí 2026 þar sem krafist er frekari skoðunar á Borgarlínuáformum m.t.t. kostnaðar og áhrifa á nærumhverfið.
+      Afstaða Vinstri grænna til rekstrarkostnaðar og þjónststigs er enn óskjalfest.
       Sjá nánari greiningu á <a href="samgongur.html">samgöngusíðunni</a>.
     </p>
 
@@ -300,7 +318,7 @@
       <div class="split-col">
         <div class="split-head for">6 framboð — Styðja Samgöngusáttmálann</div>
         <div class="split-body">
-          <div class="split-party"><div class="badge badge-sm" style="background:var(--b)">B</div> Framsóknarflokkurinn <span class="split-note">Óstaðfest</span></div>
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--b)">B</div> Framsóknarflokkurinn <span class="split-note">Formleg stefnuskrá (með fyrirvara)</span></div>
           <div class="split-party"><div class="badge badge-sm" style="background:var(--c)">C</div> Viðreisn <span class="split-note">Formleg stefnuskrá</span></div>
           <div class="split-party"><div class="badge badge-sm" style="background:var(--d)">D</div> Sjálfstæðisflokkurinn <span class="split-note">Formleg stefnuskrá</span></div>
           <div class="split-party"><div class="badge badge-sm" style="background:var(--j)">J</div> Sósíalistar <span class="split-note">Með fyrirvara</span></div>

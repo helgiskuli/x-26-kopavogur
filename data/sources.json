@@ -561,5 +561,24 @@
       "velferd",
       "stjornsysla"
     ]
+  },
+  {
+    "id": "src-framsokn-stefna-pdf-2026",
+    "type": "Formleg stefnuskrá",
+    "title": "Stefnumál Framsóknar í Kópavogi 2026",
+    "publisher": "Framsóknarflokkurinn",
+    "year": 2026,
+    "party": "b",
+    "local_pdf": "data/stefnuskra_framsoknar_i_kopavogi.pdf",
+    "notes": "9 bls. formleg stefnuskrá: leikskólar, grunnskólar, íþrótta- og lýðheilsumál, velferðarmál, menningarmál, umhverfis- og skipulagsmál, fjármál og rekstur. Lykiláherslur: þróun Kópavogsmódelsins, menningarmiðstöð í Smáralind, bókasafn í Kórnum, skoðun á Borgarlínuáformum, Reykjanesbraut í stokk, hóflegir skattar og aukin skilvirkni.",
+    "used_in": [
+      "husnaedi",
+      "velferd",
+      "midbaer",
+      "samgongur",
+      "skolar",
+      "stjornsysla",
+      "fjarmal"
+    ]
   }
 ]

@@ -419,9 +419,45 @@
       "fills_known_gap": false,
       "date": "2026-04-29",
       "applied_date": null
+    },
+    {
+      "source_url": "https://www.mbl.is/frettir/innlent/2026/05/01/undarlegt_ad_forsaetisradherra_radist_a_kopavog",
+      "source_name": "mbl.is",
+      "party_letter": "D",
+      "headline_is": "Undarlegt að forsætisráðherra ráðist á Kópavog",
+      "summary_is": "Ásdís Kristjánsdóttir, bæjarstjóri Kópavogs, segir það undarlegt að forsætisráðherra, Kristrún Frostadóttir, ráðist sérstaklega á Kópavog vegna leikskólamála og skorts á lóðaúthlutunum til Bjargs. Hún vísar gagnrýni Kristrúnar á Kópavogsmódelið á bug og segir það hafa skilað sér í stórbættri þjónustu og engum lokunardögum í leikskólum. Kristrún kallaði Kópavogsmódelið „Kópavogsskattinn“ og gagnrýndi bæjarstjórnina fyrir að hafa ekki úthlutað lóðum til Bjargs í 10 ár.",
+      "policy_area": "skólamál og Kópavogsmódelið, húsnæðismál og lóðir",
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-05-01",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.framsokn.is/vidburdir/kopavogur-opnun-kosningaskrifstofu/",
+      "source_name": "Framsókn",
+      "party_letter": "B",
+      "headline_is": "Kópavogur: Opnun kosningaskrifstofu",
+      "summary_is": "Framsóknarflokkurinn í Kópavogi opnaði kosningaskrifstofu sína í Bæjarlind 14-16 þann 2. maí. Boðið var upp á andlitsmálun, kaffi og kræsingar ásamt spjalli við frambjóðendur.",
+      "policy_area": null,
+      "category": "kosningaherferð",
+      "fills_known_gap": false,
+      "date": "2026-05-02",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.dv.is/frettir/2026/05/01/rynt-kannanir-hverjir-vinna-og-hverjir-tapa",
+      "source_name": "DV",
+      "party_letter": "S",
+      "headline_is": "Rýnt í kannanir – Hverjir vinna og hverjir tapa",
+      "summary_is": "Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, sér fram á stórsigur í sveitarstjórnarkosningunum. Hann bendir á að kannanir sýni mikil sóknarfæri fyrir Samfylkinguna í Kópavogi þar sem eldri framboð hafa misst fylgi.",
+      "policy_area": null,
+      "category": "frettir",
+      "fills_known_gap": false,
+      "date": "2026-05-01",
+      "applied_date": null
     }
   ],
-  "last_run": "2026-05-01T11:53:32.040627+00:00",
+  "last_run": "2026-05-03T16:53:28.866524+00:00",
   "gaps": {
     "C": [
       "húsnæði",
