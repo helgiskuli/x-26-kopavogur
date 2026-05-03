@@ -12,7 +12,8 @@ from pathlib import Path
 
 # Canonical nav order — edit here to add/reorder pages
 NAV_ENTRIES = [
-    ("index.html",       "Stefnumál"),
+    ("index.html",       "Yfirlit"),
+    ("yfirlit.html",     "Stefnumál"),
     ("husnaedi.html",    "Húsnæði"),
     ("velferd.html",     "Velferð"),
     ("midbaer.html",     "Miðbær"),

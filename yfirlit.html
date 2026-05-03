@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kópavogur 2026 · Stefnumál</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/common.css">
+<style>
+  /* ── Yfirlitstafla ── */
+  .yfirlit-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .yfirlit-table { width: 100%; border-collapse: collapse; font-size: 12px; background: var(--bg-card); min-width: 600px; }
+
+  /* Header row */
+  .yfirlit-table thead th {
+    padding: 10px 8px 8px;
+    font-size: 9px;
+    font-family: var(--mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--border);
+    font-weight: 600;
+    text-align: center;
+    background: var(--bg);
+    color: var(--text-dim);
+  }
+  .yfirlit-table thead th:first-child { text-align: left; width: 120px; }
+
+  /* Party column header color accents */
+  .yfirlit-table thead th:nth-child(2) { border-bottom-color: var(--b); background: rgba(21,128,61,0.05); }
+  .yfirlit-table thead th:nth-child(3) { border-bottom-color: var(--c); background: rgba(109,40,217,0.05); }
+  .yfirlit-table thead th:nth-child(4) { border-bottom-color: var(--d); background: rgba(29,78,216,0.05); }
+  .yfirlit-table thead th:nth-child(5) { border-bottom-color: var(--j); background: rgba(185,28,28,0.05); }
+  .yfirlit-table thead th:nth-child(6) { border-bottom-color: var(--m); background: rgba(180,83,9,0.05); }
+  .yfirlit-table thead th:nth-child(7) { border-bottom-color: var(--s); background: rgba(190,18,60,0.05); }
+  .yfirlit-table thead th:nth-child(8) { border-bottom-color: var(--v); background: rgba(15,118,110,0.05); }
+
+  /* Body rows */
+  .yfirlit-table tbody td { padding: 10px 8px; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
+  .yfirlit-table tbody td:first-child { text-align: left; }
+  .yfirlit-table tbody tr:last-child td { border-bottom: none; }
+  .yfirlit-table tbody tr:hover td { filter: brightness(0.97); }
+
+  /* Subtle party column tinting on body */
+  .yfirlit-table tbody td:nth-child(2) { background-color: rgba(21,128,61,0.04); }
+  .yfirlit-table tbody td:nth-child(3) { background-color: rgba(109,40,217,0.04); }
+  .yfirlit-table tbody td:nth-child(4) { background-color: rgba(29,78,216,0.04); }
+  .yfirlit-table tbody td:nth-child(5) { background-color: rgba(185,28,28,0.04); }
+  .yfirlit-table tbody td:nth-child(6) { background-color: rgba(180,83,9,0.04); }
+  .yfirlit-table tbody td:nth-child(7) { background-color: rgba(190,18,60,0.04); }
+  .yfirlit-table tbody td:nth-child(8) { background-color: rgba(15,118,110,0.04); }
+
+  /* Tally footer row */
+  .yfirlit-table tfoot td {
+    padding: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    background: var(--bg);
+    border-top: 2px solid var(--border);
+    letter-spacing: 0.02em;
+  }
+  .yfirlit-table tfoot td:first-child { text-align: left; font-weight: 500; color: var(--text-dim); font-size: 9px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .tally-hi  { color: var(--pos); }
+  .tally-mid { color: var(--warn); }
+  .tally-lo  { color: var(--text-dim); }
+
+  /* Party header cell */
+  .th-party { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+  .th-pname { font-size: 8px; color: inherit; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.3; max-width: 64px; text-align: center; }
+
+  /* Issue link in first column */
+  .row-issue a { color: var(--text); font-weight: 600; text-decoration: none; font-size: 13px; }
+  .row-issue a:hover { color: var(--accent); }
+
+  /* Coverage dots */
+  .dot { width: 13px; height: 13px; border-radius: 50%; display: inline-block; vertical-align: middle; }
+  .dot-s { background: var(--pos); }
+  .dot-o { border: 2.5px solid var(--warn); }
+  .dot-e { border: 1.5px dashed var(--border-light); }
+
+  /* Legend */
+  .legend { display: flex; gap: 1.5rem; margin: 0.75rem 0 0; flex-wrap: wrap; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 12px; color: var(--text-muted); }
+
+  .footnotes { font-size: 11px; color: var(--text-dim); font-family: var(--mono); line-height: 1.8; margin-top: 1rem; }
+  .footnotes p { margin-bottom: 0.25rem; }
+
+  /* Leikskólagjöld position strip */
+  .position-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0; }
+  .position-col { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  .position-head { font-size: 11px; font-weight: 600; font-family: var(--mono); padding: 0.5rem 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .position-head.laekka { background: var(--pos-dim); color: var(--pos); }
+  .position-head.verja  { background: rgba(217,119,6,0.1); color: var(--warn); }
+  .position-head.oljost { background: rgba(156,163,175,0.15); color: var(--text-dim); }
+  .position-body { padding: 0.75rem 1rem; }
+  .position-party { display: flex; align-items: center; gap: 0.5rem; font-size: 13px; color: var(--text); margin-bottom: 0.6rem; flex-wrap: wrap; }
+  .position-party:last-child { margin-bottom: 0; }
+
+  @media (max-width: 640px) {
+    .position-strip { grid-template-columns: 1fr; }
+    .legend { gap: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-title" href="index.html">Kópavogur <span>2026</span></a>
+    <nav>
+      <a href="index.html">Yfirlit</a>
+      <a href="yfirlit.html" class="active">Stefnumál</a>
+      <a href="husnaedi.html">Húsnæði</a>
+      <a href="velferd.html">Velferð</a>
+      <a href="midbaer.html">Miðbær</a>
+      <a href="samgongur.html">Samgöngur</a>
+      <a href="skolar.html">Skólar</a>
+      <a href="stjornsysla.html">Stjórnsýsla</a>
+      <a href="fjarmal.html">Fjármál</a>
+      <a href="kort.html">Frambjóðendur</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <p class="page-eyebrow">Stefnumál · Maí 2026</p>
+    <h1>Stefnur framboðanna í Kópavogi 2026</h1>
+    <p class="page-desc">
+      Hvaða framboð hafa birt skýra afstöðu á sex málefnasviðum? Hvernig skiptast þau á
+      skýrustu krossgötunum — Borgarlínu og leikskólagjöldum?
+      Nánari greining og heimildir eru á sérsíðum hvers málefnis.
+    </p>
+  </div>
+
+  <!-- 1. Yfirlitstafla -->
+  <div class="section">
+    <p class="section-eyebrow">Yfirlitstafla</p>
+    <h2>Hvaða framboð hafa birt afstöðu — og á hvaða sviðum?</h2>
+    <p class="section-desc">
+      Sjö framboð, sex málefnasvið. Flokkun byggir á birtum stefnuskjölum og viðtölum frá apríl–maí 2026.
+      Smelltu á málefni til að sjá nánari greiningu.
+    </p>
+
+    <div class="yfirlit-wrap">
+      <table class="yfirlit-table" aria-label="Stefnuyfirlit framboðanna 2026">
+        <thead>
+          <tr>
+            <th scope="col">Málefni</th>
+            <th scope="col">
+              <div class="th-party">
+                <div class="badge badge-sm" style="background:var(--b)">B</div>
+                <span class="th-pname">Framsókn</span>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="th-party">
+                <div class="badge badge-sm" style="background:var(--c)">C</div>
+                <span class="th-pname">Viðreisn</span>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="th-party">
+                <div class="badge badge-sm" style="background:var(--d)">D</div>
+                <span class="th-pname">Sjálfstæðis&shy;flokkur</span>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="th-party">
+                <div class="badge badge-sm" style="background:var(--j)">J</div>
+                <span class="th-pname">Sósíalistar *</span>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="th-party">
+                <div class="badge badge-sm" style="background:var(--m)">M</div>
+                <span class="th-pname">Miðflokkur</span>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="th-party">
+                <div class="badge badge-sm" style="background:var(--s)">S</div>
+                <span class="th-pname">Samfylking</span>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="th-party">
+                <div class="badge badge-sm" style="background:var(--v)">V</div>
+                <span class="th-pname">Vinstri græn **</span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-issue"><a href="husnaedi.html">Húsnæði</a></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+          </tr>
+          <tr>
+            <td class="row-issue"><a href="velferd.html">Velferð</a></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
+          </tr>
+          <tr>
+            <td class="row-issue"><a href="midbaer.html">Miðbær</a></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
+          </tr>
+          <tr>
+            <td class="row-issue"><a href="samgongur.html">Samgöngur</a></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+          </tr>
+          <tr>
+            <td class="row-issue"><a href="skolar.html">Skólar</a></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+          </tr>
+          <tr>
+            <td class="row-issue"><a href="stjornsysla.html">Stjórnsýsla</a></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-o" aria-label="Óljóst"></span></td>
+            <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
+            <td><span class="dot dot-s" aria-label="Staðfest"></span></td>
+            <td><span class="dot dot-e" aria-label="Ekki birt"></span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Staðfest / 6</td>
+            <td class="tally-mid">3/6</td>
+            <td class="tally-hi">6/6</td>
+            <td class="tally-hi">5/6</td>
+            <td class="tally-lo">0/6</td>
+            <td class="tally-lo">1/6</td>
+            <td class="tally-hi">6/6</td>
+            <td class="tally-lo">0/6</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="legend">
+      <span class="legend-item"><span class="dot dot-s"></span> Staðfest — skýr, sértæk afstaða</span>
+      <span class="legend-item"><span class="dot dot-o"></span> Óljóst — nefnt en almennt eða óútfært</span>
+      <span class="legend-item"><span class="dot dot-e"></span> Ekki birt — engin heimild fundist</span>
+    </div>
+
+    <div class="footnotes">
+      <p>* Sósíalistar (J): Afstaða byggir á þjóðarstefnu frá sosialistaflokkurinn.is — sértæk Kópavogsstefna hefur ekki verið birt sem formlegt skjal (apríl 2026).</p>
+      <p>** Vinstri græn og óháð (V): Samstarf við „Fyrir Kópavog" (Ómar Stefánsson) brotnaði 31. mars 2026. Fjöldi „Ekki birt" endurspeglar skort á gögnum, ekki endilega skort á stefnu.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 2. Borgarlína -->
+  <div class="section">
+    <p class="section-eyebrow">Skýrasta skil kosninganna</p>
+    <h2>Borgarlína — eitt framboð á móti sex</h2>
+    <p class="section-desc">
+      Miðflokkurinn er eini flokkurinn sem hafnar Samgöngusáttmálanum og Borgarlínu skýrt.
+      Afstaða Framsóknarflokks og Vinstri grænna til rekstrarkostnaðar og þjónustustigs er enn óskjalfest.
+      Sjá nánari greiningu á <a href="samgongur.html">samgöngusíðunni</a>.
+    </p>
+
+    <div class="split-grid">
+      <div class="split-col">
+        <div class="split-head for">6 framboð — Styðja Samgöngusáttmálann</div>
+        <div class="split-body">
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--b)">B</div> Framsóknarflokkurinn <span class="split-note">Óstaðfest</span></div>
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--c)">C</div> Viðreisn <span class="split-note">Formleg stefnuskrá</span></div>
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--d)">D</div> Sjálfstæðisflokkurinn <span class="split-note">Formleg stefnuskrá</span></div>
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--j)">J</div> Sósíalistar <span class="split-note">Með fyrirvara</span></div>
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--s)">S</div> Samfylkingin <span class="split-note">Formleg stefnuskrá</span></div>
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--v)">V</div> Vinstri græn og óháð <span class="split-note">Óstaðfest</span></div>
+        </div>
+      </div>
+      <div class="split-col">
+        <div class="split-head against">1 framboð — Hafnar Borgarlínu</div>
+        <div class="split-body">
+          <div class="split-party"><div class="badge badge-sm" style="background:var(--m)">M</div> Miðflokkurinn <span class="split-note">Frétt/viðtal, 25. apríl 2026</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 3. Leikskólagjöld -->
+  <div class="section">
+    <p class="section-eyebrow">Leikskólagjöld</p>
+    <h2>Hversu mikið eiga leikskólagjöld að kosta?</h2>
+    <p class="section-desc">
+      Samfylkingin er eina framboðið með skýrt gjaldaþak — 50.000 kr. á mánuði.
+      Viðreisn og Sósíalistar vilja lækkanir en án tilgreinds þaks.
+      Sjálfstæðisflokkurinn og Framsóknarflokkurinn verja Kópavogsmódelið.
+      Sjá nánari greiningu á <a href="skolar.html">skólasíðunni</a>.
+    </p>
+
+    <div class="position-strip">
+      <div class="position-col">
+        <div class="position-head laekka">Vilja lækka gjöldin</div>
+        <div class="position-body">
+          <div class="position-party"><div class="badge badge-sm" style="background:var(--s)">S</div> Samfylkingin <span class="split-note">Þak 50.000 kr./mán.</span></div>
+          <div class="position-party"><div class="badge badge-sm" style="background:var(--c)">C</div> Viðreisn <span class="split-note">Endurskoðun gjaldskrár</span></div>
+          <div class="position-party"><div class="badge badge-sm" style="background:var(--j)">J</div> Sósíalistar <span class="split-note">Lægri gjöld</span></div>
+        </div>
+      </div>
+      <div class="position-col">
+        <div class="position-head verja">Verja Kópavogsmódelið</div>
+        <div class="position-body">
+          <div class="position-party"><div class="badge badge-sm" style="background:var(--d)">D</div> Sjálfstæðisflokkurinn <span class="split-note">Ver núverandi kerfi</span></div>
+          <div class="position-party"><div class="badge badge-sm" style="background:var(--b)">B</div> Framsóknarflokkurinn <span class="split-note">Stoltur — en „ekki heilagt"</span></div>
+        </div>
+      </div>
+      <div class="position-col">
+        <div class="position-head oljost">Óljóst eða engin afstaða</div>
+        <div class="position-body">
+          <div class="position-party"><div class="badge badge-sm" style="background:var(--v)">V</div> Vinstri græn og óháð <span class="split-note">Endurskoðun (óútfært)</span></div>
+          <div class="position-party"><div class="badge badge-sm" style="background:var(--m)">M</div> Miðflokkurinn <span class="split-note">Engin birt afstaða</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 4. Aðferðafræði -->
+  <div class="section">
+    <p class="section-eyebrow">Aðferðafræði</p>
+    <p class="page-desc">
+      Flokkun byggir á birtum stefnuskjölum, formlegar stefnuskrám og tímamerktu viðtölum
+      í fjölmiðlum (apríl–maí 2026).
+      <strong>Staðfest</strong> = skýr, sértæk afstaða með nánari útfærslu.
+      <strong>Óljóst</strong> = málefnið nefnt en afstaða almennt orðuð eða vantar útfærslu.
+      <strong>Ekki birt</strong> = engin heimild fundist — þýðir ekki endilega að flokkurinn hafi ekki stefnu.
+      Flokkun er mat höfundar; kjósendur eru hvattir til að kynna sér frumheimildir.
+    </p>
+    <p style="font-size:12px;color:var(--text-dim);font-family:var(--mono);margin-top:0.75rem">Maí 2026 · Uppfærðar greiningar á sérsíðum hvers málefnis.</p>
+  </div>
+
+</main>
+
+<footer>
+  <a href="index.html">← Yfirlit</a>
+  &nbsp;·&nbsp;
+  Kópavogur 2026 · Stefnumál
+  &nbsp;·&nbsp;
+  <a href="husnaedi.html">Húsnæði →</a>
+</footer>
+
+</body>
+</html>

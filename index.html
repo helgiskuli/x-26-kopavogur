@@ -3,34 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kópavogur 2026 · Stefnumál framboðanna</title>
+<title>Kópavogur 2026 · Yfirlit</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/common.css">
 <style>
-  .primary-issues,
-  .issue-map {
+
+  /* ── Helstu umræðuefni ── */
+  .topic-grid {
     display: grid;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
     margin-top: 1rem;
   }
-  .primary-issues { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .issue-map      { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  a.topic-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.25rem 1rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  a.topic-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 14px rgba(59,100,220,0.12);
+    transform: translateY(-1px);
+  }
+  .topic-num {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: var(--mono);
+    color: var(--accent);
+    opacity: 0.18;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    transition: opacity 0.15s;
+  }
+  a.topic-card:hover .topic-num { opacity: 0.45; }
+  .topic-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+  }
+  .topic-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    flex: 1;
+  }
+  .topic-arrow {
+    font-size: 12px;
+    color: var(--accent);
+    margin-top: 0.75rem;
+    font-family: var(--mono);
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  a.topic-card:hover .topic-arrow { opacity: 1; }
 
-  /* Policy coverage matrix */
-  .coverage-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 1rem 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-  .coverage-table th { padding: 8px 10px; font-size: 10px; font-family: var(--mono); color: var(--text-dim); letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid var(--border); font-weight: 500; text-align: center; background: var(--bg); }
-  .coverage-table th:first-child { text-align: left; min-width: 160px; }
-  .coverage-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
-  .coverage-table td:first-child { text-align: left; }
-  .coverage-table tr:last-child td { border-bottom: none; }
-  .cov-party { display: flex; align-items: center; gap: 0.5rem; }
+  /* ── Stefnumál callout ── */
+  .stefnumal-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--accent-dim);
+    border: 1px solid rgba(59,100,220,0.2);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: var(--accent);
+    margin-top: 1rem;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.15s;
+  }
+  .stefnumal-link:hover { background: rgba(59,100,220,0.12); }
+  .stefnumal-link-sub { font-size: 11px; font-family: var(--mono); font-weight: 400; color: var(--text-muted); margin-top: 2px; }
+
+  /* ── Kjörstaðir ── */
+  .election-strip {
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .ed-num {
+    font-size: 3.75rem;
+    font-weight: 700;
+    font-family: var(--mono);
+    color: white;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .ed-divider {
+    width: 1px;
+    height: 3.5rem;
+    background: rgba(255,255,255,0.25);
+    flex-shrink: 0;
+  }
+  .ed-info { display: flex; flex-direction: column; gap: 0.2rem; }
+  .ed-month  { font-size: 1.35rem; font-weight: 700; color: white; line-height: 1.1; }
+  .ed-label  { font-size: 10px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.55); }
+  .ed-hours  { font-size: 12px; font-family: var(--mono); color: rgba(255,255,255,0.8); margin-top: 0.2rem; }
+
+  .polling-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .polling-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .polling-initial {
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: var(--mono);
+    border: 1px solid rgba(59,100,220,0.15);
+  }
+  .polling-name { font-size: 15px; font-weight: 700; margin-bottom: 0.2rem; }
+  .polling-addr { font-size: 11px; font-family: var(--mono); color: var(--text-muted); margin-bottom: 0.5rem; }
+  .polling-area { font-size: 12px; color: var(--text-muted); line-height: 1.45; }
 
   @media (max-width: 640px) {
-    .primary-issues,
-    .issue-map { grid-template-columns: 1fr; }
-    .coverage-table { font-size: 11px; }
-    .coverage-table th, .coverage-table td { padding: 6px 6px; }
+    .topic-grid    { grid-template-columns: 1fr; }
+    .polling-grid  { grid-template-columns: 1fr; }
+    .ed-num        { font-size: 2.75rem; }
+    .ed-month      { font-size: 1.1rem; }
+    .election-strip { padding: 1rem 1.25rem; gap: 1rem; }
   }
 </style>
 </head>
@@ -40,7 +164,8 @@
   <div class="header-inner">
     <a class="site-title" href="index.html">Kópavogur <span>2026</span></a>
     <nav>
-      <a href="index.html" class="active">Stefnumál</a>
+      <a href="index.html" class="active">Yfirlit</a>
+      <a href="yfirlit.html">Stefnumál</a>
       <a href="husnaedi.html">Húsnæði</a>
       <a href="velferd.html">Velferð</a>
       <a href="midbaer.html">Miðbær</a>
@@ -56,254 +181,69 @@
 <main>
 
   <div class="page-header">
-    <p class="page-eyebrow">Yfirlit · Apríl 2026</p>
-    <h1>Stefnumál og gögn fyrir sveitarstjórnarkosningar í Kópavogi 2026</h1>
+    <p class="page-eyebrow">Sveitarstjórnarkosningar · 16. maí 2026</p>
+    <h1>Kópavogur 2026</h1>
     <p class="page-desc">
-      Síðan dregur saman helstu umræðuefni kosninganna, opinber gögn og þá afstöðu sem framboðin hafa birt.
-      Forsíðan er yfirlit; nánari greining og úrvinnsla eru á undirsíðum.
+      Sjö framboð keppast um að stjórna Kópavogi næstu fjögur ár.
+      Síðan dregur saman helstu umræðuefni, afstöður framboðanna og hvar og hvenær er kosið.
     </p>
   </div>
 
+  <!-- 1. Helstu umræðuefni -->
   <div class="section">
-    <p class="section-eyebrow">Megináherslur</p>
-    <h2>Þrjú málefni sem móta umræðuna</h2>
+    <p class="section-eyebrow">Helstu umræðuefni</p>
+    <h2>Þrjú málefni sem ráða umræðunni</h2>
     <p class="section-desc">
-      Þessi þrjú málefni koma skýrt fram í opinberum gögnum, birtum ummælum og núverandi efni síðunnar.
-      Forsíðan bendir á meginspurningarnar; nánari úrvinnsla er á sérsíðum.
+      Þessi þrjú málefni koma skýrast fram í opinberum gögnum og birtum ummælum framboðanna.
     </p>
 
-    <div class="primary-issues">
-      <article class="issue-card">
-        <span class="issue-kicker">Málefni 1 / 3</span>
-        <h3>Börn, leikskólar og grunnskólar</h3>
-        <p>
-          Kópavogsmódelið er sýnilegasti hluti umræðunnar, en ágreiningurinn nær líka til mönnunar,
-          stuðnings, grunnskóla, stafræns skólaumhverfis og þjónustu við börn af ólíkum uppruna.
+    <div class="topic-grid">
+      <a href="skolar.html" class="topic-card">
+        <div class="topic-num">01</div>
+        <div class="topic-title">Börn, leikskólar og grunnskólar</div>
+        <p class="topic-desc">
+          Kópavogsmódelið, leikskólagjöld og mönnun í grunnskólum. Þrjú framboð vilja lækka gjöld, tvö verja núverandi kerfi.
         </p>
-        <div class="issue-meta">
-          <span class="tag tag-dim">Opinber gögn</span>
-          <span class="tag tag-dim">Flokksafstaða</span>
-          <span class="tag tag-dim">Greining</span>
-        </div>
-        <a class="issue-link" href="skolar.html">Lesa um skólamál →</a>
-      </article>
+        <div class="topic-arrow">Lesa nánar →</div>
+      </a>
 
-      <article class="issue-card">
-        <span class="issue-kicker">Málefni 2 / 3</span>
-        <h3>Samgöngur og Borgarlína</h3>
-        <p>
-          Borgarlínan er áberandi í umræðunni, en stærri spurningin snýr líka að Fossvogsbrú,
-          rekstri almenningssamgangna, tengingum milli hverfa og ábyrgð á þjónustustigi eftir 1. júlí 2026.
+      <a href="samgongur.html" class="topic-card">
+        <div class="topic-num">02</div>
+        <div class="topic-title">Samgöngur og Borgarlína</div>
+        <p class="topic-desc">
+          Eitt framboð á móti sex í Borgarlínumálinu. Þar að auki Fossvogsbrú, þjónustubreytingar 1. júlí 2026 og rekstrarkostnaður.
         </p>
-        <div class="issue-meta">
-          <span class="tag tag-dim">Framkvæmdir</span>
-          <span class="tag tag-dim">Rekstur</span>
-          <span class="tag tag-dim">Flokksafstaða</span>
-        </div>
-        <a class="issue-link" href="samgongur.html">Lesa um samgöngumál →</a>
-      </article>
+        <div class="topic-arrow">Lesa nánar →</div>
+      </a>
 
-      <article class="issue-card">
-        <span class="issue-kicker">Málefni 3 / 3</span>
-        <h3>Fjármál og lóðatekjur</h3>
-        <p>
-          Rekstrarniðurstaða síðustu ára lítur sterk út, en lykilspurningin er hversu sjálfbær hún er án
-          óreglulegra tekna af byggingarrétti og lóðaúthlutunum.
+      <a href="fjarmal.html" class="topic-card">
+        <div class="topic-num">03</div>
+        <div class="topic-title">Fjármál og ársreikningar</div>
+        <p class="topic-desc">
+          Rekstrarniðurstaða lítur sterk út — en hversu sjálfbær er hún án óreglulegra tekna af byggingarrétti og lóðaúthlutunum?
         </p>
-        <div class="issue-meta">
-          <span class="tag tag-dim">Ársreikningar</span>
-          <span class="tag tag-dim">Fjárhagsáætlun</span>
-          <span class="tag tag-dim">Greining</span>
-        </div>
-        <a class="issue-link" href="fjarmal.html">Lesa fjármálagreiningu</a>
-      </article>
+        <div class="topic-arrow">Lesa nánar →</div>
+      </a>
     </div>
+
+    <a href="yfirlit.html" class="stefnumal-link">
+      <div>
+        <div>Sjá stefnuyfirlit allra framboðanna</div>
+        <div class="stefnumal-link-sub">Yfirlitstafla · Borgarlína · Leikskólagjöld</div>
+      </div>
+      <span>→</span>
+    </a>
   </div>
 
   <hr class="divider">
 
+  <!-- 2. Framboð -->
   <div class="section">
-    <p class="section-eyebrow">Málefnakort</p>
-    <h2>Önnur málefni sem tengjast sömu spurningum</h2>
+    <p class="section-eyebrow">Framboð 2026</p>
+    <h2>Sjö framboð í Kópavogi</h2>
     <p class="section-desc">
-      Rannsóknarvinnan bendir til þess að sömu grunnspurningar komi aftur fram í uppbyggingu, þjónustu,
-      framkvæmdum og stjórnsýslu. Þessi mál verða unnin áfram á sérsíðum.
-    </p>
-
-    <div class="issue-map">
-      <article class="issue-card">
-        <span class="issue-kicker">Málefni 1 / 4</span>
-        <h3>Húsnæði, lóðir og uppbygging</h3>
-        <p>
-          Vatnsendahvarf og Hamraborg/Fannborg tengja saman húsnæðisuppbyggingu, skólaþörf,
-          samgöngur og tekjur bæjarins.
-        </p>
-        <div class="issue-meta">
-          <span class="tag tag-dim">Skipulag</span>
-          <span class="tag tag-dim">Fjármál</span>
-        </div>
-        <a class="issue-link" href="husnaedi.html">Lesa um húsnæðismál →</a>
-      </article>
-
-      <article class="issue-card">
-        <span class="issue-kicker">Málefni 2 / 4</span>
-        <h3>Velferð og aðgengi</h3>
-        <p>
-          Fjárhagsáætlun og greinargerðir benda á aukinn þrýsting í stuðningsþjónustu, akstursþjónustu
-          og aðgengi að þjónustu.
-        </p>
-        <div class="issue-meta">
-          <span class="tag tag-dim">Þjónusta</span>
-          <span class="tag tag-dim">Fjárhagsáætlun</span>
-        </div>
-        <a class="issue-link" href="velferd.html">Lesa um velferðarmál →</a>
-      </article>
-
-      <article class="issue-card">
-        <span class="issue-kicker">Málefni 3 / 4</span>
-        <h3>Miðbær og framkvæmdir</h3>
-        <p>
-          Framkvæmdir í miðbænum snúast ekki aðeins um skipulag heldur líka um upplýsingagjöf,
-          aðgengi, bílastæði, ónæði og traust.
-        </p>
-        <div class="issue-meta">
-          <span class="tag tag-dim">Framkvæmdir</span>
-          <span class="tag tag-dim">Samráð</span>
-        </div>
-        <a class="issue-link" href="midbaer.html">Lesa um miðbæjarmál →</a>
-      </article>
-
-      <article class="issue-card">
-        <span class="issue-kicker">Málefni 4 / 4</span>
-        <h3>Stjórnsýsla og samráð</h3>
-        <p>
-          Þegar stór verkefni, lóðir og fjárhagslegar forsendur fara saman verður gagnsæi sjálfstætt kosningamál.
-        </p>
-        <div class="issue-meta">
-          <span class="tag tag-dim">Gagnsæi</span>
-          <span class="tag tag-dim">Ferli</span>
-        </div>
-        <a class="issue-link" href="stjornsysla.html">Lesa um stjórnsýslumál →</a>
-      </article>
-    </div>
-  </div>
-
-  <hr class="divider">
-
-  <div class="section">
-    <p class="section-eyebrow">Yfirlit yfir birta stefnu</p>
-    <h2>Hvaða framboð hafa birt stefnu í hvaða málaflokkum?</h2>
-    <p class="section-desc">
-      Yfirlitið byggir á birtum heimildum í apríl 2026. „Formleg stefna" merkir birta stefnuskrá eða formlegt skjal.
-      „Grein eða viðtal" merkir að afstaða hafi komið fram í grein, frétt eða viðtali. „Almenn áhersla"
-      merkir almenna yfirlýsingu í stefnuskrá án útfærðrar stefnu um málefnið. „Óstaðfest" merkir að
-      afstaða virðist þekkt en vantar beina heimild. „Stefna ekki birt" merkir að ekki fannst birt stefna
-      um málefnið.
-    </p>
-    <table class="coverage-table" aria-label="Birting stefnu framboðanna eftir málefnum — apríl 2026">
-      <thead>
-        <tr>
-          <th>Framboð</th>
-          <th><a href="skolar.html" style="color:inherit;text-decoration:none">Skólar</a></th>
-          <th><a href="samgongur.html" style="color:inherit;text-decoration:none">Samgöngur</a></th>
-          <th><a href="husnaedi.html" style="color:inherit;text-decoration:none">Húsnæði</a></th>
-          <th><a href="velferd.html" style="color:inherit;text-decoration:none">Velferð</a></th>
-          <th><a href="stjornsysla.html" style="color:inherit;text-decoration:none">Stjórnsýsla</a></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div class="cov-party"><div class="badge badge-sm" style="background:var(--b)">B</div> Framsókn</div></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-          <td><span class="tag tag-dim">Grein eða viðtal</span></td>
-          <td><span class="tag tag-dim">Almenn áhersla</span></td>
-        </tr>
-        <tr>
-          <td><div class="cov-party"><div class="badge badge-sm" style="background:var(--c)">C</div> Viðreisn</div></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-        </tr>
-        <tr>
-          <td><div class="cov-party"><div class="badge badge-sm" style="background:var(--d)">D</div> Sjálfstæðisflokkur</div></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-          <td><span class="tag tag-dim">Almenn áhersla</span></td>
-        </tr>
-        <tr>
-          <td><div class="cov-party"><div class="badge badge-sm" style="background:var(--j)">J</div> Sósíalistar</div></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-          <td><span class="tag tag-dim">Grein eða viðtal</span></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-          <td><span class="tag tag-party">Formleg stefna</span></td>
-        </tr>
-        <tr>
-          <td><div class="cov-party"><div class="badge badge-sm" style="background:var(--m)">M</div> Miðflokkurinn</div></td>
-          <td><span class="tag tag-dim">Grein eða viðtal</span></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-        </tr>
-        <tr>
-          <td><div class="cov-party"><div class="badge badge-sm" style="background:var(--s)">S</div> Samfylkingin</div></td>
-          <td><span class="tag tag-dim">Grein eða viðtal</span></td>
-          <td><span class="tag tag-dim">Grein eða viðtal</span></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-        </tr>
-        <tr>
-          <td><div class="cov-party"><div class="badge badge-sm" style="background:var(--v)">V</div> VG og óháð</div></td>
-          <td><span class="tag tag-dim">Grein eða viðtal</span></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-unverified">Óstaðfest</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-          <td><span class="tag tag-dim">Stefna ekki birt</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="font-size:11px;color:var(--text-dim);font-family:var(--mono);margin-top:0.5rem">Apríl 2026 · Birting stefnu getur breyst á kosningaherferðartíma — sannreyna áður en notuð.</p>
-  </div>
-
-  <hr class="divider">
-
-  <div class="section">
-    <p class="section-eyebrow">Um síðuna</p>
-    <h2>Hvernig lesa á síðuna</h2>
-    <p class="section-desc">
-      Meginmarkmiðið er að halda aðgreiningu milli opinberra gagna, birtrar afstöðu framboða og greiningar.
-    </p>
-
-    <div class="callout">
-      <div class="callout-title">Hvernig heimildir eru lesnar</div>
-      <p>
-        Á síðunni eru aðgreind opinber gögn, birt afstaða framboða og greining höfundar.
-        Þar sem gögn vantar eða staða er tímaháð er það merkt sérstaklega á viðkomandi síðu.
-      </p>
-      <p>
-        <span class="tag tag-dim">Opinber gögn</span>
-        <span class="tag tag-dim">Afstaða framboða</span>
-        <span class="tag tag-dim">Greining</span>
-      </p>
-    </div>
-  </div>
-
-  <hr class="divider">
-
-  <div class="section">
-    <p class="section-eyebrow">Framboð og leiðsögn</p>
-    <h2>Framboð 2026 og leiðir inn á síðuna</h2>
-    <p class="section-desc">
-      Opinber framboðslisti Kópavogsbæjar liggur til grundvallar. Kortið sýnir frambjóðendur eftir heimilisfangi
-      og fjármálasíðan dregur saman rekstrar- og áætlanagögn.
+      Opinber framboðslisti Kópavogsbæjar liggur til grundvallar.
+      <a href="kort.html">Kortið</a> sýnir frambjóðendur eftir heimilisfangi.
     </p>
 
     <div class="party-grid">
@@ -315,7 +255,6 @@
           <a class="party-web" href="https://framsokn.is/sveitarfelog/kopavogur" target="_blank" rel="noopener">framsokn.is ↗</a>
         </div>
       </div>
-
       <div class="party-card">
         <div class="badge badge-lg" style="background:var(--c)">C</div>
         <div class="party-info">
@@ -324,7 +263,6 @@
           <a class="party-web" href="https://vidreisn.is/kopavogur" target="_blank" rel="noopener">vidreisn.is ↗</a>
         </div>
       </div>
-
       <div class="party-card">
         <div class="badge badge-lg" style="background:var(--d)">D</div>
         <div class="party-info">
@@ -333,7 +271,6 @@
           <a class="party-web" href="https://xdkop.is" target="_blank" rel="noopener">xdkop.is ↗</a>
         </div>
       </div>
-
       <div class="party-card">
         <div class="badge badge-lg" style="background:var(--j)">J</div>
         <div class="party-info">
@@ -342,16 +279,14 @@
           <a class="party-web" href="https://sosialistaflokkurinn.is" target="_blank" rel="noopener">sosialistaflokkurinn.is ↗</a>
         </div>
       </div>
-
       <div class="party-card">
         <div class="badge badge-lg" style="background:var(--m)">M</div>
         <div class="party-info">
           <div class="party-name">Miðflokkurinn</div>
           <div class="party-leader">Einar Jóhannes Guðnason</div>
-          <a class="party-web" href="https://midflokkurinn.is/kopavogur" target="_blank" rel="noopener">midflokkurinn.is ↗</a>
+          <a class="party-web" href="https://midflokkurinn.is" target="_blank" rel="noopener">midflokkurinn.is ↗</a>
         </div>
       </div>
-
       <div class="party-card">
         <div class="badge badge-lg" style="background:var(--s)">S</div>
         <div class="party-info">
@@ -360,7 +295,6 @@
           <a class="party-web" href="https://xs.is/samfylkingin-i-kopavogi1" target="_blank" rel="noopener">xs.is ↗</a>
         </div>
       </div>
-
       <div class="party-card">
         <div class="badge badge-lg" style="background:var(--v)">V</div>
         <div class="party-info">
@@ -370,61 +304,56 @@
         </div>
       </div>
     </div>
-
-    <div class="callout">
-      <div class="callout-title">Fljótleg leiðsögn</div>
-      <p>
-        <a href="fjarmal.html">Fjármál</a> dregur saman ársreikninga, fjárhagsáætlun og áætlaðar horfur.
-        <a href="kort.html">Frambjóðendur</a> sýnir kort yfir skráða frambjóðendur eftir heimilisfangi.
-      </p>
-      <p>
-        Framboð, listabókstafir og oddvitar byggja á
-        <a href="https://www.kopavogur.is/is/frettir-tilkynningar/frambodslistar-2026" target="_blank" rel="noopener">framboðslistum Kópavogsbæjar 2026</a>.
-      </p>
-    </div>
   </div>
 
   <hr class="divider">
 
+  <!-- 3. Kjörstaðir -->
   <div class="section">
     <p class="section-eyebrow">Kosningadagur</p>
-    <h2>Hvenær og hvar er kosið?</h2>
+    <h2>Hvar og hvenær er kosið?</h2>
 
-    <div class="callout">
-      <div class="callout-title">
-        Sveitarstjórnarkosningar — 16. maí 2026
-        <span class="tag tag-official" style="margin-left:0.5rem">Opinbert gagnaskjal</span>
+    <div class="election-strip">
+      <div class="ed-num">16</div>
+      <div class="ed-divider"></div>
+      <div class="ed-info">
+        <span class="ed-label">Kosningadagur</span>
+        <span class="ed-month">maí 2026</span>
+        <span class="ed-hours">Kjörfundur opinn 09:00 – 22:00</span>
       </div>
-      <p>Kjörfundur í Kópavogi er frá <strong>09:00 til 22:00</strong>. Talning fer fram í Kórnum að kjörfundi loknum.</p>
-      <ul style="margin:0.75rem 0 0 1.2rem;font-size:13px;color:var(--text-muted);line-height:1.9">
-        <li><strong style="color:var(--text)">Smárinn</strong>, Dalsmára 5 — íbúar vestan Reykjanesbrautar og í Lindahverfi</li>
-        <li><strong style="color:var(--text)">Kórinn</strong>, Vallakór 12 — íbúar austan Reykjanesbrautar, að undanskildum Lindahverfi</li>
-      </ul>
-      <p style="margin-top:0.75rem">
-        <a href="https://www.kopavogur.is/is/stjornsysla/sveitarstjornarkosningar-2026" target="_blank" rel="noopener" style="font-size:12px;font-family:var(--mono);color:var(--accent)">Sjá nánar hjá Kópavogsbæ ↗</a>
-      </p>
     </div>
-  </div>
 
-  <hr class="divider">
+    <div class="polling-grid">
+      <div class="polling-card">
+        <div class="polling-initial">S</div>
+        <div>
+          <div class="polling-name">Smárinn</div>
+          <div class="polling-addr">Dalsmára 5</div>
+          <div class="polling-area">Íbúar vestan Reykjanesbrautar og í Lindahverfi</div>
+        </div>
+      </div>
+      <div class="polling-card">
+        <div class="polling-initial">K</div>
+        <div>
+          <div class="polling-name">Kórinn</div>
+          <div class="polling-addr">Vallakór 12</div>
+          <div class="polling-area">Íbúar austan Reykjanesbrautar, að undanskildum Lindahverfi. Talning fer einnig fram hér að kjörfundi loknum.</div>
+        </div>
+      </div>
+    </div>
 
-  <div class="section">
-    <p class="section-eyebrow">Heimildir</p>
-    <p style="font-size:13px;color:var(--text-dim);font-family:var(--mono);line-height:1.8">
-      Kópavogur — framboðslistar 2026 · Opinbert gagnaskjal<br>
-      Kópavogur — sveitarstjórnarkosningar 2026 · Opinbert gagnaskjal<br>
-      Apríl 2026
+    <p style="margin-top:0.75rem;font-size:12px;font-family:var(--mono);color:var(--text-dim)">
+      <a href="https://www.kopavogur.is/is/stjornsysla/sveitarstjornarkosningar-2026" target="_blank" rel="noopener" style="color:var(--accent)">Sjá nánar hjá Kópavogsbæ ↗</a>
+      &nbsp;·&nbsp; Heimild: Kópavogur — sveitarstjórnarkosningar 2026 · Opinbert gagnaskjal
     </p>
   </div>
 
 </main>
 
 <footer>
-  Kópavogur 2026 · Stefnumál
+  Kópavogur 2026 · Yfirlit
   &nbsp;·&nbsp;
-  Heimild: Kópavogur framboðslistar 2026
-  &nbsp;·&nbsp;
-  <a href="husnaedi.html">Húsnæði →</a>
+  <a href="yfirlit.html">Stefnumál →</a>
 </footer>
 
 </body>

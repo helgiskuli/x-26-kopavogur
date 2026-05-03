@@ -17,11 +17,11 @@ ROOT = Path(__file__).parent.parent
 
 # Pages that are not 5-part issue pages (skip issue-specific checks).
 # fjarmal.html uses its own 4-part financial structure, not the standard template.
-NON_ISSUE_PAGES = {"index.html", "fjarmal.html", "kort.html", "stefnumal.html"}
+NON_ISSUE_PAGES = {"index.html", "yfirlit.html", "fjarmal.html", "kort.html", "stefnumal.html"}
 
 # All nav hrefs that must appear in every page
 ALL_NAV_HREFS = [
-    "index.html", "husnaedi.html", "velferd.html", "midbaer.html",
+    "index.html", "yfirlit.html", "husnaedi.html", "velferd.html", "midbaer.html",
     "samgongur.html", "skolar.html", "stjornsysla.html",
     "fjarmal.html", "kort.html",
 ]
