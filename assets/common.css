@@ -112,7 +112,7 @@ h1 {
 .page-desc {
   font-size: 14px;
   color: var(--text-muted);
-  max-width: 60ch;
+  max-width: 75ch;
   line-height: 1.7;
 }
 
@@ -136,7 +136,7 @@ h2 {
   font-size: 13px;
   color: var(--text-muted);
   margin-bottom: 1.25rem;
-  max-width: 65ch;
+  max-width: 80ch;
   line-height: 1.65;
 }
 
