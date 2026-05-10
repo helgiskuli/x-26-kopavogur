@@ -1,14 +1,14 @@
 ---
-date: 2026-05-03T16:53:28.869246+00:00
-count_total: 38
-count_unapplied: 6
+date: 2026-05-10T10:15:51.994635+00:00
+count_total: 39
+count_unapplied: 7
 ---
 
-## Rannsóknarsamantekt 03.05.2026 16:53 UTC
+## Rannsóknarsamantekt 10.05.2026 10:15 UTC
 
-Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 1. til 3. maí 2026. Umræðan hefur aðallega snúist um gagnrýni forsætisráðherra, Kristrúnar Frostadóttur (S), á leikskólamál (Kópavogsmódelið) og húsnæðismál í Kópavogi, sérstaklega skort á lóðaúthlutunum til Bjargs íbúðafélags. Ásdís Kristjánsdóttir (D), bæjarstjóri Kópavogs, hefur svarað þessari gagnrýni. Leikskólastjóri í Kópavogi hefur einnig gagnrýnt ummæli forsætisráðherra. Framsóknarflokkurinn (B) opnaði kosningaskrifstofu sína. Anna Sigríður Hafliðadóttir (V) hefur birt pistil um velferð og skólamál sem fyllir upp í þekkta eyðu í stefnu flokksins um velferð. Jónas Már Torfason (S) hefur tjáð sig um væntanlegan kosningasigur Samfylkingarinnar og húsnæðismál.
+Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist á síðustu 48 klukkustundum. Viðreisn hefur birt stefnu um stjórnsýslu, velferð og fjármál, sem fyllir upp í þekktar eyður. Einnig hefur verið umræða um Kópavogsmódelið í leikskólamálum, þar sem Sjálfstæðisflokkurinn er nefndur. Greinar hafa birst um velferðarmál og þróun atvinnulífs, samgangna og húsnæðismála í Kópavogi. Þá hefur verið fjallað um aðgengi heyrnarlausra að kosningaumfjöllun RÚV.
 
-### 6 óúrvinnsluð uppfærsla(r)
+### 7 óúrvinnsluð uppfærsla(r)
 
 #### Bæjarstjórn Kópavogs samþykkir viðauka við fjárhagsáætlun og kosningar í hverfakjörstjórnir
 
@@ -50,4 +50,11 @@ _Heimild: https://www.framsokn.is/vidburdir/kopavogur-opnun-kosningaskrifstofu/_
 Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, sér fram á stórsigur í sveitarstjórnarkosningunum. Hann bendir á að kannanir sýni mikil sóknarfæri fyrir Samfylkinguna í Kópavogi þar sem eldri framboð hafa misst fylgi.
 
 _Heimild: https://www.dv.is/frettir/2026/05/01/rynt-kannanir-hverjir-vinna-og-hverjir-tapa_
+
+
+#### Segja RÚV skerða aðgengi heyrnarlausra
+
+Félag heyrnarlausra gerir athugasemdir við fyrirkomulag RÚV á táknmálstúlkaðri útsendingu frá kosningavöku sveitarstjórnarkosninganna. Fyrirkomulagið takmarkar aðgengi heyrnarlausra að kosningasjónvarpi RÚV í rauntíma.
+
+_Heimild: https://www.mbl.is/frettir/innlent/2026/05/08/segja_ruv_skerda_adgengi_heyrnarlausra/_
 
