@@ -1,26 +1,19 @@
-## Rannsóknarsamantekt 03.05.2026 16:53 UTC
+## Rannsóknarsamantekt 12.05.2026 11:23 UTC
 
-Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 1. til 3. maí 2026. Umræðan hefur aðallega snúist um gagnrýni forsætisráðherra, Kristrúnar Frostadóttur (S), á leikskólamál (Kópavogsmódelið) og húsnæðismál í Kópavogi, sérstaklega skort á lóðaúthlutunum til Bjargs íbúðafélags. Ásdís Kristjánsdóttir (D), bæjarstjóri Kópavogs, hefur svarað þessari gagnrýni. Leikskólastjóri í Kópavogi hefur einnig gagnrýnt ummæli forsætisráðherra. Framsóknarflokkurinn (B) opnaði kosningaskrifstofu sína. Anna Sigríður Hafliðadóttir (V) hefur birt pistil um velferð og skólamál sem fyllir upp í þekkta eyðu í stefnu flokksins um velferð. Jónas Már Torfason (S) hefur tjáð sig um væntanlegan kosningasigur Samfylkingarinnar og húsnæðismál.
+Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 10. maí 2026. Miðflokkurinn hefur birt stefnu um velferð og stjórnsýslu, sem fyllir hluta af þekktum eyðum í stefnu þeirra. Umræða hefur verið um húsnæðismál og skort á stefnu framboða, auk umfjöllunar um gervigreind í málefnaskrám. Einnig fannst frétt um pólitísk skilaboð í Hamraborg og skoðunargrein um nýfrjálshyggju í Kópavogi.
 
-### 3 nýjar uppfærslur
+### 2 nýjar uppfærslur
 
-#### **[D]** Undarlegt að forsætisráðherra ráðist á Kópavog
+#### **[S]** Björn Þór Rögnvaldsson (S) skrifar um skjá- og samfélagsmiðlanotkun barna í Kópavogi
 
-Ásdís Kristjánsdóttir, bæjarstjóri Kópavogs, segir það undarlegt að forsætisráðherra, Kristrún Frostadóttir, ráðist sérstaklega á Kópavog vegna leikskólamála og skorts á lóðaúthlutunum til Bjargs. Hún vísar gagnrýni Kristrúnar á Kópavogsmódelið á bug og segir það hafa skilað sér í stórbættri þjónustu og engum lokunardögum í leikskólum. Kristrún kallaði Kópavogsmódelið „Kópavogsskattinn“ og gagnrýndi bæjarstjórnina fyrir að hafa ekki úthlutað lóðum til Bjargs í 10 ár.
+Björn Þór Rögnvaldsson, frambjóðandi Samfylkingarinnar í Kópavogi, skrifar um mikilvægi þess að foreldrar fái stuðning við að takast á við skjá- og samfélagsmiðlanotkun barna. Hann fjallar um félagslegan þrýsting sem foreldrar upplifa og óttann við að börn verði útundan ef þau fá ekki snjallsíma og aðgang að samfélagsmiðlum.
 
-_Heimild: https://www.mbl.is/frettir/innlent/2026/05/01/undarlegt_ad_forsaetisradherra_radist_a_kopavog_
-
-
-#### **[B]** Kópavogur: Opnun kosningaskrifstofu
-
-Framsóknarflokkurinn í Kópavogi opnaði kosningaskrifstofu sína í Bæjarlind 14-16 þann 2. maí. Boðið var upp á andlitsmálun, kaffi og kræsingar ásamt spjalli við frambjóðendur.
-
-_Heimild: https://www.framsokn.is/vidburdir/kopavogur-opnun-kosningaskrifstofu/_
+_Heimild: https://samfylkingin.is/frettir/skja-og-samfelagsmidlanotkun-barna-i-kopavogi/_
 
 
-#### **[S]** Rýnt í kannanir – Hverjir vinna og hverjir tapa
+#### Skoðunargrein um nýfrjálshyggju í Kópavogi og gjaldfrjálsa leikskóla
 
-Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, sér fram á stórsigur í sveitarstjórnarkosningunum. Hann bendir á að kannanir sýni mikil sóknarfæri fyrir Samfylkinguna í Kópavogi þar sem eldri framboð hafa misst fylgi.
+Skoðunargrein á Vitinn.is fjallar um umræðu um nýfrjálshyggju í Kópavogi og stöðu leikskóla. Greinin gagnrýnir rökstuðning um að ánægja notenda og gjaldfrjáls þjónusta útiloki nýfrjálshyggjulegt skipulag.
 
-_Heimild: https://www.dv.is/frettir/2026/05/01/rynt-kannanir-hverjir-vinna-og-hverjir-tapa_
+_Heimild: https://vitinn.is/2026/05/10/nyfrjalshyggjubrjalaedid-i-kopavogi/_
 
