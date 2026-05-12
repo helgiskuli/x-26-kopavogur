@@ -455,9 +455,34 @@
       "fills_known_gap": false,
       "date": "2026-05-01",
       "applied_date": null
+    },
+    {
+      "source_url": "https://samfylkingin.is/frettir/skja-og-samfelagsmidlanotkun-barna-i-kopavogi/",
+      "source_name": "Samfylkingin",
+      "party_letter": "S",
+      "headline_is": "Björn Þór Rögnvaldsson (S) skrifar um skjá- og samfélagsmiðlanotkun barna í Kópavogi",
+      "summary_is": "Björn Þór Rögnvaldsson, frambjóðandi Samfylkingarinnar í Kópavogi, skrifar um mikilvægi þess að foreldrar fái stuðning við að takast á við skjá- og samfélagsmiðlanotkun barna. Hann fjallar um félagslegan þrýsting sem foreldrar upplifa og óttann við að börn verði útundan ef þau fá ekki snjallsíma og aðgang að samfélagsmiðlum.",
+      "policy_area": "skólamál og Kópavogsmódelið",
+      "category": "stefna",
+      "fills_known_gap": false,
+      "date": "2026-05-11",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://vitinn.is/2026/05/10/nyfrjalshyggjubrjalaedid-i-kopavogi/",
+      "source_name": "Vitinn",
+      "party_letter": null,
+      "headline_is": "Skoðunargrein um nýfrjálshyggju í Kópavogi og gjaldfrjálsa leikskóla",
+      "summary_is": "Skoðunargrein á Vitinn.is fjallar um umræðu um nýfrjálshyggju í Kópavogi og stöðu leikskóla. Greinin gagnrýnir rökstuðning um að ánægja notenda og gjaldfrjáls þjónusta útiloki nýfrjálshyggjulegt skipulag.",
+      "policy_area": "stjórnsýsla og gagnsæi, skólamál og Kópavogsmódelið",
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-05-10",
+      "url_unverified": true,
+      "applied_date": null
     }
   ],
-  "last_run": "2026-05-03T16:53:28.866524+00:00",
+  "last_run": "2026-05-12T11:23:04.728428+00:00",
   "gaps": {
     "C": [
       "húsnæði",

@@ -1,14 +1,14 @@
 ---
-date: 2026-05-03T16:53:28.869246+00:00
-count_total: 38
-count_unapplied: 6
+date: 2026-05-12T11:23:04.729242+00:00
+count_total: 40
+count_unapplied: 8
 ---
 
-## Rannsóknarsamantekt 03.05.2026 16:53 UTC
+## Rannsóknarsamantekt 12.05.2026 11:23 UTC
 
-Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 1. til 3. maí 2026. Umræðan hefur aðallega snúist um gagnrýni forsætisráðherra, Kristrúnar Frostadóttur (S), á leikskólamál (Kópavogsmódelið) og húsnæðismál í Kópavogi, sérstaklega skort á lóðaúthlutunum til Bjargs íbúðafélags. Ásdís Kristjánsdóttir (D), bæjarstjóri Kópavogs, hefur svarað þessari gagnrýni. Leikskólastjóri í Kópavogi hefur einnig gagnrýnt ummæli forsætisráðherra. Framsóknarflokkurinn (B) opnaði kosningaskrifstofu sína. Anna Sigríður Hafliðadóttir (V) hefur birt pistil um velferð og skólamál sem fyllir upp í þekkta eyðu í stefnu flokksins um velferð. Jónas Már Torfason (S) hefur tjáð sig um væntanlegan kosningasigur Samfylkingarinnar og húsnæðismál.
+Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 10. maí 2026. Miðflokkurinn hefur birt stefnu um velferð og stjórnsýslu, sem fyllir hluta af þekktum eyðum í stefnu þeirra. Umræða hefur verið um húsnæðismál og skort á stefnu framboða, auk umfjöllunar um gervigreind í málefnaskrám. Einnig fannst frétt um pólitísk skilaboð í Hamraborg og skoðunargrein um nýfrjálshyggju í Kópavogi.
 
-### 6 óúrvinnsluð uppfærsla(r)
+### 8 óúrvinnsluð uppfærsla(r)
 
 #### Bæjarstjórn Kópavogs samþykkir viðauka við fjárhagsáætlun og kosningar í hverfakjörstjórnir
 
@@ -50,4 +50,18 @@ _Heimild: https://www.framsokn.is/vidburdir/kopavogur-opnun-kosningaskrifstofu/_
 Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, sér fram á stórsigur í sveitarstjórnarkosningunum. Hann bendir á að kannanir sýni mikil sóknarfæri fyrir Samfylkinguna í Kópavogi þar sem eldri framboð hafa misst fylgi.
 
 _Heimild: https://www.dv.is/frettir/2026/05/01/rynt-kannanir-hverjir-vinna-og-hverjir-tapa_
+
+
+#### **[S]** Björn Þór Rögnvaldsson (S) skrifar um skjá- og samfélagsmiðlanotkun barna í Kópavogi
+
+Björn Þór Rögnvaldsson, frambjóðandi Samfylkingarinnar í Kópavogi, skrifar um mikilvægi þess að foreldrar fái stuðning við að takast á við skjá- og samfélagsmiðlanotkun barna. Hann fjallar um félagslegan þrýsting sem foreldrar upplifa og óttann við að börn verði útundan ef þau fá ekki snjallsíma og aðgang að samfélagsmiðlum.
+
+_Heimild: https://samfylkingin.is/frettir/skja-og-samfelagsmidlanotkun-barna-i-kopavogi/_
+
+
+#### Skoðunargrein um nýfrjálshyggju í Kópavogi og gjaldfrjálsa leikskóla
+
+Skoðunargrein á Vitinn.is fjallar um umræðu um nýfrjálshyggju í Kópavogi og stöðu leikskóla. Greinin gagnrýnir rökstuðning um að ánægja notenda og gjaldfrjáls þjónusta útiloki nýfrjálshyggjulegt skipulag.
+
+_Heimild: https://vitinn.is/2026/05/10/nyfrjalshyggjubrjalaedid-i-kopavogi/_
 
