@@ -455,9 +455,45 @@
       "fills_known_gap": false,
       "date": "2026-05-01",
       "applied_date": null
+    },
+    {
+      "source_url": "https://samfylkinginkopavogi.wordpress.com/2026/05/13/solveig-kraginn-kopavogur/",
+      "source_name": "Samfylkingin í Kópavogi",
+      "party_letter": "S",
+      "headline_is": "Sólveig, Kraginn, Kópavogur",
+      "summary_is": "Bloggfærsla á vef Samfylkingarinnar í Kópavogi sem tengist kosningaherferð flokksins. Nánari upplýsingar um innihald eru ekki gefnar í samantektinni.",
+      "policy_area": null,
+      "category": "kosningaherferð",
+      "fills_known_gap": false,
+      "date": "2026-05-13",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://samfylkinginkopavogi.wordpress.com/2026/05/13/hundalifid-i-kopavogi/",
+      "source_name": "Samfylkingin í Kópavogi",
+      "party_letter": "S",
+      "headline_is": "Hundalífið í Kópavogi",
+      "summary_is": "Bloggfærsla á vef Samfylkingarinnar í Kópavogi þar sem rætt er um málefni hundaeigenda í bænum. Frambjóðendur hafa fengið beiðnir um að taka á málefnum hundaeigenda.",
+      "policy_area": "velferð",
+      "category": "frettir",
+      "fills_known_gap": false,
+      "date": "2026-05-13",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://samfylkinginkopavogi.wordpress.com/2026/05/12/nytum-kosningarettinn/",
+      "source_name": "Samfylkingin í Kópavogi",
+      "party_letter": "S",
+      "headline_is": "Nýtum kosningaréttinn",
+      "summary_is": "Bloggfærsla á vef Samfylkingarinnar í Kópavogi sem hvetur ungt fólk til að nýta kosningaréttinn sinn. Kosningaþátttaka ungs fólks hefur farið minnkandi og framboðið lítur á þetta sem áhyggjuefni.",
+      "policy_area": null,
+      "category": "kosningaherferð",
+      "fills_known_gap": false,
+      "date": "2026-05-12",
+      "applied_date": null
     }
   ],
-  "last_run": "2026-05-03T16:53:28.866524+00:00",
+  "last_run": "2026-05-15T11:23:11.572133+00:00",
   "gaps": {
     "C": [
       "húsnæði",

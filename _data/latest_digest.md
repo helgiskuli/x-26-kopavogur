@@ -1,14 +1,14 @@
 ---
-date: 2026-05-03T16:53:28.869246+00:00
-count_total: 38
-count_unapplied: 6
+date: 2026-05-15T11:23:11.573065+00:00
+count_total: 41
+count_unapplied: 9
 ---
 
-## Rannsóknarsamantekt 03.05.2026 16:53 UTC
+## Rannsóknarsamantekt 15.05.2026 11:23 UTC
 
-Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 1. til 3. maí 2026. Umræðan hefur aðallega snúist um gagnrýni forsætisráðherra, Kristrúnar Frostadóttur (S), á leikskólamál (Kópavogsmódelið) og húsnæðismál í Kópavogi, sérstaklega skort á lóðaúthlutunum til Bjargs íbúðafélags. Ásdís Kristjánsdóttir (D), bæjarstjóri Kópavogs, hefur svarað þessari gagnrýni. Leikskólastjóri í Kópavogi hefur einnig gagnrýnt ummæli forsætisráðherra. Framsóknarflokkurinn (B) opnaði kosningaskrifstofu sína. Anna Sigríður Hafliðadóttir (V) hefur birt pistil um velferð og skólamál sem fyllir upp í þekkta eyðu í stefnu flokksins um velferð. Jónas Már Torfason (S) hefur tjáð sig um væntanlegan kosningasigur Samfylkingarinnar og húsnæðismál.
+Nýjustu fréttir um sveitarstjórnarkosningarnar í Kópavogi sýna að Samfylkingin hefur verið virk í umræðum um velferðarmál, þar á meðal gjaldfrjálsa íþróttaiðkun barna og leikskólamál, sem fyllir að hluta til þekktar eyður í stefnu þeirra. Einnig hafa komið fram nýjar kannanir sem sýna Sjálfstæðisflokkinn leiða í Kópavogi og Samfylkinguna styrkja stöðu sína. Almennar fréttir um kosningarnar og hvatning til að kjósa hafa einnig birst á síðustu 48 klukkustundum.
 
-### 6 óúrvinnsluð uppfærsla(r)
+### 9 óúrvinnsluð uppfærsla(r)
 
 #### Bæjarstjórn Kópavogs samþykkir viðauka við fjárhagsáætlun og kosningar í hverfakjörstjórnir
 
@@ -50,4 +50,25 @@ _Heimild: https://www.framsokn.is/vidburdir/kopavogur-opnun-kosningaskrifstofu/_
 Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, sér fram á stórsigur í sveitarstjórnarkosningunum. Hann bendir á að kannanir sýni mikil sóknarfæri fyrir Samfylkinguna í Kópavogi þar sem eldri framboð hafa misst fylgi.
 
 _Heimild: https://www.dv.is/frettir/2026/05/01/rynt-kannanir-hverjir-vinna-og-hverjir-tapa_
+
+
+#### **[S]** Sólveig, Kraginn, Kópavogur
+
+Bloggfærsla á vef Samfylkingarinnar í Kópavogi sem tengist kosningaherferð flokksins. Nánari upplýsingar um innihald eru ekki gefnar í samantektinni.
+
+_Heimild: https://samfylkinginkopavogi.wordpress.com/2026/05/13/solveig-kraginn-kopavogur/_
+
+
+#### **[S]** Hundalífið í Kópavogi
+
+Bloggfærsla á vef Samfylkingarinnar í Kópavogi þar sem rætt er um málefni hundaeigenda í bænum. Frambjóðendur hafa fengið beiðnir um að taka á málefnum hundaeigenda.
+
+_Heimild: https://samfylkinginkopavogi.wordpress.com/2026/05/13/hundalifid-i-kopavogi/_
+
+
+#### **[S]** Nýtum kosningaréttinn
+
+Bloggfærsla á vef Samfylkingarinnar í Kópavogi sem hvetur ungt fólk til að nýta kosningaréttinn sinn. Kosningaþátttaka ungs fólks hefur farið minnkandi og framboðið lítur á þetta sem áhyggjuefni.
+
+_Heimild: https://samfylkinginkopavogi.wordpress.com/2026/05/12/nytum-kosningarettinn/_
 

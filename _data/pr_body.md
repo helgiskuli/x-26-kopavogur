@@ -1,26 +1,26 @@
-## Rannsóknarsamantekt 03.05.2026 16:53 UTC
+## Rannsóknarsamantekt 15.05.2026 11:23 UTC
 
-Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 1. til 3. maí 2026. Umræðan hefur aðallega snúist um gagnrýni forsætisráðherra, Kristrúnar Frostadóttur (S), á leikskólamál (Kópavogsmódelið) og húsnæðismál í Kópavogi, sérstaklega skort á lóðaúthlutunum til Bjargs íbúðafélags. Ásdís Kristjánsdóttir (D), bæjarstjóri Kópavogs, hefur svarað þessari gagnrýni. Leikskólastjóri í Kópavogi hefur einnig gagnrýnt ummæli forsætisráðherra. Framsóknarflokkurinn (B) opnaði kosningaskrifstofu sína. Anna Sigríður Hafliðadóttir (V) hefur birt pistil um velferð og skólamál sem fyllir upp í þekkta eyðu í stefnu flokksins um velferð. Jónas Már Torfason (S) hefur tjáð sig um væntanlegan kosningasigur Samfylkingarinnar og húsnæðismál.
+Nýjustu fréttir um sveitarstjórnarkosningarnar í Kópavogi sýna að Samfylkingin hefur verið virk í umræðum um velferðarmál, þar á meðal gjaldfrjálsa íþróttaiðkun barna og leikskólamál, sem fyllir að hluta til þekktar eyður í stefnu þeirra. Einnig hafa komið fram nýjar kannanir sem sýna Sjálfstæðisflokkinn leiða í Kópavogi og Samfylkinguna styrkja stöðu sína. Almennar fréttir um kosningarnar og hvatning til að kjósa hafa einnig birst á síðustu 48 klukkustundum.
 
 ### 3 nýjar uppfærslur
 
-#### **[D]** Undarlegt að forsætisráðherra ráðist á Kópavog
+#### **[S]** Sólveig, Kraginn, Kópavogur
 
-Ásdís Kristjánsdóttir, bæjarstjóri Kópavogs, segir það undarlegt að forsætisráðherra, Kristrún Frostadóttir, ráðist sérstaklega á Kópavog vegna leikskólamála og skorts á lóðaúthlutunum til Bjargs. Hún vísar gagnrýni Kristrúnar á Kópavogsmódelið á bug og segir það hafa skilað sér í stórbættri þjónustu og engum lokunardögum í leikskólum. Kristrún kallaði Kópavogsmódelið „Kópavogsskattinn“ og gagnrýndi bæjarstjórnina fyrir að hafa ekki úthlutað lóðum til Bjargs í 10 ár.
+Bloggfærsla á vef Samfylkingarinnar í Kópavogi sem tengist kosningaherferð flokksins. Nánari upplýsingar um innihald eru ekki gefnar í samantektinni.
 
-_Heimild: https://www.mbl.is/frettir/innlent/2026/05/01/undarlegt_ad_forsaetisradherra_radist_a_kopavog_
-
-
-#### **[B]** Kópavogur: Opnun kosningaskrifstofu
-
-Framsóknarflokkurinn í Kópavogi opnaði kosningaskrifstofu sína í Bæjarlind 14-16 þann 2. maí. Boðið var upp á andlitsmálun, kaffi og kræsingar ásamt spjalli við frambjóðendur.
-
-_Heimild: https://www.framsokn.is/vidburdir/kopavogur-opnun-kosningaskrifstofu/_
+_Heimild: https://samfylkinginkopavogi.wordpress.com/2026/05/13/solveig-kraginn-kopavogur/_
 
 
-#### **[S]** Rýnt í kannanir – Hverjir vinna og hverjir tapa
+#### **[S]** Hundalífið í Kópavogi
 
-Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, sér fram á stórsigur í sveitarstjórnarkosningunum. Hann bendir á að kannanir sýni mikil sóknarfæri fyrir Samfylkinguna í Kópavogi þar sem eldri framboð hafa misst fylgi.
+Bloggfærsla á vef Samfylkingarinnar í Kópavogi þar sem rætt er um málefni hundaeigenda í bænum. Frambjóðendur hafa fengið beiðnir um að taka á málefnum hundaeigenda.
 
-_Heimild: https://www.dv.is/frettir/2026/05/01/rynt-kannanir-hverjir-vinna-og-hverjir-tapa_
+_Heimild: https://samfylkinginkopavogi.wordpress.com/2026/05/13/hundalifid-i-kopavogi/_
+
+
+#### **[S]** Nýtum kosningaréttinn
+
+Bloggfærsla á vef Samfylkingarinnar í Kópavogi sem hvetur ungt fólk til að nýta kosningaréttinn sinn. Kosningaþátttaka ungs fólks hefur farið minnkandi og framboðið lítur á þetta sem áhyggjuefni.
+
+_Heimild: https://samfylkinginkopavogi.wordpress.com/2026/05/12/nytum-kosningarettinn/_
 
