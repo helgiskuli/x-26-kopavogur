@@ -455,9 +455,57 @@
       "fills_known_gap": false,
       "date": "2026-05-01",
       "applied_date": null
+    },
+    {
+      "source_url": "https://www.ruv.is/frettir/kosningar/sveitarstjornarkosningar-2026/telur-ad-baejarbua-hafi-ekki-kunad-ad-meta-afskipti-kristrunar",
+      "source_name": "RÚV.is",
+      "party_letter": "D",
+      "headline_is": "Ásdís Kristjánsdóttir um afskipti forsætisráðherra og stórsigur Sjálfstæðisflokksins í Kópavogi",
+      "summary_is": "Ásdís Kristjánsdóttir, bæjarstjóri í Kópavogi og oddviti Sjálfstæðisflokksins, segir að Kópavogsbúar hafi ekki kunnað að meta mikil afskipti Kristrúnar Frostadóttur forsætisráðherra af sveitarstjórnarkosningunum í bænum. Sjálfstæðisflokkurinn fékk hreinan meirihluta með 45,7% atkvæða og sex bæjarfulltrúa. Hún styður samgöngusáttmálann og telur að bæjarbúar vilji halda áfram á sömu braut.",
+      "policy_area": "stjórnsýsla, samgöngur",
+      "category": "frettir",
+      "fills_known_gap": false,
+      "date": "2026-05-17",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.ruv.is/frettir/kosningar/sveitarstjornarkosningar-2026/asdis-stolt-og-meyr-yfir-fyrstu-tolum-ur-kopavogi",
+      "source_name": "RÚV.is",
+      "party_letter": "D",
+      "headline_is": "Ásdís „stolt og meyr“ yfir fyrstu tölum úr Kópavogi",
+      "summary_is": "Sjálfstæðisflokkurinn bætti verulega við sig fylgi í Kópavogi og fékk 45% atkvæða og meirihluta bæjarfulltrúa samkvæmt fyrstu tölum. Ásdís Kristjánsdóttir, oddviti flokksins, sagðist vera stolt og meyr yfir niðurstöðunni sem væri sú besta fyrir flokkinn í Kópavogi síðan 2006.",
+      "policy_area": null,
+      "category": "frettir",
+      "fills_known_gap": false,
+      "date": "2026-05-16",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.mbl.is/frettir/innlent/2026/05/14/x26_kopavogur_oddvitaslagur/",
+      "source_name": "mbl.is",
+      "party_letter": null,
+      "headline_is": "Oddvitaslagur fimm stærstu framboðanna í Kópavogi",
+      "summary_is": "Oddvitar Framsóknarflokksins (B), Viðreisnar (C), Sjálfstæðisflokksins (D), Samfylkingarinnar (S) og Miðflokksins (M) tókust á í kosningaumræðum í myndveri Morgunblaðsins tveimur dögum fyrir kosningar. Umræðurnar fjölluðu um stóru málin í Kópavogi.",
+      "policy_area": null,
+      "category": "umraeda",
+      "fills_known_gap": false,
+      "date": "2026-05-14",
+      "applied_date": null
+    },
+    {
+      "source_url": "https://www.ruv.is/frettir/kosningar/sveitarstjornarkosningar-2026/telur-ad-baejarbua-hafi-ekki-kunad-ad-meta-afskipti-kristrunar",
+      "source_name": "RÚV.is",
+      "party_letter": "S",
+      "headline_is": "Samfylkingin lagði til þak á leikskólagjöld og lögfestingu leikskólavistar",
+      "summary_is": "Í aðdraganda kosninga kynnti Samfylkingin útspil sitt fyrir sveitarstjórnarkosningar þar sem lagt var til þak á leikskólagjöld og lögfestingu leikskólavistar. Þetta var hluti af kosningabaráttu flokksins, sem forsætisráðherra Kristrún Frostadóttir tók virkan þátt í.",
+      "policy_area": "velferð",
+      "category": "stefna",
+      "fills_known_gap": true,
+      "date": "2026-05-17",
+      "applied_date": null
     }
   ],
-  "last_run": "2026-05-03T16:53:28.866524+00:00",
+  "last_run": "2026-05-18T12:30:54.276034+00:00",
   "gaps": {
     "C": [
       "húsnæði",

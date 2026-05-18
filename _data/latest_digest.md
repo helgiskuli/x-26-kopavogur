@@ -1,14 +1,14 @@
 ---
-date: 2026-05-03T16:53:28.869246+00:00
-count_total: 38
-count_unapplied: 6
+date: 2026-05-18T12:30:54.276943+00:00
+count_total: 42
+count_unapplied: 10
 ---
 
-## Rannsóknarsamantekt 03.05.2026 16:53 UTC
+## Rannsóknarsamantekt 18.05.2026 12:30 UTC
 
-Nýjar fréttir og umræður um sveitarstjórnarkosningarnar í Kópavogi hafa fundist frá 1. til 3. maí 2026. Umræðan hefur aðallega snúist um gagnrýni forsætisráðherra, Kristrúnar Frostadóttur (S), á leikskólamál (Kópavogsmódelið) og húsnæðismál í Kópavogi, sérstaklega skort á lóðaúthlutunum til Bjargs íbúðafélags. Ásdís Kristjánsdóttir (D), bæjarstjóri Kópavogs, hefur svarað þessari gagnrýni. Leikskólastjóri í Kópavogi hefur einnig gagnrýnt ummæli forsætisráðherra. Framsóknarflokkurinn (B) opnaði kosningaskrifstofu sína. Anna Sigríður Hafliðadóttir (V) hefur birt pistil um velferð og skólamál sem fyllir upp í þekkta eyðu í stefnu flokksins um velferð. Jónas Már Torfason (S) hefur tjáð sig um væntanlegan kosningasigur Samfylkingarinnar og húsnæðismál.
+Nýjustu fréttir um sveitarstjórnarkosningarnar í Kópavogi, sem fram fóru 16. maí 2026, sýna að Sjálfstæðisflokkurinn (D) náði stórsigri og hreinum meirihluta með 6 bæjarfulltrúa. Oddviti Sjálfstæðisflokksins, Ásdís Kristjánsdóttir, lýsti yfir mikilli ánægju með úrslitin og gagnrýndi afskipti forsætisráðherra af kosningabaráttunni. Samfylkingin (S) tvöfaldaði fylgi sitt og fékk 2 fulltrúa, og kynnti áður stefnu um þak á leikskólagjöld sem fyllir þekkt stefnuleysi um velferð. Miðflokkurinn (M) fékk einn fulltrúa. Framsóknarflokkurinn (B) og Viðreisn (C) fengu einnig einn fulltrúa hvor. Vinstri græn (V) og Sósíalistaflokkur Íslands (J) náðu ekki kjöri. Kosningaumræður með oddvitum fimm stærstu framboðanna fóru fram tveimur dögum fyrir kosningar. Konur eru nú í meirihluta fulltrúa í bæjarstjórn Kópavogs.
 
-### 6 óúrvinnsluð uppfærsla(r)
+### 10 óúrvinnsluð uppfærsla(r)
 
 #### Bæjarstjórn Kópavogs samþykkir viðauka við fjárhagsáætlun og kosningar í hverfakjörstjórnir
 
@@ -50,4 +50,32 @@ _Heimild: https://www.framsokn.is/vidburdir/kopavogur-opnun-kosningaskrifstofu/_
 Jónas Már Torfason, oddviti Samfylkingarinnar í Kópavogi, sér fram á stórsigur í sveitarstjórnarkosningunum. Hann bendir á að kannanir sýni mikil sóknarfæri fyrir Samfylkinguna í Kópavogi þar sem eldri framboð hafa misst fylgi.
 
 _Heimild: https://www.dv.is/frettir/2026/05/01/rynt-kannanir-hverjir-vinna-og-hverjir-tapa_
+
+
+#### **[D]** Ásdís Kristjánsdóttir um afskipti forsætisráðherra og stórsigur Sjálfstæðisflokksins í Kópavogi
+
+Ásdís Kristjánsdóttir, bæjarstjóri í Kópavogi og oddviti Sjálfstæðisflokksins, segir að Kópavogsbúar hafi ekki kunnað að meta mikil afskipti Kristrúnar Frostadóttur forsætisráðherra af sveitarstjórnarkosningunum í bænum. Sjálfstæðisflokkurinn fékk hreinan meirihluta með 45,7% atkvæða og sex bæjarfulltrúa. Hún styður samgöngusáttmálann og telur að bæjarbúar vilji halda áfram á sömu braut.
+
+_Heimild: https://www.ruv.is/frettir/kosningar/sveitarstjornarkosningar-2026/telur-ad-baejarbua-hafi-ekki-kunad-ad-meta-afskipti-kristrunar_
+
+
+#### **[D]** Ásdís „stolt og meyr“ yfir fyrstu tölum úr Kópavogi
+
+Sjálfstæðisflokkurinn bætti verulega við sig fylgi í Kópavogi og fékk 45% atkvæða og meirihluta bæjarfulltrúa samkvæmt fyrstu tölum. Ásdís Kristjánsdóttir, oddviti flokksins, sagðist vera stolt og meyr yfir niðurstöðunni sem væri sú besta fyrir flokkinn í Kópavogi síðan 2006.
+
+_Heimild: https://www.ruv.is/frettir/kosningar/sveitarstjornarkosningar-2026/asdis-stolt-og-meyr-yfir-fyrstu-tolum-ur-kopavogi_
+
+
+#### Oddvitaslagur fimm stærstu framboðanna í Kópavogi
+
+Oddvitar Framsóknarflokksins (B), Viðreisnar (C), Sjálfstæðisflokksins (D), Samfylkingarinnar (S) og Miðflokksins (M) tókust á í kosningaumræðum í myndveri Morgunblaðsins tveimur dögum fyrir kosningar. Umræðurnar fjölluðu um stóru málin í Kópavogi.
+
+_Heimild: https://www.mbl.is/frettir/innlent/2026/05/14/x26_kopavogur_oddvitaslagur/_
+
+
+#### **[S]** Samfylkingin lagði til þak á leikskólagjöld og lögfestingu leikskólavistar 🆕 _Fylli þekkta eyðu_
+
+Í aðdraganda kosninga kynnti Samfylkingin útspil sitt fyrir sveitarstjórnarkosningar þar sem lagt var til þak á leikskólagjöld og lögfestingu leikskólavistar. Þetta var hluti af kosningabaráttu flokksins, sem forsætisráðherra Kristrún Frostadóttir tók virkan þátt í.
+
+_Heimild: https://www.ruv.is/frettir/kosningar/sveitarstjornarkosningar-2026/telur-ad-baejarbua-hafi-ekki-kunad-ad-meta-afskipti-kristrunar_
 
